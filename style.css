@@ -715,15 +715,18 @@ img {
   margin-bottom: 55px; }
 
   .main-img > a > img{
+    margin-top: 10px;
     width: 494px;
-    height: 495px; }
+    height: 496px; }
   
   .sub-img > a > img{
+    margin-top: 10px;;
     width: 494px;
-    height: 231px; }
+    height: 243px; }
 
   .blog-img > a > img{
+    margin-top: 10px;
     width: 494px;
-    height: 240px; }
+    height: 243px; }
 
 /* ====== The End ====== */
