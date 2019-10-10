@@ -708,48 +708,22 @@ img {
   .single-blog-post.style-6:hover .blog-content .post-title {
     color: #ef1b48; }
 
-.sidebar-area {
-  position: relative;
-  z-index: 1; }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .sidebar-area {
-      margin-top: 100px; } }
-  @media only screen and (max-width: 767px) {
-    .sidebar-area {
-      margin-top: 100px; } }
-
-.single-widget-area {
-  position: relative;
-  z-index: 1; }
-  .single-widget-area.newsletter-widget {
-    background-color: #f0f4f8;
-    padding: 50px 20px;
-    text-align: center; }
-    .single-widget-area.newsletter-widget h4 {
-      margin-bottom: 25px; }
-    .single-widget-area.newsletter-widget form input {
-      text-align: center;
-      width: 100%;
-      background-color: #d4dfe3;
-      height: 54px;
-      font-size: 12px;
-      font-style: italic;
-      color: #4c4c4c;
-      border: none;
-      margin-bottom: 15px; }
-    .single-widget-area.newsletter-widget p {
-      font-size: 12px;
-      font-style: italic; }
-  .single-widget-area.news-widget h4 {
-    margin-bottom: 60px; }
   .plus-button {
     float: right; 
     margin: 10px 20px; }
   .subtitle{
   margin-bottom: 55px; }
 
-  .main-img > img{
-    width: 478px;
-    height: 980px;  }
+  .main-img > a > img{
+    width: 494px;
+    height: 495px; }
+  
+  .sub-img > a > img{
+    width: 494px;
+    height: 231px; }
+
+  .blog-img > a > img{
+    width: 494px;
+    height: 240px; }
 
 /* ====== The End ====== */
