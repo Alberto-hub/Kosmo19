@@ -1,0 +1,82 @@
+body {
+    margin: 0 auto;
+    width: 1200px;
+    height: auto;
+}
+h1{
+    text-align: center;
+}
+#ToUAT {
+    width: 582px;
+    height: 450px;
+    margin: 0 auto;
+    overflow:scroll;
+}
+#FFF{
+    position: relative;
+}
+#id , #name ,#PW {
+    padding-top: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+}
+#dongi{
+    position: relative;
+    padding-top: 50px;
+}
+#dong{
+    line-height: 30px;
+    margin-left: 240px;
+    width: 250px;
+    float: left;
+    font: bold;
+}
+#checkdong{
+    width: 20px;
+    height: 20px;
+    margin: 20px 0 0 250px;
+    float: left;
+    
+}
+#id > div{
+    line-height: 50px;
+    margin-left: 130px;
+    width: 250px;
+    float: left;
+}
+#name > div{
+    margin-left: 130px;
+    width: 250px;
+    float: left;
+}
+#PW > div ,#PW > input{
+    margin-left: 130px;
+    width: 250px;
+    float: left;
+}
+#userid, #username, #dong{
+    background-color: rgb(224,224,224);
+}
+#pwd{
+    height: 30px;
+}
+
+
+
+
+#sign_up {
+    margin-left: 510.6px;
+    width: 200px;
+    height: 54px;
+    padding-top: 10px;
+    background: #3498DB;
+    text-decoration-line: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    line-height: 2em;
+    font-size: 18px;
+    color: rgb(64,64,64);
+}

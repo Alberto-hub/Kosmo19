@@ -1,0 +1,41 @@
+/* 초기화 */
+*{ 
+    margin: 0;
+    padding: 0;
+    text-decoration-line: none;
+    }
+/* 바디 기본 설정 */
+body{
+    margin: 1% auto;
+    text-align: center;
+    width: 1200px;
+}
+/*중간 제목 ~방법*/
+.sub_title {
+    margin: 0 auto;
+    padding: 0 auto;
+    font: bold 30px/1.6 arial; 
+    color: rgb(150, 150, 50); 
+    text-align: center;
+    cursor: pointer;
+}
+.content{
+    overflow: auto;
+    margin: 0 2%;
+}
+.map{
+    margin: 2% 0.5% 0.5% 0.5%;
+    float: left;
+}
+#map1, #map2, #map3{
+    margin: 5%;
+    height: 320px;
+    width: 320px;
+}
+h4 {
+    width: 320px;
+    margin: 1%;
+    font: bold 20px/1.6 arial; 
+    color: rgb(150, 150, 50); 
+    text-align: center;
+}

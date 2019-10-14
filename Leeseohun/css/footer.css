@@ -1,0 +1,79 @@
+/* :: 7.0 Footer Area CSS */
+.footer-area .news-area {
+  position: relative;
+  z-index: 1; }
+  .footer-area .footer-logo {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    width: 100%; }
+    .footer-area .footer-logo a {
+      display: inline-block;
+      background-color: #ffffff;
+      padding: 0 10px; }
+    .footer-area .footer-logo::after {
+      position: absolute;
+      width: 100%;
+      content: '';
+      background-color: #d6dfe2;
+      height: 2px;
+      top: 50%;
+      left: 0;
+      right: 0;
+      margin-top: -1px;
+      z-index: -1; }
+  .footer-area .footer-nav {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px;
+    display: block; }
+    .footer-area .footer-nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .footer-area .footer-nav li a {
+      color: #404040;
+      font-size: 16px;
+      padding: 0 40px; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .footer-area .footer-nav li a {
+          padding: 0 20px; } }
+      @media only screen and (max-width: 767px) {
+        .footer-area .footer-nav li a {
+          font-size: 14px;
+          padding: 0 5px; } }
+      @media only screen and (min-width: 576px) and (max-width: 767px) {
+        .footer-area .footer-nav li a {
+          font-size: 15px;
+          padding: 0 20px; } }
+      .footer-area .footer-nav li a:hover, .footer-area .footer-nav li a:focus {
+        color: #ef1b48; }
+  .footer-area .footer-social-info {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin-bottom: 30px; }
+    .footer-area .footer-social-info a {
+      display: inline-block;
+      padding: 0 15px;
+      font-size: 14px;
+      color: #404040; }
+  .footer-area .copywrite-text {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: #a9a9a9;
+    font-weight: 500;
+    padding: 15px 0; }
+    .footer-area .copywrite-text a {
+      color: #a9a9a9;
+      font-size: 12px;
+      font-weight: 500; }
+      .footer-area .copywrite-text a:hover, .footer-area .copywrite-text a:focus {
+        color: #ef1b48; }

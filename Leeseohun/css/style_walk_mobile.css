@@ -1,0 +1,53 @@
+/* 초기화 */
+*{ 
+  margin: 0 auto;
+  padding: 0;
+  text-decoration-line: none;
+  }
+/* 바디 기본 설정 */
+
+body{
+  margin: 0 auto;
+  text-align: center;
+  width: 360px;
+}
+
+/*중간 제목 ~방법*/
+
+.sub_title {
+  margin: 0 auto;
+  font: bold 24px/1.6 arial; 
+  color: rgb(150, 150, 50); 
+  text-align: center;
+  cursor: pointer;
+}
+#maps{
+  margin: 0 auto;
+  display: none;
+  height: 340px;
+  width: 360px;
+}
+#map {
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+}
+span{
+  border: 1px solid black;
+}
+select, button, span{
+  margin: 5px;
+  height: 40px;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+#fnc1 , #fnc2 {
+    float: left;
+    margin: 5%;
+    width: 20%;
+}
+#Serch{
+  margin: 5%;
+}

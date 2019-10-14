@@ -1,0 +1,41 @@
+body {
+    margin: 0 auto;
+    width: 1200px;
+    height: auto;
+}
+h1{
+    text-align: center;
+}
+
+#name{
+    font-size: 20px;
+    text-align: center;
+    margin: 5px auto;
+}
+
+#phone {
+    text-align: center;
+    margin: 5px auto;
+}
+#phone > strong {
+    font-size: 20px;
+}
+#find{
+    margin: 10px 505px;
+    width: 200px;
+    height: 54px;
+    padding-top: 10px;
+    background: #3498DB;
+    text-decoration-line: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    line-height: 2em;
+    font-size: 18px;
+    color: rgb(64,64,64);
+}
+#telceck {
+    margin: 5px;
+    width: 15px;
+    height: 15px;
+}

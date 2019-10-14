@@ -1,0 +1,28 @@
+body {
+    margin: 0 auto;
+    width: 1200px;
+    height: auto;
+}
+h1{
+    text-align: center;
+}
+
+#name{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px auto;
+}
+#find_pwd{
+    margin: 30px 505px;
+    background: rgb(224,224,224);
+    width: 200px;
+    height: 54px;
+    padding-top: 10px;
+    text-decoration-line: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    line-height: 2em;
+    font-size: 18px;
+    color: rgb(64,64,64);
+}

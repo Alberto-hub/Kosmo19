@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    outline: 0; text-decoration: none; color: black;
+}
+
+img {
+    border: 0;
+}
+
+body {
+    width: 1200px;
+    background: #e5f4ff;
+    margin: 0 auto;
+    font: 24px arial; color: black;
+}
+
+div {
+    width: 80%;
+    height: 250px;
+    /* border: 1px solid black; */
+    margin-top: 25px;
+    box-sizing: border-box;
+}
+
+
+section {
+    width: 1200px;
+    height: 100%;
+}

@@ -1,0 +1,116 @@
+body {
+    margin: 0 auto;
+    width: 1200px;
+    height: auto;
+}
+h1{
+    text-align: center;
+}
+#FFF{
+    position: relative;
+}
+#id , #name, #phone, #email{
+    padding-top: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+}
+#id > div{
+    margin-left: 130px;
+    width: 250px;
+    float: left;
+}
+#name > div{
+    margin-left: 130px;
+    width: 250px;
+    float: left;
+}
+#phone > div{
+    margin-left: 130px;
+    width: 250px;
+    float: left;
+}
+#email > div{
+    margin-left: 130px;
+    width: 250px;
+    float: left;
+}
+#userid, #username, #userphone, #useremail{
+    background-color: rgb(224,224,224);
+}
+#PW{
+    padding-top: 30px;
+    margin: 20px;
+    text-align: center;
+}
+#phone > .change, #email > .change {
+    margin-right: 300px;
+}
+.change ,#change{
+    width: 50px;
+    height: 30px;
+    background-color: rgb(94,94,94);
+    text-decoration-line: none;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 2em;
+    font-size: 14px;
+}
+#pwd, #newpwd_ceck{
+    margin-right: 60px;
+}
+input{
+    margin: 10px;
+    font-size: 20px;
+}
+
+#email + button {
+    margin: 50px 0 0 800px;
+    background: rgb(224,224,224);
+}
+#btn > div{
+    margin-top: 50px;
+    float: left;
+}
+
+#reboke{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(224, 224, 224);
+    text-decoration-line: none;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 2em;
+    font-size: 14px;
+}
+
+#cancel {
+    background: rgb(224,224,224);
+    margin-left: 260.6px;
+    width: 200px;
+    height: 54px;
+    padding-top: 10px;
+    text-decoration-line: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    line-height: 2em;
+    font-size: 18px;
+    color: rgb(64,64,64);
+}
+
+#sign_up {
+    margin-left: 260.6px;
+    width: 200px;
+    height: 54px;
+    padding-top: 10px;
+    background: #3498DB;
+    text-decoration-line: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    line-height: 2em;
+    font-size: 18px;
+    color: rgb(64,64,64);
+}

@@ -1,0 +1,65 @@
+/* 초기화 */
+*{ 
+    width: 360px;
+    margin: 0;
+    padding: 0;
+    text-decoration-line: none;
+    }
+/* 바디 기본 설정 */
+body{
+    text-align: center;
+    
+}
+/*중간 제목 ~방법*/
+.sub_title {
+    margin: 0 auto;
+    font: bold 24px/1.6 arial; 
+    color: rgb(150, 150, 50); 
+    text-align: center;
+    cursor: pointer;
+}
+/* div content */
+img {
+    padding-top: 5%;
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+}
+.price {
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+    border: 1px solid black;
+    font: bold 16px/1.6 arial;
+}
+.site{
+    margin-top: 2%;
+    font: bold 14px/1.6 arial;
+    color: blue;
+}
+#logo{
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+}
+/* 최상단 버튼 */
+#topBtn {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    background: #000;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.price_text{
+    width: 100%;
+}
+  
