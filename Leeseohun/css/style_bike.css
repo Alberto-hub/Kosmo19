@@ -1,14 +1,13 @@
 /* 초기화 */
-*{ 
+/* *{ 
     margin: 0;
     padding: 0;
     text-decoration-line: none;
-    }
+    } */
 /* 바디 기본 설정 */
-body{
+section{
     margin: 1% auto;
     text-align: center;
-    width: 1200px;
 }
 /*중간 제목 ~방법*/
 .sub_title {
