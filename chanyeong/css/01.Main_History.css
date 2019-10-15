@@ -3,7 +3,7 @@ body {background-color:#e5f4ff;}
 figcaption {text-align:center;}
 
 #main_section {
-    width:1200px; margin:0 auto; overflow:hidden; 
+    width:100%; margin:0 auto; overflow:hidden; 
 }
 
 .left_aside {
