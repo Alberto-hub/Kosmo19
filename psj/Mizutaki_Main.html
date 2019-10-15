@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./js/Store_Main.js"></script>
+    <script src="./js/Misutaki_Map.js"></script>
+    <link rel="stylesheet" href="./css/Store_Main.css">
+    <link rel="stylesheet" href="./css/Misutaki_Main.css">
+    <title>미즈타키</title>
+</head>
+
+<body>
+    <header></header>
+
+    <section>
+
+        <div id="Title">
+            <h2>미즈타키</h2>
+            <input type="button" value="관리자 페이지" class="enteradmin">
+        </div>
+        <div class="Store_Main">
+            <!-- 미스타키 본 -->
+            <div class="Store_Main_Body">
+                <img src="./img/미즈타키본.jpg" alt="">
+                <hr>
+                <h2>미스타키 본 水炊き凡</h2>
+                <p>물에 끓인다,는 의미의 미즈타키(水炊き) 이름 그대로, 물에 뼈가 있는 닭고기를 파와 그 외 좋아하는 야채들과 함께 우려낸 다음, 폰즈(ポン酢: 일본식 식초간장소스)와 함께 먹는
+                    전골요리.<br>일본 전역에서 맛볼 수 있는 후쿠오카 현의 대표적인 전골요리가 되었다.<br> 건더기를 모두 먹은 후 남은 국물로 만들어 먹는 죽도 인기만점이다<br>
+                </p>
+                <br>
+                <ul>
+                    <li>주소 : 〒810-0801 福岡県福岡市博多区２ 中洲 ４丁目 ２ １５ メインストリートビル2F</li>
+                    <li>주소 : 일본 〒810-0801 Fukuoka, Hakata Ward, 2, 中洲 ４丁目 ２ １５ メインストリートビル2F</li>
+                    <li>전화번호 : +81 92-281-1177</li>
+                    <li>홈페이지 : <a href="http://mizutaki-bon.com/"
+                            target="_blank">http://mizutaki-bon.com/</a>
+                    </li>
+                </ul>
+                <div>
+                    <div id="MTB" class="Map"></div>
+                    <input type="button" value="지도보기" id="MTBbtn" class="btn">
+                </div>
+            </div>
+        </div>
+        <!-- 하나미도리 -->
+        <div class="Store_Main">
+            <div class="Store_Main_Body">
+                <img src="./img/하나미도리.jpg" alt="">
+                <hr>
+                <h2>하나미도리 華味鳥</h2>
+                <p>
+
+                    당점은 북부 규슈에서 스스로 키운 종목 닭 "華味鳥"를 사용하여 엄선한 미즈를 제공하고 있습니다. 진한 닭 스프는 속재료를 삶는 정도로 맛이 녹아 더 깊은 맛 깊은 맛으로 변화 해
+                    가고 있습니다.
+                    <br>
+                    <br>
+                    점심 메뉴<br>
+                    <br>
+                    ■ 미즈타키 고센(水炊き御膳) 1200엔<br>
+                    (고바치 2종/하나미도리 미즈타키/밥/반찬/디저트)<br>
+                    ■ 하나 고젠(華御膳) 1600엔<br>
+                    (전채요리 3동/닭 튀김/하나미도리 미즈타키/밥/반찬/디저트)<br>
+                    ■ 토리쥬우 고젠(とり重御膳) 1000엔<br>
+                    (고바치 2종/밥 위에 올려먹는 닭요리/우동/반찬/디저트)<br>
+                    ■ 오야코동 고젠(親子丼御膳) 850엔<br>
+                    (고바치 2종/닭고기 덮밥/우동/반찬)<br>
+                </p>
+                <br>
+                <ul>
+                    <li>주소 : 〒812-0011 福岡県福岡市博多区博多駅前３丁目２３−17</li>
+                    <li>주소 : 3 Chome-23-17 Hakata Ekimae, Hakata Ward, Fukuoka, 812-0011 일본</li>
+                    <li>전화번호 : + 81 92 553 6915</li>
+                    <li>홈페이지 : <a href="http://www.motsunabe-yamanaka.com"
+                            target="_blank">http://www.motsunabe-yamanaka.com</a>
+                    </li>
+                    <li>찾아가는 법 : 하카타 역의 하카타 입구에서 도보 3분</li>
+                </ul>
+                <div id="HMT" class="Map"></div>
+                <input type="button" value="지도보기" id="HMTbtn" class="btn">
+            </div>
+        </div>
+        <!-- Top버튼 -->
+        <a href="#" class="top"><img src="http://placehold.it/50x50" alt=""></a>
+    </section>
+    <!-- googlemap api -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhKyXAc10lVlDsQTYSetha2ZCJ7Ah308Q&callback=initMap"></script>
+    <footer></footer>
+
+</body>
+
+</html>

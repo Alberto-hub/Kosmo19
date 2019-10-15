@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./js/Store_Main.js"></script>
+    <link rel="stylesheet" href="./css/Store_Main.css">
+    <link rel="stylesheet" href="./css/admin.css">
+    <title>admin</title>
+</head>
+
+<body>
+
+    <header></header>
+
+    <section>
+        <div class="Store_Main">
+            <!-- 이치란 -->
+            <div class="Store_Main_Body">
+                <img src="" alt="">
+                <div id="imginput">
+                    <h2>사진을 넣어주세요</h2>
+                </div>
+                <hr>
+                <input type="text" name="title" id="IpTitle" value="제목을 입력해주세요" onfocus="this.value=''">
+                <input type="text" name="section" id="Ipsection" value="내용을 입력해주세요" onfocus="this.value=''">
+                <input type="text" name="mapx" id="x" value="X좌표을 입력해주세요" onfocus="this.value=''">
+                <input type="text" name="mapy" id="y" value="Y좌표을 입력해주세요" onfocus="this.value=''">
+                <input type="button" value="확인" onClick="history.go(-1)">
+            </div>
+        </div>
+        <footer></footer>
+
+</body>
+
+</html>
