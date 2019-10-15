@@ -2,11 +2,17 @@
 body {background-color:#e5f4ff;}
 
 #main_section {
-    width:1200px; margin:0 auto; overflow:hidden;
+    width:100%; margin:0 auto; overflow:hidden;
 }
 
-#chm_main {
-    width:600px; margin:20px auto;
+.main-div{
+    width: 100%;
+    margin: 10px auto;
+}
+
+.container{
+    border: 2px solid black;
+    background-color: white;
 }
 
 h1 {text-align:center;}
