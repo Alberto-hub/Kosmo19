@@ -1,38 +1,34 @@
-body {
-    margin: 0 auto;
+body{
     width: 1200px;
-    height: auto;
 }
 h1{
     text-align: center;
 }
-#id{
-    padding-top: 50px;
-    height: 50px;
-    line-height: 50px;
+
+section{
     text-align: center;
-    font-size: 24px;
+    height: 500px;
+    margin-left: 40%;
 }
-#id > div{
-    margin-left: 130px;
-    width: 250px;
+
+.content_name, .content_input {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
     float: left;
+    line-height: 2.5em;
 }
-#userid{
+.userid {
     background-color: rgb(224,224,224);
 }
-#button{
-    text-align: center;
-}
-#PW{
-    text-align: center;
-}
-input{
-    margin-top: 20px;
+.content_input > input{
+    height: 30px;
     font-size: 20px;
 }
-#gologin{
-    margin: 20px 505px;
+
+
+.gologin{
+    margin: 50px 80% 0 0;
     width: 200px;
     height: 54px;
     padding-top: 10px;

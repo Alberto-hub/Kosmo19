@@ -6,26 +6,26 @@ body {
 h1{
     text-align: center;
 }
-#id{
+.id{
     padding-top: 50px;
     height: 50px;
     line-height: 50px;
     text-align: center;
     font-size: 24px;
 }
-#id > div{
+.id > div{
     margin-left: 130px;
     width: 250px;
     float: left;
 }
-#userid{
+.userid{
 
     background-color: rgb(224,224,224);
 }
-#button{
+.button{
     text-align: center;
 }
-#gologin{
+.gologin{
     margin: 20px;
     width: 200px;
     height: 54px;
@@ -39,7 +39,7 @@ h1{
     font-size: 18px;
     color: rgb(64,64,64);
 }
-#findpwd{
+.findpwd{
     margin: 30px;
     background: rgb(224,224,224);
     width: 200px;

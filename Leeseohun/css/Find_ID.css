@@ -1,27 +1,30 @@
-body {
-    margin: 0 auto;
+body{
     width: 1200px;
-    height: auto;
 }
 h1{
     text-align: center;
 }
 
-#name{
-    font-size: 20px;
+section{
     text-align: center;
-    margin: 5px auto;
+    height: 100px;
+    margin-left: 40%;
 }
 
-#phone {
-    text-align: center;
-    margin: 5px auto;
+.content_name, .content_input, .content_sub{
+    margin: 10px;
+    font-weight: bold;
+    float: left;
+    line-height: 2.5em;
 }
-#phone > strong {
-    font-size: 20px;
+
+.content_input > input{
+    height: 30px;
+    font-size: 25px;
 }
-#find{
-    margin: 10px 505px;
+
+.find{
+    margin-left: -30%;
     width: 200px;
     height: 54px;
     padding-top: 10px;

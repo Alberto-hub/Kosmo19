@@ -15,12 +15,22 @@
 
 <body>
     <h1>아이디 찾기</h1>
-    <div id="name">
-        <strong>이름</strong> <input type="text" name="findname" id="findname">
-    </div>
-    <div id="phone">
-        <strong>휴대전화</strong> <input type="text" name="findphone" id="findphone"> <input type="checkbox" name="ceck" id="telceck" value="telceck"><span>본인확인</span>
-    </div>
-    <input type="button" value="확인" id="find">
+    <section>
+        <div class="content_name">
+                이름
+                <br>
+                휴대전화
+        </div>
+        <div class="content_input">
+            <input type="text" name="findname" id="findname">
+            <br>
+            <input type="text" name="findphone" id="findphone">
+        </div>
+        <div class="content_sub">
+            <br>
+            <input type="checkbox" name="ceck" id="telceck" value="telceck">본인확인
+        </div>
+    </section>
+    <input type="button" value="확인" class="find">
 </body>
 </html>
