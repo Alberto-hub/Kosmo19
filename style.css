@@ -758,4 +758,8 @@ img {
   .modal{ 
     height: 100%; overflow-y: auto; }
 
+  .admin{
+    margin: 0 auto;
+  }
+
 /* ====== The End ====== */
