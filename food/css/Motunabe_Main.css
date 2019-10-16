@@ -1,0 +1,24 @@
+#Motunabe_Title {
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    background: rgb(119, 200, 253);
+    border: none;
+}
+
+/* 지도 생성 */
+
+#SMN {
+    height: 400px;  
+    width: 70%;  
+    margin: 0 auto;
+    margin-top: 10px;
+    
+   }
+
+#YMN {
+    height: 400px;  
+    width: 70%;  
+    margin: 0 auto;
+    margin-top: 10px;
+}
