@@ -758,8 +758,9 @@ img {
   .modal{ 
     height: 100%; overflow-y: auto; }
 
-  .admin{
+  .admin, .user_modify{
     margin: 0 auto;
+    padding: 0 auto;
   }
 
 /* ====== The End ====== */
