@@ -3,13 +3,13 @@ body{
 }
 
 h1{
-    text-align: left;
+    text-align: center;
 }
 
 section{
     text-align: center;
     height: 100px;
-    margin: 0 auto;
+    margin: 10px 50px;
     float: left;
 }
 
@@ -26,7 +26,6 @@ section{
 }
 
 .find{
-    float: left;
     margin: 0 auto;
     width: 200px;
     height: 54px;

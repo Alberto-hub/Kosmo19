@@ -50,14 +50,10 @@ $(function () {
     }
 
     // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+    // window.onclick = function(event) {
+    //     if (event.target == modal) {
+    //         modal.style.display = "none";
+    //     }
+    // }
 
 });
-
-function showPopup(){
-    window.open("./find_ID.html", "a", "width=700, height=300, left=100, top=50");
-};
