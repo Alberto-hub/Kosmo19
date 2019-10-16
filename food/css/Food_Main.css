@@ -1,0 +1,106 @@
+section{
+    margin-bottom: 200px;
+    position: relative;
+}
+
+section > div{
+    overflow: hidden;
+    position: relative;
+}
+section > div > img {
+    width: 30%;
+    float: left;
+    height: 100%;
+}
+
+section > div > p {
+    width: 70%;
+    float: left;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+section > div:nth-child(even) {
+    margin-left: 20%;
+}
+
+body {
+    width: 100%;
+    background: #e5f4ff;
+}
+
+section > div {
+    width: 80%;
+    height: 250px;
+    /* border: 1px solid black; */
+    margin-top: 25px;
+    box-sizing: border-box;
+}
+
+
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    background: white;
+    margin-bottom: 20px;
+}
+
+.nextbtn {
+    width: 100%;
+    height: 100%;
+    border: none;
+    position: absolute;
+    opacity: 0;
+    background: rgb(20, 181, 255);
+    margin: 0 auto;
+}
+
+.VD {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 이미지 슬라이드 */
+
+.swiper-container {
+    width: 518px;
+    height: 385px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#swiper_main{
+    width: 100%;
+    max-width: 1200px;
+    height: 385px;
+    background: white;
+    margin: 0 auto;
+}
+.swiper-slide{
+    margin: 0 auto;
+}
+.swiper-wrapper{
+    margin: 0 auto;
+}
+
+strong{
+font-size: 26px;
+}
+
+.body12 {
+    width: 360px;
+    background: #e5f4ff;
+    margin: 0 auto;
+    font: 24px arial; color: black;
+}
+
+#header{
+    width: 100%;
+    height: 140px;
+}
