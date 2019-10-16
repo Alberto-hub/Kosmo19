@@ -1,14 +1,16 @@
 body{
-    width: 1200px;
+    width: 100%;
 }
+
 h1{
-    text-align: center;
+    text-align: left;
 }
 
 section{
     text-align: center;
     height: 100px;
-    margin-left: 40%;
+    margin: 0 auto;
+    float: left;
 }
 
 .content_name, .content_input, .content_sub{
@@ -24,10 +26,10 @@ section{
 }
 
 .find{
-    margin-left: -30%;
+    float: left;
+    margin: 0 auto;
     width: 200px;
     height: 54px;
-    padding-top: 10px;
     background: #3498DB;
     text-decoration-line: none;
     text-align: center;
