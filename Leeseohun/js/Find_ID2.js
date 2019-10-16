@@ -5,7 +5,7 @@ $(function () {
     //     modal.style.display = "none";
     // }
     // var modal = document.getElementById('myModal');
-    var modal = document.$(this).parent("#myModal");
+    // var modal = document.$(this).parent("#myModal");
 
     $(".find").css('cursor', 'pointer');
     $('.gologin').click(function () {

@@ -27,6 +27,7 @@ $(function () {
             return false;
         }
         else{                       // 모두 만족하면 다음 페이지로
+            alert("정상적으로 변경되었습니다.")
             return location.href = 'Login_Main.html';
         }
     });

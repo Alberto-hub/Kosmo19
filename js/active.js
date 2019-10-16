@@ -194,7 +194,7 @@
     btn1.onclick = function() {
         modal1.style.display = "block";
         $('html, body').css({'overflow': 'hidden', 'height': '100%'}); // 모달팝업 중 html,body의 scroll을 hidden시킴
-        $('#element').on('scroll touchmove mousewheel', function(event) { // 터치무브와 마우스휠 스크롤 방지     
+        $('#element').on('scroll touchmove mousewheel' , function(event) { // 터치무브와 마우스휠 스크롤 방지     
             event.preventDefault();     
             event.stopPropagation();     
             return false; 
@@ -227,5 +227,32 @@
     $(document).ready(function () { 
         $('head').append('<style type="text/css">.modal .modal-body {max-height: ' + ($('body').height() * .8) + 'px;overflow-y: auto;}.modal-open .modal{overflow-y: hidden !important;}</style>'); 
     });
+
+    // Get the modal
+    var modal2 = document.getElementById('myModal');
+ 
+    // Get the button that opens the modal
+    var btn2 = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span2 = document.getElementsByClassName("close")[2];                                          
+
+    // When the user clicks on the button, open the modal 
+    btn2.onclick = function() {
+        modal2.style.display = "block";
+        $('html, body').css({'overflow': 'hidden', 'height': '100%'}); // 모달팝업 중 html,body의 scroll을 hidden시킴
+        $('#element').on('scroll touchmove mousewheel' , function(event) { // 터치무브와 마우스휠 스크롤 방지     
+            event.preventDefault();     
+            event.stopPropagation();     
+            return false; 
+        });
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span2.onclick = function() {
+        modal2.style.display = "none";
+        $('html, body').css({'overflow': 'auto', 'height': '100%'}); //scroll hidden 해제 
+        $('#element').off('scroll touchmove mousewheel'); // 터치무브 및 마우스휠 스크롤 가능
+    }
 
 })(jQuery);

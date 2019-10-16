@@ -3,15 +3,14 @@ body{
 }
 
 h1{
-    text-align: left;
+    text-align: center;
 }
 
 
 section{
     text-align: center;
     height: 100px;
-    margin-left: 40%;
-
+    margin-left: 10%;
 }
 .content_name, .content_input, .content_sub{
     margin: 10px;
@@ -24,8 +23,11 @@ section{
     height: 30px;
     font-size: 25px;
 }
+.btn{
+    text-align: center;
+    padding-top: 50px;
+}
 .find_pwd{
-    margin-left: -30%;
     width: 200px;
     height: 54px;
     padding-top: 10px;

@@ -6,7 +6,6 @@ $(function () {
     var cal = document.getElementById('cal');
     var email = document.getElementById('email');
     var tel = document.getElementById('tel');
-
     $("#btn > div").css('cursor', 'pointer');
     $('#sign_up').click(function () {
         var pattern_kor = /[a-z0-9]|[ \[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g;
@@ -55,7 +54,15 @@ $(function () {
             tel.value = "";
         } else {
             if ($('input:radio[name=남성]').is(':checked') || $('input:radio[name=여성]').is(':checked')) {
-                location.href = 'Sign_Up3.html';
+                if(id.value == "admin"){
+                    // 새창 닫기 아직 못함
+                    location.href = '../index_admin.html';
+                }
+                else{
+                    // 새창 닫기 아직 못함
+                    location.href = '../index_user.html';
+                }
+                    
             } else {
                 alert("성별을 입력해주세요.")
             }
