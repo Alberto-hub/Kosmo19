@@ -9,14 +9,15 @@ h1{
 }
 
 #Con {
-    width: 582px;
-    height: 500px;
+    width: 650px;
     margin: 0 auto;
     margin-bottom: 10px;
-    overflow:scroll;
-    font-size: 40px;
+    font-size: 18px;
 }
-
+.img {
+    width: 650px;
+    text-align: center;
+}
 #Nbtn{
     margin: 0 auto;
     margin-top: 20px;
