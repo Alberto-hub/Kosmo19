@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./js/custom_iku.js"></script>
     <!-- Title -->
-    <title>Fuku?oka!</title>
-
+    <title>후쿠오카로 가는 교통 수단</title>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" id="css" href="./css/style_car.css">
-    <!-- <script src="./js/custom_car.js"></script> -->
-
+    <link rel="stylesheet" id="css" href="./css/style_iku.css">
 </head>
 <body>
-    <!-- Preloader -->
-    <div class="preloader d-flex align-items-center justify-content-center">
-        <div class="lds-ellipsis">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+<!-- Preloader -->
+<div class="preloader d-flex align-items-center justify-content-center">
+    <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
+</div>
 
     <!-- ##### Header Area Start ##### -->
     <header class="header-area">
@@ -123,30 +121,109 @@
     </header>
     <!-- ##### Header Area End ##### -->
 
-    <a href="./Fukuoka_transport.html"><h2 class="sub_title"> 자 동 차 </h2></a>
-
-
-    <!-- ##### content ##### -->
-    <img src="./img/cae2.png" alt="car" id="car">
+    <h2 class="title">후쿠오카로 가는 교통수단</h2>
+    <!-- content -->
     
-    <div class="rent">
-        <h3>렌트카 예약 안내 및 주의사항</h3>
-        <div>렌트카 예약 전 <strong>"국제면허증"</strong>필수!</div>
-        <div>발급방법은 가까운 경찰서나, 도로교통공단의 운전면허 시험장에서 발급가능</div>
-        <div>여권과 여권사진, 수수료 8,500원, 국내 운전면허증 지참후 방문하여 접수</div>
-        <div><strong>유효기간1년</strong></div>
-    </div>
-    <div class="site">자동차 렌트 사이트
-        <br>
-        <a href="https://www.befreetour.com/kr/detail/5499-fukuoka-rent-car" target="_blank"><img src="./img/car3.png" alt="rentcar" id="rentcar"></a>
-        <a href="https://www.budgetrentacar.co.jp/kr/" target="_blank"><img src="./img/budget_logo_lrg.gif" alt="rentcar" id="rentcar"></a>
-        <a href="https://www.europcar.com/en/car-rental/locations/japan/fukuoka" target="_blank"><img src="./img/europcar_logo_lrg.gif" alt="rentcar" id="rentcar"></a>
-        <a href="https://www.timescar-rental.com/ko/?utm_source=naver_listing&utm_medium=cpc&utm_campaign=%e3%80%90KR_%e9%9f%93%e5%9b%bd%e8%aa%9e%e3%80%91%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3&utm_term=E4%B9%9D%E5%B7%9E02&argument=qFQSqfgP&dmai=a59f7050f13367&NaPm=ct%3Dk0p67vxs%7Cci%3D0ze000064C9ruU4dL1nw%7Ctr%3Dsa%7Chk%3D40f24ea4071be6034e8c37e7fdfd7807099184cb" target="_blank"><img src="./img/times_logo_lrg.gif" alt="rentcar" id="rentcar"></a>
-    </div>
+    <div id="wrap">
+
+        <!-- 비행기로 가는 방법 -->
+
+        <div class="sub_title">비행기로 가는 방법</div> 
+            <div class="content">
+                <div id="fnc">
+                    <span>출발지</span>
+                    <select name="startAR" id="startAR"> <!-- startAR 아이디 -->
+                        <option value="인천">인천</option>
+                        <option value="김포">김포</option>
+                        <option value="부산">부산</option>
+                    </select>
+                    <br>
+                    <span>도착지</span>
+                    <select name="arriveAR" id="arriveAR"> <!-- ariiveAR 아이디 -->
+                        <option value="후쿠오카" selected="후쿠오카" disabled>후쿠오카</option>
+                    </select>
+                    <br>
+                    <button id="airportSr">검색</button>
+                </div>
+                    <!-- airportSr 아이디 -->
+                <div id="airportRe">예상 도착 시간 : </div> <!-- airportRe 아이디 -->
+            </div>
+
+        <!-- 배로 가는 방법 -->
+
+        <div class="sub_title">배로 가는 방법</div> 
+            <div class="content">
+                <div id="fnc">
+                    <span>출발지</span>
+                    <select name="startSH" id="startSH"> <!-- startSH 아이디 -->
+                        <option value="부산" selected="부산" disabled>부산</option>
+                    </select>
+                    <br>
+                    <span>도착지</span>
+                    <select name="arriveSH" id="arriveSH"> <!-- arriveSH 아이디 -->
+                        <option value="후쿠오카" selected="후쿠오카" disabled>후쿠오카</option>
+                    </select>
+                    <br>
+                    <span>배편</span>
+                    <select name="Ship" id="Ship">
+                        <option value="쾌속선">쾌속선</option>
+                        <option value="여객선">여객선</option>
+                    </select>
+                    <br>
+                    <button id="ShipSr">검색</button> <!-- ShipSr 아이디 -->
+                </div>
+                <div id="ShipRe">예상 도착 시간 : </div> <!-- ShipRe 아이디 -->
+            </div>
+
+        <!-- 기차로 가는 방법 -->
+
+        <div class="sub_title">기차로 가는 방법</div> 
+            <div class="content">
+                <div id="fnc">
+                    <span>출발지</span>
+                    <select name="startTR" id="startTR"> <!-- startTR 아이디 -->
+                        <option value="도쿄">도쿄</option>
+                        <option value="오사카">오사카</option>
+                        <option value="홋카이도">홋카이도</option>
+                    </select>
+                    <br>
+                    <span>도착지</span>
+                    <select name="arriveTR" id="arriveTR"> <!-- arriveTR 아이디 -->
+                        <option value="후쿠오카" selected="후쿠오카" disabled>후쿠오카</option>
+                    </select>
+                    <br>
+                    <button id="trainSr">검색</button> <!-- trainSr 아이디 -->
+                </div>
+
+                <div id="trainRe">예상 도착 시간 : </div> <!-- trainRe 아이디 -->
+            </div>
+
+        <!-- 버스로 가는 방법 -->
+
+        <div class="sub_title">버스로 가는 방법</div> 
+            <div class="content">
+                <div id="fnc">
+                    <span>출발지</span>
+                    <select name="startBS" id="startBS"> <!-- startBS 아이디 -->
+                        <option value="도쿄">도쿄</option>
+                        <option value="오사카">오사카</option>
+                    </select>
+                    <br>
+                    <span>도착지</span>
+                    <select name="arriveBS" id="arriveBS"> <!-- arriveBS 아이디 -->
+                        <option value="후쿠오카" selected="후쿠오카" disabled>후쿠오카</option>
+                    </select>
+                    <br>
+                    <button id="busSr">검색</button> <!-- busSr 아이디 -->
+                </div>
+                
+                <div id="busRe">예상 도착 시간 : </div> <!-- busRe 아이디 -->
+            </div>    
+    </div> 
     <!-- 최상단 버튼 -->
     <div>
         <span id="topBtn">top</span>
-    </div> 
+    </div>   
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
         <!-- Footer Logo -->
@@ -170,7 +247,6 @@
                 </div>
             </div>
         </div>
-
     </footer>
      <!-- jQuery-2.2.4 js -->
      <script src="../js/jquery/jquery-2.2.4.min.js"></script>
