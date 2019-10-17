@@ -26,7 +26,12 @@ $(function () {
             alert("비밀번호를 잘못 입력하셨습니다. 다시 입력해 주십시오.");
             return false;
         } else{
-            location.href = '.html';// 메인 페이지 이동
+            if(id.value == "admin"){
+                location.href = '../index_admin.html';// 메인 페이지 이동
+            }
+            else{
+                location.href = '../index_user.html';// 메인 페이지 이동
+            }
         }
     }); 
 });
