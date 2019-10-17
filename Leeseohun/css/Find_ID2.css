@@ -5,18 +5,19 @@ body {
 h1{
     text-align: center;
 }
+.wrap_id{
+    text-align: center;
+}
 .id{
+    display: inline-block;
     padding-top: 50px;
-    height: auto;
     line-height: 50px;
     text-align: center;
     font-size: 24px;
-    margin-left: 10%;
     font-weight: bold;
 }
 .id > div{
     width: 200px;
-    margin-left: 50px;
     float: left;
 }
 .userid{
@@ -25,6 +26,9 @@ h1{
 .button{
     padding-top: 50px;
     height: auto;
+    display: inline-block;
+}
+.wrap_btn{
     text-align: center;
 }
 .gologin{

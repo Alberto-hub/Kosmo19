@@ -1,4 +1,3 @@
-
 body{
     width: 100%;
     height: auto;
@@ -14,10 +13,10 @@ section{
     height: auto;
 }
 form{
-    text-align: center;
     width: 100%;
-    height: 200px;
-    margin-left: 20%;
+}
+.name, .input {
+    display: inline-block;
 }
 .content_name, .content_input {
     margin: 10px;
@@ -37,6 +36,7 @@ form{
 
 
 .gologin{
+    margin: 0 auto;
     width: 200px;
     height: 54px;
     padding-top: 10px;

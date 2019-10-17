@@ -13,8 +13,7 @@ section{
     text-align: center;
 }
 .content{
-    height: 150px;
-    width: 100%;
+    display: inline-block;
 }
 .content_name, .content_input, .content_sub{
     margin: 10px;
@@ -32,6 +31,7 @@ section{
     margin: 0 auto;
     width: 200px;
     height: 54px;
+    padding-top: 10px;
     background: #3498DB;
     text-decoration-line: none;
     text-align: center;

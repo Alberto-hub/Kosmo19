@@ -9,8 +9,7 @@ h1{
 
 section{
     text-align: center;
-    height: 100px;
-    margin-left: 10%;
+    height: auto;
 }
 .content_name, .content_input, .content_sub{
     margin: 10px;
@@ -18,16 +17,17 @@ section{
     float: left;
     line-height: 2.5em;
 }
+.name, .input, .sub {
+    display: inline-block;
+}
 
 .content_input > input{
+    width: 75%;
     height: 30px;
     font-size: 25px;
 }
-.btn{
-    text-align: center;
-    padding-top: 50px;
-}
 .find_pwd{
+    margin: 0 auto;
     width: 200px;
     height: 54px;
     padding-top: 10px;

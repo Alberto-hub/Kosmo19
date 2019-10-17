@@ -3,19 +3,21 @@ h1{
 }
 
 section{
-    width: 1200px;
-    height: 300px;
+    width: 100%;
+    height: 250px;
     text-align: center;
     padding-top: 50px;
-    margin-left: 33%;
 }
 
 .ToUAT{
-    width: 600px;
+    width: 75%;
     margin: 0 auto;
     text-align: left;
     border: 1px solid black;
     background-color: rgb(175, 172, 172);
+}
+.wrap {
+    display: inline-block;
 }
 .content_name{
     float: left;
@@ -58,11 +60,14 @@ section{
 }
 
 
-
+.btn{
+    height: 64px;
+    margin: 0 auto;
+    text-align: center;
+}
 
 .sign_up {
-    margin: 250px 0 0 -300px;
-    float: left;
+    margin: 0 auto;
     width: 200px;
     height: 54px;
     padding-top: 10px;

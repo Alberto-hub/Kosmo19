@@ -2,6 +2,13 @@ $(function () {
 
     $(".btn > div").css('cursor', 'pointer');
     $("button").css('cursor', 'pointer');
+    $(window).resize(function() {
+        // if($(window).width() < 800) {
+        //창 가로 크기가 600 미만일 경우
+        //     $("body").attr({ display : "none" });
+        //     alert("모바일 환경에서는 실행할수 없습니다.")
+        // }
+     });
     $('#change').click(function () {
         var pwd = $(".pwd").val();//변수 선언
         var newpwd = $(".newpwd").val();

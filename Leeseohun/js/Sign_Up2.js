@@ -54,14 +54,15 @@ $(function () {
             tel.value = "";
         } else {
             if ($('input:radio[name=남성]').is(':checked') || $('input:radio[name=여성]').is(':checked')) {
-                if(id.value == "admin"){
-                    // 새창 닫기 아직 못함
-                    location.href = '../index_admin.html';
-                }
-                else{
-                    // 새창 닫기 아직 못함
-                    location.href = '../index_user.html';
-                }
+                // if(id.value == "admin"){
+                //     // 새창 닫기 아직 못함
+                //     location.href = '../index_admin.html';
+                // }
+                // else{
+                //     // 새창 닫기 아직 못함
+                //     location.href = '../index_user.html';
+                // }
+                location.href = 'Sign_Up3.html';
                     
             } else {
                 alert("성별을 입력해주세요.")
