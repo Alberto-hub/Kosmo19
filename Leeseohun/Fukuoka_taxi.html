@@ -8,45 +8,37 @@
     <script src="./js/jquery-2.1.1.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/jquery.easing.1.3.js"></script>
-    <link rel="stylesheet" id="css" href="./css/style_taxi.css">
-    <script src="./js/custom_taxi_mobile.js" id="css"></script>
-    <script src="./bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
-    <link rel="stylesheet" href="./bxslider-4-4.2.12/dist/jquery.bxslider.min.css">
-    <script type="text/javascript"> 
-        $(document).ready(function(){ 
-            $('.bxslider').bxSlider({
-                auto: true, // 이미지 회전 자동
-                speed: 1000, // 스피드
-                pause: 4000, // 정지 시간
-                mode:'fade', // 방식 
-                pager:true}  // 바로가기 버튼
-            ); 
-        }); 
-    </script>
-    <script src="./js/custom_taxi.js"></script>
+    <link rel="stylesheet" href="./css/style_taxi.css">
+    <link rel="stylesheet" href="../style.css">
+
 </head>
+
+
+<header id="header2">
+
+</header>
 <body>
-    
-    <!-- main_header -->
-    <header class="main_header"></header>
 
     <a href="./Fukuoka_transport.html"><h2 class="sub_title"> 택 시 </h2></a>
     <!-- content -->
-    <button id="back">뒤로가기</button>
-    <ul class="bxslider">
-        <li>
-                <img src="./img/taxi2.jpg" alt="taxi"/>
-        </li>
-        <li>
-                <img src="./img/taxi3.jpg" alt="taxi"/>
-        </li>
-        <li>
-                <img src="./img/taxi4.jpg" alt="taxi"/>
-        </li>
-        <li>
-                <img src="./img/taxi5.jpg" alt="taxi"/>
-        </li>
-    </ul>
+    <div class="content">
+        <div>
+            <ul class="bxslider">
+                <li>
+                        <img src="./img/taxi2.jpg" alt="taxi"/>
+                </li>
+                <li>
+                        <img src="./img/taxi3.jpg" alt="taxi"/>
+                </li>
+                <li>
+                        <img src="./img/taxi4.jpg" alt="taxi"/>
+                </li>
+                <li>
+                        <img src="./img/taxi5.jpg" alt="taxi"/>
+                </li>
+            </ul>
+        </div>
+    </div>
     
     <!-- table -->
     <table border="1">
@@ -86,11 +78,33 @@
     <br>
     <div class="text">후쿠오카 공항 &harr; 텐진역</div>
     <div class="en">약 2,300엔</div>
-    <!-- 최상단 버튼 -->
-    <div>
-        <span id="topBtn">top</span>
-    </div> 
-    <!-- main_footer -->
-
 </body>
+<footer id="footer">
+
+</footer>
+<!-- jQuery-2.2.4 js -->
+<script src="../js/jquery/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<script src="../js/bootstrap/bootstrap.min.js"></script>
+<!-- Bootstrap js -->
+<script src="../js/bootstrap/popper.min.js"></script>
+<!-- All Plugins js -->
+<script src="../js/plugins/plugins.js"></script>
+<!-- Active js -->
+<script src="../js/active.js"></script>
+<script src="./js/load.js"></script>
+<script src="./bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
+<link rel="stylesheet" href="./bxslider-4-4.2.12/dist/jquery.bxslider.min.css">
+<script type="text/javascript"> 
+    $(document).ready(function(){ 
+        $('.bxslider').bxSlider({
+            auto: true, // 이미지 회전 자동
+            speed: 1000, // 스피드
+            pause: 4000, // 정지 시간
+            mode:'fade', // 방식 
+            pager:true}  // 바로가기 버튼
+        ); 
+    }); 
+</script>
+<script src="./js/custom_taxi.js"></script>
 </html>

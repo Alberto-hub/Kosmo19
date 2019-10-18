@@ -13,19 +13,22 @@ body{
     margin: 0 auto;
     padding-bottom: 100px;
     font: bold 60px/1.6 arial; 
-    color: rgb(183, 192, 51); 
+    color: black; 
     text-align: center;
     line-height: 60px;
 }
 /*중간 제목 ~방법*/
 .sub_title {
-    /* position: relative; */
-    margin: 0 auto;
-    padding: 0 auto;
+    height: 80px;
+    width: 50%;
+    margin: 50px auto;
     font: bold 30px/1.6 arial; 
-    color: rgb(150, 150, 50); 
+    color: white; 
     text-align: center;
     cursor: pointer;
+    background-color: rgb(52, 152, 219);
+    border-radius: 10px;
+    line-height: 80px;
 }
 /* div content */
 .content {
@@ -55,9 +58,11 @@ select, button, span{
     margin: 0 auto;
     text-align: center;
     width: 50%;
-    height: 30px;
+    height: 50px;
     background: grey;
     padding: 10px;
+    line-height: 30px;
+    font-weight: bold;
 }
 /* 최상단 버튼 */
 #topBtn {

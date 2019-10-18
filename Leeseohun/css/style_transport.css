@@ -4,21 +4,22 @@
 body{
     margin: 1% auto;
     text-align: center;
-    width: 1200px;
+    width: 100%;
+    background-color: #e5f4ff;
 }
 /* 제목 */
 .title {
     margin: 2% auto;
     padding-bottom: 10%;
     font: bold 60px/1.6 arial; 
-    color: rgb(183, 192, 51); 
+    color: black; 
     text-align: center;
 }
 /* 중간제목 */
 h4 {
     margin: 1%;
     font: bold 20px/1.6 arial; 
-    color: rgb(150, 150, 50); 
+    color: black; 
     text-align: center;
 }
 /* a태그 */
@@ -26,33 +27,23 @@ a {
     cursor: pointer;
 }
 /* div content */
-#content{
-    overflow: auto;
-    margin: 0 5%;
-    padding: 0 3%;
+.wrap {
+    text-align: center;
+}
+#content {
+    display: inline-block;
+}
+.first, .second {
+    width: 100%;
+    float: left;
 }
 img{
+    margin: 0 auto;
     width: 320px;
     height: 240px;
 }
 /* 운송수단 */
 .transprot{
     float: left;
-    margin: 0.5%;
+    margin: 10px;
 }
-/* 최상단버튼 */
-#topBtn {
-    position: fixed;
-    right: 5%;
-    bottom: 5%;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    display: block;
-    background: #000;
-    color: #fff;
-    font-size: 10px;
-    text-align: center;
-    border-radius: 5px;
-    cursor: pointer;
-  }

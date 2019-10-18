@@ -26,8 +26,3 @@ function map() {
     // 마커
     var marker = new google.maps.Marker({position: fukuokaap, map: map3});
 }
-$(function() {
-    $("#back").click(function(){
-        history.back(-1);
-    });
-});

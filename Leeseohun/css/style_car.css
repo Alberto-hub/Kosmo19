@@ -1,6 +1,5 @@
 /* 초기화 */
 *{ 
-    margin: 0 auto;
     text-decoration-line: none;
     }
 /* 바디 기본 설정 */
@@ -10,8 +9,7 @@ body{
 }
 /*중간 제목 ~방법*/
 .sub_title {
-    margin: 0 auto;
-    padding: 30px 0;
+    padding-top: 30px;
     font: bold 30px/1.6 arial; 
     color: black; 
     text-align: center;
@@ -19,20 +17,35 @@ body{
 }
 /* div content */
 img > #car {
-    margin: 0 auto;
     width: 50%;
     height: 25%;
 }
+.car_img{
+    text-align: center;
+}
+.car_img > div {
+    display: inline-block;
+    margin: 50px;
+}
 .rent {
+    text-align: center;
     min-width: 100px;
     margin: 10px auto;
     width: 50%;
     border: 1px solid black;
 }
 .site{
+    text-align: center;
     margin-top: 2%;
     font: bold 20px/1.6 arial;
     color: black;
+}
+.logo {
+    text-align: center;
+    margin: 30px;
+}
+.logo > div {
+    display: inline-block;
 }
 a > #rentcar{
     margin: 5px;
