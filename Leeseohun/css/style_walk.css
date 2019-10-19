@@ -20,6 +20,12 @@ body{
   text-align: center;
   cursor: pointer;
 }
+.wrap {
+  text-align: center;
+}
+.content1{
+  display: inline-block;
+}
 #maps{
   display: none;
   float: left;
@@ -50,5 +56,5 @@ select, button, span{
 }
 #Serch{
   float: left;
-  margin: 0 80px;
+  margin: 0 60px;
 }
