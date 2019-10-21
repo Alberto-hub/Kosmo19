@@ -223,13 +223,17 @@
     });
 
     // Get the modal
-    var modal2 = document.getElementById('myModal');
+    var modal2 = document.getElementById('myModal1');
+    var modal3 = document.getElementById('myModal2');
+
  
     // Get the button that opens the modal
-    var btn2 = document.getElementById("myBtn");
+    var btn2 = document.getElementById("myBtn1");
+    var btn3 = document.getElementById("myBtn2");
 
     // Get the <span> element that closes the modal
     var span2 = document.getElementsByClassName("close")[2];                                          
+    var span3 = document.getElementsByClassName("close")[3];                                          
 
     // When the user clicks on the button, open the modal 
     window.onload = function(){ 
@@ -242,9 +246,25 @@
                 return false; 
             });
         }
+        btn3.onclick = function() {
+            modal3.style.display = "block";
+            $('html, body').css({'overflow': 'hidden', 'height': '100%'}); // 모달팝업 중 html,body의 scroll을 hidden시킴
+            $('#element').on('scroll touchmove mousewheel' , function(event) { // 터치무브와 마우스휠 스크롤 방지     
+                event.preventDefault();     
+                event.stopPropagation();     
+                return false; 
+            });
+        }
         // When the user clicks on <span> (x), close the modal
         span2.onclick = function() {
+            $(".modal1").attr("src", './Leeseohun/Login_Main.html');
             modal2.style.display = "none";
+            $('html, body').css({'overflow': 'auto', 'height': '100%'}); //scroll hidden 해제 
+            $('#element').off('scroll touchmove mousewheel'); // 터치무브 및 마우스휠 스크롤 가능
+        }
+        span3.onclick = function() {
+            $(".modal2").attr("src", './Leeseohun/Sign_Up.html');
+            modal3.style.display = "none";
             $('html, body').css({'overflow': 'auto', 'height': '100%'}); //scroll hidden 해제 
             $('#element').off('scroll touchmove mousewheel'); // 터치무브 및 마우스휠 스크롤 가능
         }
