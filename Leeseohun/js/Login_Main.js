@@ -27,7 +27,8 @@ $(function () {
             return false;
         } else{
             if(id.value == "admin"){
-                location.href = '../index_admin.html';// 메인 페이지 이동
+                // $(this).parents("iframe").attr("src", '../index.html');
+                window.location.href = '../index_admin.html';// 메인 페이지 이동
             }
             else{
                 location.href = '../index_user.html';// 메인 페이지 이동
