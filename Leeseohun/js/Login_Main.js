@@ -16,14 +16,14 @@ $(function () {
         if (id.value == "") {      // 빈칸 확인
             alert("아이디를 입력해주세요.")
         } else if (!idReg.test(id.value)) { // 정규식
-            alert("아이디를 잘못 입력하셨습니다. 다시 입력해 주십시오.");
+            alert("아이디를 잘못 입력하셨습니다. 다시 입력해 주세요.");
             id.value = ""
             return false;
         } else if (pwd.value == "") {    //
             alert("비밀번호를 입력해주세요.");
             return false;
         } else if (!pwd_reg.test(pwd.value)) { //
-            alert("비밀번호를 잘못 입력하셨습니다. 다시 입력해 주십시오.");
+            alert("비밀번호를 잘못 입력하셨습니다. 다시 입력해 주세요.");
             return false;
         } else{
             if(id.value == "admin"){
