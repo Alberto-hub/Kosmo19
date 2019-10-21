@@ -2283,7 +2283,7 @@ th {
   padding: 5px;
 }
 .table-bordered {
-  border: 1px solid #ddd;
+  border:2px cornflowerblue solid; 
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,

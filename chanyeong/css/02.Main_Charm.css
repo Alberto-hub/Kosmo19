@@ -2,7 +2,7 @@
 body {background-color:#e5f4ff;}
 
 #main_section {
-    width:100%; margin:0 auto; overflow:hidden;
+    width:1200px; margin:0 auto; overflow:hidden;
 }
 
 #chm_main {
@@ -22,7 +22,7 @@ body {background-color:#e5f4ff;}
 
 #chm_lnb > div {
     border-radius:10px 10px 10px 10px;
-    background-color:green; 
+    background-color:pink;
     text-align:center;
     display:inline-block;
 } 
@@ -35,17 +35,76 @@ body {background-color:#e5f4ff;}
 
 .nav04 {width:140px; height:50px; margin:10px 30px 10px 10px;}
 
+/* image slide */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev {left :0;}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+    .prev, .next {font-size: 11px}
+}
+
 /* 01.traffic */
-.chm_trf {
+#chm_trf {
     width:600px; margin:20px auto;
 }
 
 h2 {text-align:center; margin-top:40px;}
 
+#chm_trf img { vertical-align: center;}
+
 .trf_img {
-    display:inline-block;
-    margin:20px auto;
+    max-width : 2000px;
+    position:relative;
+    /* display:inline-block; */
+    margin:auto;
 }
+
+.trf_slide { display:none; margin:20px auto;}
+.trf_slide:first-child {display:inline-block;}
+
+
 
 .trf_pnts {width:600px; margin:0 auto; height:180px;}
 
@@ -78,7 +137,7 @@ h2 {text-align:center; margin-top:40px;}
 }
 
 .top2 {
-    position:fixed; bottom:140px; right:20px;
+    position:fixed; bottom:240px; right:20px;
 }
 
 
@@ -90,16 +149,28 @@ h2 {text-align:center; margin-top:40px;}
 
 
 /* 02.food */
-.chm_food {
+
+#chm_food {
     width:600px; margin:20px auto;
 }
 
 h2 {text-align:center; margin-top:40px;}
 
+#chm_food img { vertical-align: center;}
+
 .food_img {
-    display:inline-block;
-    margin:20px auto;
+    max-width : 2000px;
+    position:relative;
+    /* display:inline-block; */
+    margin:auto;
 }
+
+.food_slide { display:none; margin:20px auto;}
+.food_slide:first-child {display:inline-block;}
+
+
+/* h2 {text-align:center; margin-top:40px;} */
+
 
 .food_pnts {width:600px; margin:0 auto; height:180px; }
 
@@ -128,16 +199,25 @@ h2 {text-align:center; margin-top:40px;}
 .food_section > p {padding:0 15px;}
 
 /* 03.festival */
-.chm_fst {
+
+#chm_fst {
     width:600px; margin:20px auto;
 }
 
 h2 {text-align:center; margin-top:40px;}
 
+#chm_fst img { vertical-align: center;}
+
 .fst_img {
-    display:inline-block;
-    margin:20px auto;
+    max-width : 2000px;
+    position:relative;
+    /* display:inline-block; */
+    margin:auto;
 }
+
+.fst_slide { display:none; margin:20px auto;}
+.fst_slide:first-child {display:inline-block;}
+
 
 .fst_pnts {width:600px; margin:0 auto; height:180px; }
 
@@ -166,16 +246,24 @@ h2 {text-align:center; margin-top:40px;}
 .fst_section > p {padding:0 15px;}
 
 /* 04.nature */
-.chm_ntr {
+#chm_ntr {
     width:600px; margin:20px auto;
 }
 
 h2 {text-align:center; margin-top:40px;}
 
+
+#chm_ntr img { vertical-align: center;}
+
 .ntr_img {
-    display:inline-block;
-    margin:20px auto;
+    max-width : 2000px;
+    position:relative;
+    /* display:inline-block; */
+    margin:auto;
 }
+
+.ntr_slide { display:none; margin:20px auto;}
+.ntr_slide:first-child {display:inline-block;}
 
 .ntr_pnts {width:600px; margin:0 auto; height:180px; }
 

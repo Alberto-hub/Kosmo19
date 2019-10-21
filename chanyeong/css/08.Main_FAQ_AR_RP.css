@@ -31,3 +31,7 @@ h1 {text-align:center;}
 
 #btn {margin:50px auto; margin-right:240px; }
 #btn_d {margin-right:20px;}
+
+.top {
+    position:fixed; bottom:240px; right:20px;
+}

@@ -1,14 +1,14 @@
 body {background-color:#e5f4ff;}
 
 #main_section {
-    width:100%; margin:0 auto; overflow:hidden;
+    width:1200px; margin:0 auto; overflow:hidden;
 }
 
 /* .FAQ {margin:0 auto;}
 
 .FAQ > dd { display:none;} */
 
-.FAQ { width:60%; text-align:center; margin:0 auto;}
+.FAQ { width:720px; text-align:center; margin:0 auto;}
 
 .FAQ_Qst { 
     text-align:center; height:60px; cursor:pointer; background-color:#ffffcc; 
@@ -26,5 +26,5 @@ body {background-color:#e5f4ff;}
 h1 {text-align:center;}
 
 .top {
-    position:fixed; bottom:140px; right:20px;
+    position:fixed; bottom:240px; right:20px;
 }

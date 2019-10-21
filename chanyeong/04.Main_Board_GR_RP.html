@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/common.css"> <!--공통적인거 먼저-->
-    <link rel="stylesheet" href="./css/04. Main_Board_GR_RP.css">
+    <link rel="stylesheet" href="./css/04.Main_Board_GR_RP.css">
     <link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="js/jquery-2.1.1.min.js">
     <title>Main_Board_GR_RP</title>
@@ -19,23 +19,23 @@
             <h1>공지사항</h1>
         </div>
         <div class="container">
-            <table class="table table-bordered">
+            <table class="table table-bordered" >
                 <thead>
                     <caption><h2>글읽기</h2></caption>
                 </thead>
                 <tbody>
-                    <form action="write_ok.jsp" method="post" encType="multiplart/form-data">
+                    <form>
                         <tr>
-                        <th>제목: </th>
+                        <td class="th"><b>제목 : </b></d>
                         <td>제목을 입력하세요.</td>
                         </tr>
                         <tr>
-                            <th>내용: </th>
+                            <td class="th"><b>내용 : </b></d>
                             <td style="height:500px">내용을 입력하세요</td>
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <a class="btn btn-default pull-right" href="05. Main_Board_ARp01.html" alt=목록으로 targe="_self">목록으로</a>
+                                <a class="btn btn-default pull-right" onclick="history.back();" alt=목록으로 targe="_self">목록으로</a>
                             </td>
                         </tr>
                     </form>

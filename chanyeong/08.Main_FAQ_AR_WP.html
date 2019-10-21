@@ -9,8 +9,8 @@
     <script src="./js/jquery.easing.1.3.js"></script> <!--가속도-->
     <link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/08. Main_FAQ_GR_WP.css">
-    <script src="./js/08.Main_FAQ_GR_WP.js"></script>
+    <link rel="stylesheet" href="./css/08.Main_FAQ_AR_WP.css">
+    <script src="./js/08.Main_FAQ_AR_WP.js"></script>
     <title>Main_FAQ_GR_RP</title>
 </head>
 
@@ -31,15 +31,15 @@
                         <form action="write_ok.jsp" method="post" encType="multiplart/form-data">
                             <tr>
                             <th>제목: </th>
-                            <td><input type="text" placeholder="제목을 입력하세요. " name="subject" class="form-control"/></td>
+                            <td><input type="text" placeholder="제목을 입력하세요. " name="subject" class="form-control text_hd"/></td>
                             </tr>
                             <tr>
                                 <th>내용: </th>
-                                <td><textarea cols="100" style="height:500px" placeholder="내용을 입력하세요. " name="content" class="form-control"></textarea></td>
+                                <td><textarea cols="100" style="height:500px" placeholder="내용을 입력하세요. " name="content" class="form-control text_sct"></textarea></td>
                             </tr>
                             <tr>
                                 <th>비밀번호: </th>
-                                <td><input type="password" placeholder="비밀번호를 입력하세요" class="form-control"/></td>
+                                <td><input type="password" placeholder="비밀번호를 입력하세요" class="form-control text_pwd"/></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
@@ -47,8 +47,8 @@
                                     <input type="button" value="리셋" class="pull-left"/>
                                     <input type="button" value="취소" class="pull-right" onclick="05.Main_Board_ARp01.html"/> -->
                                     <a class="btn btn-default pull-right" onclick="sendData()" alt="등록"> 등록 </a>
-                                    <a class="btn btn-default pull-left" type="reset" href="08. Main_FAQ_AR_WP.html" alt="리셋"> 리셋 </a>
-                                    <a class="btn btn-default pull-right" href="08. Main_FAQ_AR_RP.html" alt=목록으로 targe="_self">취소</a>
+                                    <a class="btn btn-default pull-left" type="reset" href="08.Main_FAQ_AR_WP.html" alt="리셋"> 리셋 </a>
+                                    <a class="btn btn-default pull-right" onclick="history.back();" alt=취소 targe="_self">취소</a>
                                 </td>
                             </tr>
                         </form>

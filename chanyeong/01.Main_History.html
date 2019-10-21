@@ -1,155 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- Title -->
-    <title>Fuku?oka!</title>
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="../style.css">
-    <!-- <link rel="stylesheet" href="./css/common.css"> --> <!--공통적인거 먼저-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/common.css"> <!--공통적인거 먼저-->
     <link rel="stylesheet" href="./css/01.Main_History.css">
-
+    <!-- lightbox -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <link href="./css/lightbox.css" rel="stylesheet" />
+    <script src="./js/lightbox.js"></script>
+    <title>Main_History</title>
 </head>
-
 <body>
 
-    <!-- Preloader -->
-    <div class="preloader d-flex align-items-center justify-content-center">
-        <div class="lds-ellipsis">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-
-    <!-- ##### Header Area Start ##### -->
-    <header class="header-area">
-        <!-- Navbar Area -->
-        <div class="newsbox-main-menu">
-            <div class="classy-nav-container breakpoint-off">
-                <div class="container-fluid">
-                    <!-- Menu -->
-                    <nav class="classy-navbar justify-content-between" id="newsboxNav">
-
-                        <!-- Nav brand -->
-                        <a href="../index.html" class="nav-brand"><img src="../img/core-img/fukuokalogo_1.png" alt="홈페이지 로고"></a>
-
-                        <!-- Navbar Toggler -->
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                        </div>
-
-                        <!-- Menu -->
-                        <div class="classy-menu">
-
-                            <!-- Close Button -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-
-                            <!-- Nav Start -->
-                            <div class="classynav">
-                                <ul>
-                                    <li><a href="#">후쿠오카 소개</a>
-                                        <ul class="dropdown">
-                                            <li class="title"><a href="../index.html">역사</a></li>
-                                            <li class="title"><a href="./index.html">매력</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">후쿠오카 관광</a>
-                                        <ul class="dropdown">
-                                            <li class="title"><a href="../index.html">Spot</a></li>
-                                            <li class="title"><a href="../index.html">추천경로</a></li>
-                                            <li class="title"><a href="../index.html">Event</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">후쿠오카 음식</a>
-                                        <ul class="dropdown">
-                                            <li><a href="../index.html">하카타 라멘</a></li>
-                                            <li><a href="../index.html">모츠나베</a></li>
-                                            <li><a href="../index.html">미즈타키</a></li>
-                                            <li><a href="../index.html">포장마차</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">후쿠오카 교통</a>
-                                        <ul class="dropdown">
-                                            <li><a href="#">후쿠오카로의 교통</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="#">비행기</a></li>
-                                                    <li><a href="#">기차</a></li>
-                                                    <li><a href="#">버스</a></li>
-                                                    <li><a href="#">배</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">후쿠오로의 교통</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="#">지하철</a></li>
-                                                    <li><a href="#">버스</a></li>
-                                                    <li><a href="#">택시</a></li>
-                                                    <li><a href="#">자동차</a></li>
-                                                    <li><a href="#">자전거</a></li>
-                                                    <li><a href="#">도보</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">커뮤니티</a>
-                                        <ul class="dropdown">
-                                            <li><a href="../index.html">공지사항</a></li>
-                                            <li><a href="../index.html">FAQ</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                                <!-- Header Add Area -->
-                                <div class="header-add-area">
-                                    <a href="../index.html"><button>Login</button></a>
-                                    <a href="../index.html"><button>Join</button></a>
-                                </div>
-                            </div>
-                            <!-- Nav End -->
-
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ##### Header Area End ##### -->
+    <header></header>
 
     <section id="main_section">
+
         <div class="left_aside">
             <figure class="his_pic01">
-                <img src="./img/his_pic01.png" width="280px" height="340px" alt="큐슈의 옛 지도">
-                <figcaption>큐슈의 옛 지도</figcaption>
+                <a href="./img/his_pic01.png" data-lightbox=his_pic01 data-title="큐슈의 옛 지도">
+                    <img src="./img/his_pic01.png" width="280px" height="340px" alt="큐슈의 옛 지도">
+                    <figcaption>큐슈의 옛 지도</figcaption>
+                </a>
             </figure>
             <figure class="his_pic02">
-                <img src="./img/his_pic02.gif" width="280px" height="340px" alt="후쿠오카 현 지도">
-                <figcaption>후쿠오카 현 현재 지도</figcaption>
+                <a href="./img/his_pic02.gif" data-lightbox=his_pic02 data-title="후쿠오카 현 현재 지도">
+                    <img src="./img/his_pic02.gif" width="280px" height="340px" alt="후쿠오카 현 현재 지도">
+                    <figcaption>후쿠오카 현 현재 지도</figcaption>
+                </a>
             </figure>
         </div>
+
         <div class="right_aside">
             <figure class="his_pic03">
-                <img src="./img/his_pic03.jpg" width="300px" height="180px" alt="모모치 해변">
-                <figcaption>후쿠오카 해변과 모모치 해변</figcaption>
+                <a href="./img/his_pic03.jpg" data-lightbox=his_pic03 data-title="후쿠오카 타워와 모모치 해변">
+                    <img src="./img/his_pic03.jpg" width="300px" height="180px" alt="후쿠오카 타워와 모모치 해변">
+                    <figcaption>후쿠오카 타워와 모모치 해변</figcaption>
+                </a>
             </figure>
             <figure class="his_pic04">
-                <img src="./img/his_pic04.png" width="180px" height="120px" alt="후쿠오카 현 기">
-                <figcaption>후쿠오카 현 기</figcaption>
+                <a href="./img/his_pic04.png" data-lightbox=his_pic04 data-title="후쿠오카 현 기">
+                    <img src="./img/his_pic04.png" width="180px" height="120px" alt="후쿠오카 현 기">
+                    <figcaption>후쿠오카 현 기</figcaption>
+                </a>
             </figure>
             <figure class="his_pic04">
-                <img src="./img/his_pic05.png" width="180px" height="120px" alt="후쿠오카 시 기">
-                <figcaption>후쿠오카 시 기</figcaption>
+                <a href="./img/his_pic05.png" data-lightbox=his_pic05 data-title="후쿠오카 시 기">
+                    <img src="./img/his_pic05.png" width="180px" height="120px" alt="후쿠오카 시 기">
+                    <figcaption>후쿠오카 시 기</figcaption>
+                </a>
             </figure>
         </div>
+
         <div class="his_main">
             <h1>후쿠오카의 역사</h1>
             <p>
@@ -162,46 +66,14 @@
                 &nbsp;&nbsp;현재 후쿠오카는 일본 전국에서 6번째로 많은 인구인 510만 명이 거주하고 있고, 일본 내 GDP 4위의 일본 굴지의 대도시로 자리 잡았으며, “아시아를 향한 국제도시”를 지향하며 무역과 관광의 도시로 더욱 발돋움하고자 하고 있습니다.
             </p>
         </div>
+        
+
+
 
     </section>
 
-    <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area">
-        <!-- Footer Logo -->
-        <div class="footer-logo mb-100">
-            <a href="../index.html"><img src="../img/core-img/fukuokalogo_1.png" alt="홈페이지 로고 이미지"></a>
-        </div>
-        <!-- Footer Content -->
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer-content text-center">
-                        <!-- Footer Nav -->
-                        <div class="footer-nav">
-                            <ul>
-                                <li><a href="#">About Website</a></li>
-                                <li><a href="#">Cookie</a></li>
-                                <li><a href="https://www.city.fukuoka.lg.jp/promotion/index.html" target="_blank">FukuokaCity Homepage</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 
-    <!-- ##### All Javascript Script ##### -->
-    <!-- jQuery-2.2.4 js -->
-    <script src="../js/jquery/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="../js/bootstrap/popper.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="../js/bootstrap/bootstrap.min.js"></script>
-    <!-- All Plugins js -->
-    <script src="../js/plugins/plugins.js"></script>
-    <!-- Active js -->
-    <script src="../js/active.js"></script>
+    <footer></footer>
     
 </body>
-
 </html>
