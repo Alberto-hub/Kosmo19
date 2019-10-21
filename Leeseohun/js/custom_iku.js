@@ -13,14 +13,17 @@ $(function(){
         var time = $("#airportRe").text().substring(0,11); // substring으로 11글자 저장
         $("#airportRe").empty();                           // 내용 비우기
         $("#airportRe").append(time);                      // 저장했던 11글자 다시 넣기
-        var mi = ["40분","50분"];                          // 배열로 시간 저장
+        var mi = ["40분","50분","1시간 50분"];                          // 배열로 시간 저장
         var ST = document.getElementById("startAR");       // 예)ST = 인천
         var STvar = ST.options[ST.selectedIndex].value;    // ST는 값이 아니므로 값으로 저장
         if(STvar == "부산"){                               // 부산이 아닐경우 50분 부산일경우 40분
             $("#airportRe").append(mi[0]);
             false;
-        }else{
+        }else if(STvar == "부산"){
             $("#airportRe").append(mi[1]);
+            false;
+        }else{
+            $("#airportRe").append(mi[2]);
             false;
         };
     });
