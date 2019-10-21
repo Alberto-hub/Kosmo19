@@ -24,7 +24,7 @@ $(function () {
             alert("비밀번호를 입력해주세요.");
             return false;
         } if (!pwd_reg.test(pwd.value)) { //
-            alert("최소 8 자, 최소 하나의 문자, 하나의 숫자 및 하나의 특수 문자 특수문자는 (~!@#$%^&*()-_? 만 허용)")
+            alert("비밀번호는 최소 8 자, 최소 하나의 문자, 하나의 숫자 및 하나의 특수 문자 특수문자는 (~!@#$%^&*()-_? 만 허용)")
             return false;
         } if (pwd.value != pwd_ceck.value) { //
             alert("두개의 비밀번호가 서로 다릅니다. 확인해 주세요");
