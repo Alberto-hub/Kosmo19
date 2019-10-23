@@ -40,7 +40,7 @@ body{
 span{
     border: 1px solid black;
 }
-select, button, span{
+select, div > button, span{
     margin: 10px;
     height: 40px;
     padding: 5px 10px;
