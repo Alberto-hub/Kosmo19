@@ -1,19 +1,31 @@
 $(document).ready(function(){
 
+    $("#header").load("./header.html");
+    $("#footer").load("./footer.html");
+
      var search_count=0;
      var check_point; //체크값 비교하기 위한 변수
     
-    $('.spot_img > a> img').mouseenter(function(){ // 마우스 올렸을때 이미지 흐리게
-        $(this).css('opacity','0.5');
-    });
-    $('.spot_img > a> img').mouseleave(function(){
-        $(this).css('opacity','1');
+    // $('.spot_img > .spot_a> img').mouseenter(function(){ // 마우스 올렸을때 이미지 흐리게
+    //     $(this).css('opacity','0.5');
+    // });
+    // $('.spot_img > .spot_a> img').mouseleave(function(){
+    //     $(this).css('opacity','1');
+    // });
+
+    $(function () {
+        $('.spot_img').mouseenter(function () { // 마우스 올렸을때 이미지 흐리게
+            $(this).css('opacity', '0.5');
+            
+        });
+        $('.spot_img').mouseleave(function () {
+            $(this).css('opacity', '1');
+           
+            
+        });
     });
 
-    $(".spot_info > a").click(function(){
-        alert($(this).text());
-       
-    });
+  
 
     $("#search").click(function() {
         var chk_area_count=0;  /*지역 체크박스 선택된 갯수만큼 배열에 담기 위한 변수*/ 
@@ -113,7 +125,7 @@ $(document).ready(function(){
             $(".spot").each(function(){
 
                 var check_Area2= $(this).children(".spot_info").children(".area").children("a").children("option").val();
-                console.log(check_Area2);
+                // console.log(check_Area2);
     
                 if(check_Area1!=check_Area2){
 
@@ -134,7 +146,7 @@ $(document).ready(function(){
             $(".spot").each(function(){
 
                 var check_Area2= $(this).children(".spot_info").children(".category").children("a").children("option").val();
-                console.log(check_Area2);
+                // console.log(check_Area2);
     
                 if(check_Area1!=check_Area2){
 
@@ -143,7 +155,5 @@ $(document).ready(function(){
             });
     
         });
-
+     
 });
-
- 
