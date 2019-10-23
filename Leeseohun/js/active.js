@@ -255,7 +255,6 @@
                 return false; 
             });
         }
-    window.onload = function(){
         // When the user clicks on <span> (x), close the modal
         span2.onclick = function() {
             $(".modal1").attr("src", './Login_Main.html');
@@ -269,7 +268,7 @@
             $('html, body').css({'overflow': 'auto', 'height': '100%'}); //scroll hidden 해제 
             $('#element').off('scroll touchmove mousewheel'); // 터치무브 및 마우스휠 스크롤 가능
         }
-    }
+    
     };
    
 

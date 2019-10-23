@@ -1,10 +1,12 @@
 /* 초기화 */
 *{ 
     text-decoration-line: none;
+    
     }
 /* 바디 기본 설정 */
 body{
     width: 100%;
+    /* background-color: #a3daff; */
 }
 /*중간 제목 ~방법*/
 .sub_title {
@@ -17,7 +19,7 @@ body{
     cursor: pointer;
 }
 /* div content */
-img {
+.img > img , div > a > img {
     margin-left: 25%;
     width: 50%;
     height: 25%;
@@ -36,6 +38,7 @@ img {
     font: bold 20px/1.6 arial;
     color: black;
 }
+
 
 /* 최상단 버튼 */
 #topBtn {
