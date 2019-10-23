@@ -1,15 +1,16 @@
-*{
-    margin: 0 auto;
-}
+
 
 a{
     text-decoration: none;
 }
 
 body{
-    width: 1200px;
+    /* width: 1200px; */
     /* height: auto; */
-    background-color: cadetblue;
+    /* background-color: cadetblue;
+    margin: 0 auto; */
+    /* float: left; */
+    width: auto;
 }
 
 #full{
@@ -19,12 +20,25 @@ body{
     overflow: hidden;
     height: auto;
     margin: 0 auto;
-    margin-top: 200px; /*헤더 들어갈거라서 나중에 제거*/
+   
+    
 }
 
 #full > h1{
     text-align: center;
 }
+
+#menu{
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#menu > a {
+    font-size: 2em;
+    color: green;
+}
+
 #maturi_img{
     margin: 0 auto;
     margin-top: 30px;
@@ -35,10 +49,12 @@ body{
 #Expl{
     width: 820px;
     margin-top: 30px;
+    margin: 0 auto;
 }
 #info{
     width: 820px;
     margin-top: 30px;
+    margin: 0 auto;
     margin-bottom: 30px;
     background-color: #f5f55f;
     
@@ -46,4 +62,12 @@ body{
 
 #info > dt{
     float: left;
+}
+
+#footer {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+    float: left ;
 }

@@ -7,11 +7,14 @@
     <script src="./js/jquery-2.1.1.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src=" http://maps.google.com/maps/api/js?v=3.3&sensor=true"></script>
+    <!-- <script type="text/javascript" src=" http://maps.google.com/maps/api/js?v=3.3&sensor=true"></script> -->
     <link rel="stylesheet" href="./css/rout.css">
     <script src="./js/rout.js"></script>
+    <link rel="stylesheet" href="./css/header_footer.css">
     <title>코스1번</title>
 </head>
+
+<header id="header"></header>
 <body>
 
 
@@ -22,7 +25,7 @@
                 <h2>덴진 일대</h2>
                 <p>큐슈 최고의 번화가 '텐진'. 거리에는 패션빌딩 이 즐비하고 오랜 전통의 백화점과 드럭스토어, 
                     가전제품점이 늘어서 있습니다. 그런 텐진도 조금 시선을 바꾸어 길을 걸어 보면 후쿠오카의 역사를 
-                    엿볼 수 있는 곳과 시민들의 쉼터가 되어 주는 공원 등, 이곳이 텐진 맞아? 라고 놀랄만한 명소가
+                    엿볼 수 b있는 곳과 시민들의 쉼터가 되어 주는 공원 등, 이곳이 텐진 맞아? 라고 놀랄만한 명소가
                     가득합니다. 쇼핑 도중에도 즐길 수 있는 알아 두면 좋을 텐진의 관광지를 안내해 드립니다!</p>
             </div>       
             <div id="b_img"><img src="./img/rout/denjin_cosu.jpg" alt="덴진일대 이미지"></div>
@@ -53,7 +56,7 @@
 
             <div class="content_section">
                 <div class="content_box" id="corse-1">
-                    <h2>아크로스 후쿠오카</h2> <!--1번-->
+                    <b class="numberring">1</b><h2>아크로스 후쿠오카</h2> <!--1번-->
                     <div class="content_img">
                         <img src="./img/Place/akuros_hukuoka.jpg" alt="아크로스_후쿠오카의 이미지">
                     </div>
@@ -65,7 +68,7 @@
 
                         <div>
                             <dt>주소</dt><dd> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;후쿠오카시 주오구 덴진 1-1-1</dd>
-                            <dt>상세내용</dt><dd><a href=""> &nbsp;&nbsp;요카나비 명소정보</a></dd>
+                            <dt>상세내용</dt><dd><a href="./akuros_hukuoka.html"> &nbsp;&nbsp;요카나비 명소정보</a></dd>
                         </div> 
                     </div>
                 </div>
@@ -86,7 +89,7 @@
 
                                 <div >
                                     <dt>주소</dt><dd> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;후쿠오카시 주오구 니시나카스 6-29</dd>
-                                    <dt>상세내용</dt><dd><a href=""> &nbsp;&nbsp;요카나비 명소정보</a></dd>
+                                    <dt>상세내용</dt><dd><a href="./hukuokaken_gonhedang.html"> &nbsp;&nbsp;요카나비 명소정보</a></dd>
                                 </div> 
                             </div>
                         </div>
@@ -110,7 +113,7 @@
         
                                     <div >
                                         <dt>주소</dt><dd> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;후쿠오카시 주오구 덴진 1-15-4</dd>
-                                        <dt>상세내용</dt><dd><a href=""> &nbsp;&nbsp;요카나비 명소정보</a></dd>
+                                        <dt>상세내용</dt><dd><a href="./suikyotaemangusinsa.html"> &nbsp;&nbsp;요카나비 명소정보</a></dd>
         
                                     </div> 
                             </div>
@@ -131,7 +134,7 @@
             
                                         <div >
                                             <dt>주소</dt><dd> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;후쿠오카시 주오구 덴진 1-15-30</dd>
-                                            <dt>상세내용</dt><dd><a href=""> &nbsp;&nbsp;요카나비 명소정보</a></dd>
+                                            <dt>상세내용</dt><dd><a href="./akarengabunkakan.html"> &nbsp;&nbsp;요카나비 명소정보</a></dd>
             
                                         </div> 
                             </div>
@@ -154,7 +157,7 @@
             
                                 <div >
                                     <dt>주소</dt><dd> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;후쿠오카시 주오구 덴진 2 지하 1~3호</dd>
-                                    <dt>상세내용</dt><dd><a href=""> &nbsp;&nbsp;요카나비 명소정보</a></dd>
+                                    <dt>상세내용</dt><dd><a href="./denjin_chikasangjumka.html"> &nbsp;&nbsp;요카나비 명소정보</a></dd>
             
                                 </div> 
                         </div>
@@ -175,21 +178,22 @@
                            
                         <div >
                             <dt>주소</dt><dd> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;후쿠오카시 주오구 덴진 2-2-20</dd>
-                            <dt>상세내용</dt><dd><a href=""> &nbsp;&nbsp;요카나비 명소정보</a></dd>
+                            <dt>상세내용</dt><dd><a href="./gaegosinsa.html"> &nbsp;&nbsp;요카나비 명소정보</a></dd>
                         </div>
                     </div>
                 </div>
                   
             </div>
-
+            <div id="map"></div>
 
         </div>
 
         
-        <div id="map"></div>
     </div>
 
-    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhKyXAc10lVlDsQTYSetha2ZCJ7Ah308Q&callback=map"
+    async defer></script>
     
 </body>
+<footer id="footer"></footer>
 </html>

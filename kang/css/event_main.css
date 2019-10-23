@@ -13,26 +13,93 @@ body{
 
 #full{
     width: 1200px;
-    height: 1000px;
-    border: 1px solid black;
+    height: auto;
+    /* position:; */
+    /* float: left; */
+
     margin: 0 auto;
     margin-top: 50px;
+    margin-left: 450px;
 }
 
-.season{
-    width: 500px;
-    height: auto;
+
+.season_front img{
+    border-radius: 200px 200px 200px 200px;
+}
+
+.season_back img{
+  border-radius: 200px 200px 200px 200px;
+}
+
+#content {
     float: left;
-    border: 1px solid black;
-    margin: 0 auto;
-    margin: 20px 10px 50px 50px; /*상 우 하 좌*/
-    border-radius: 200px 200px 200px 200px;
+    position: relative;
+    width: 1190px; height: auto;
 }
-#season_pic{
-    width: 500px;
-    height: auto;
+.season_front, .season_back {
+    float: left;
+  
+    width: 500px; height: 300px;
+    transition: transform 1s;
+    backface-visibility:hidden;
+}
+ 
+.season_back { 
+  position: absolute;
+  transform: rotateY(180deg); 
 }
 
-.season img{
-    border-radius: 200px 200px 200px 200px;
+#spring{
+  float: left;
+ 
+  width: 550px;
+  height: 350px;
+  margin-bottom: 50px;
 }
+
+#summer{
+  float: left;
+  
+  width: 550px;
+  height: 350px;
+  margin-bottom: 50px;
+}
+
+#fall{
+  float: left;
+ 
+  width: 550px;
+  height: 350px;
+}
+
+#winter{
+  float: left;
+ 
+  width: 550px;
+  height: 350px;
+}
+
+#content img{
+  width: 500px;
+  height: auto;
+}
+
+
+#footer{
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+#spring:hover .season_front{ transform: rotateY(180deg); }
+#spring:hover .season_back { transform: rotateY(360deg); }
+
+#summer:hover .season_front{ transform: rotateY(180deg); }
+#summer:hover .season_back { transform: rotateY(360deg); }
+
+#fall:hover .season_front{ transform: rotateY(180deg); }
+#fall:hover .season_back { transform: rotateY(360deg); }
+
+#winter:hover .season_front{ transform: rotateY(180deg); }
+#winter:hover .season_back { transform: rotateY(360deg); }
