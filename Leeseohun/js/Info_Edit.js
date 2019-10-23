@@ -50,11 +50,11 @@ $(function () {
         }  
     });
     $('.sign_up').click(function () {
-        location.href = 'Login_Main.html';
+        location.href = '../index_user.html';
     });
 
     $('.cancel').click(function () {
-        location.href = 'Login_Main.html';
+        location.href = '../index_user.html';
     });
 });
 $(function () {
