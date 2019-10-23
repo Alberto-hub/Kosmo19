@@ -101,10 +101,16 @@ a{
 }
 
 .numberring{
-    font-size: 2em;
+    font-size: 3em;
+    /* background-image: url(/Project/img/bookmark.png); */
+    width: 50px;
+    height: 50px;
+    margin-bottom:30px;
+    /* position: absolute; */
+    white-space:nowrap;
+   
 }
 #content_aside{
-    border: 1px solid orange;
     width:300px;
     height: 100%;
     float: right;
@@ -112,7 +118,7 @@ a{
 }
 
 #content_aside_two{
-   border: 1px solid orange;
+  
    width:300px;
    float: right;
    position: fixed;
@@ -121,14 +127,17 @@ a{
 }
 
 #content_aside_sub{
-
+    border-top: 3px solid salmon;
+    
     display: block;
-    border: 1px solid orange;
+   
     width: auto;
     height: auto;
     float: right;
-    background-color: #0078aa;
-    background: red;
+    text-align: center;
+    /* background-color: #0078aa; */
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 50px ;
 
 }
 
@@ -136,8 +145,9 @@ a{
 
 
 #content_aside_sub > div{
-    background-color: white; 
    
+    /* background-color: white;  */
+    border-radius: 20px 20px 20px 20px;   
 }
 
 .content_img{
