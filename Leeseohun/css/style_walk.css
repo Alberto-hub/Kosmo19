@@ -39,7 +39,7 @@ body{
 span{
   border: 1px solid black;
 }
-select, div > button, span{
+select, #Serch, span{
   margin: 5px;
   height: 40px;
   padding: 5px;
