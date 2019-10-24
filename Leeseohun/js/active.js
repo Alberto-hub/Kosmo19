@@ -215,8 +215,7 @@
                 modal1.style.display = "none";
             }   
         }
-    };
-
+  
 
     $(document).ready(function () { 
         $('head').append('<style type="text/css">.modal .modal-body {max-height: ' + ($('body').height() * .8) + 'px;overflow-y: auto;}.modal-open .modal{overflow-y: hidden !important;}</style>'); 
@@ -270,6 +269,7 @@
         }
     
     };
-   
+};
+
 
 })(jQuery);
