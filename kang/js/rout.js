@@ -2,24 +2,16 @@ $(document).ready(function () {
 
   $("#header").load("./header.html");
   $("#footer").load("./footer.html");
-
-
-
-
-
 })
-
-
-
 
 
 $(window).scroll(function () {
   var height = $(document).scrollTop(); //실시간으로 스크롤의 높이를 측정
-  if (height > 850) {
+  if (height > 1010) {
     $('#content_aside').attr('id', 'content_aside_two');
-  } else if (height < 850) {
+  } else if (height < 1010) {
     $('#content_aside_two').attr('id', 'content_aside');
-  } else (height)
+  }
 });
 
 
@@ -50,18 +42,7 @@ function map() {
     });
 
 
-    // // 정보창에들어갈 내용
-    // var contentString = '<div><p>주소 : 〒810-0801 福岡県福岡市博多区中洲 5-3-2<br>주소 : 5-chōme-3-2 Nakasu, Hakata-ku, Fukuoka, 810-0801 일본<br>전화번호 : + 81 92 262 0433<p></div>'
-
-    // // 닫기 버튼을 누를때 까지 정보창 유지
-    // var infowindow = new google.maps.InfoWindow({
-    //   content: contentString
-    // });
-    // // 마커 클릭 시 정보창 표시
-    //   marker1.addListener('click', function () {
-    //   infowindow.open(map1, marker1);
-    //   marker1.setAnimation(google.maps.Animation.BOUNCE);
-    // });
+  
   }
 };
 

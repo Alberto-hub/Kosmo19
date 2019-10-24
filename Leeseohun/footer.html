@@ -12,18 +12,31 @@
     <title>Fuku?oka!</title>
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="../style.css">
+    <!-- <link rel="stylesheet" href="../Kosmo19-master/style.css"> -->
+    <!-- <link rel="stylesheet" href="./css/header_footer.css"> -->
+
 
 
 </head>
 
 <body>
 
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
         <!-- Footer Logo -->
         <div class="footer-logo mb-100">
-            <a href="../index.html"><img src="img/core-img/fukuokalogo_1.png" alt="홈페이지 로고 이미지"></a>
+            <a href="../index.html"><img src="../img/core-img/fukuokalogo_1.png" alt=""></a>
         </div>
         <!-- Footer Content -->
         <div class="container">
@@ -33,9 +46,9 @@
                         <!-- Footer Nav -->
                         <div class="footer-nav">
                             <ul>
-                                <li><a href="#" id="aboutWeb">About Website</a></li>
-                                <li><a href="#" id="cookey">Cookie</a></li>
-                                <li><a href="https://www.city.fukuoka.lg.jp/promotion/index.html" target="_blank">FukuokaCity Homepage</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Closed Captioning</a></li>
+                                <li><a href="#">Site Map</a></li>
                             </ul>
                         </div>
                     </div>
@@ -43,8 +56,22 @@
             </div>
         </div>
     </footer>
+    <div id="myModal1" class="modal">
+        <!-- ##### Modal content ##### -->
+        <div class="modal-content">
+            <span class="close">&times;</span>                                                               
+            <iframe src="./Login_Main.html" class="modal1" frameborder="0" width="100%" height="600" scrolling="yes"></iframe>
+        </div>
+    </div>
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>                                                               
+            <iframe src="./Sign_Up.html" class="modal2" frameborder="0" width="100%" height="600" scrolling="yes"></iframe>
+        </div>
+    </div>
     <!-- jQuery-2.2.4 js -->
-    <script src="../js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- <script src="../js/jquery/jquery-2.2.4.min.js"></script> -->
+    <!-- <script src="../js/jquery/jquery-2.2.4.js"></script> -->
     <!-- Popper js -->
     <script src="../js/bootstrap/bootstrap.min.js"></script>
     <!-- Bootstrap js -->
