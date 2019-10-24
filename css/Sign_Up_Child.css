@@ -1,0 +1,35 @@
+body {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+#Con {
+    width: 650px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.img {
+    width: 650px;
+    text-align: center;
+}
+#Nbtn{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 200px;
+    height: 54px;
+    padding-top: 10px;
+    background: #3498DB;
+    text-decoration-line: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    line-height: 2em;
+    font-size: 18px;
+    color: rgb(64,64,64);
+}

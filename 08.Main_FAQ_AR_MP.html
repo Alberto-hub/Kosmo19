@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/jquery/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/08.Main_FAQ_AR_WP.css">
+    <script src="./js/08.Main_FAQ_AR_MP.js"></script>
+    <link rel="stylesheet" href="./css/header_footer.css">
+    <script src="./js/load.js"></script>
+    <script src="./js/active.js"></script>
+    <script src="bootstrap-3.3.2-dist/js/bootstrap.js"></script>
+    <title>Main_FAQ_GR_MP</title>
+</head>
+<header id="header"></header>
+
+<body>
+    <section id="main_section">
+        <div>
+            <h1>FAQ</h1>
+        </div>
+        <div class="container">
+            <table class="table table-bordered">
+                <thead>
+                    <caption>
+                        <h2>수정하기</h2>
+                    </caption>
+                </thead>
+                <tbody>
+                    <form action="write_ok.jsp" method="post" encType="multiplart/form-data">
+                        <tr>
+                            <th>제목: </th>
+                            <td><input type="text" placeholder="제목을 입력하세요. " name="subject" class="form-control" /></td>
+                        </tr>
+                        <tr>
+                            <th>내용: </th>
+                            <td><textarea cols="100" style="height:500px" placeholder="내용을 입력하세요. " name="content"
+                                    class="form-control"></textarea></td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호: </th>
+                            <td><input type="password" placeholder="비밀번호를 입력하세요" class="form-control text_pwd" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <!-- <input type="button" value="등록" onclick="sendData()" class="pull-right"/>
+                                    <input type="button" value="리셋" class="pull-left"/>
+                                    <input type="button" value="취소" class="pull-right" onclick="05.Main_Board_ARp01.html"/> -->
+                                <a class="btn btn-default pull-right" onclick="sendData()" alt="수정완료"> 완료 </a>
+                                <a class="btn btn-default pull-left" type="reset" href="08.Main_FAQ_AR_MP.html"
+                                    alt="리셋"> 리셋 </a>
+                                <a class="btn btn-default pull-right" onclick="history.back();" alt=취소
+                                    targe="_self">취소</a>
+                            </td>
+                        </tr>
+                    </form>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</body>
+
+<footer id="footer"></footer>
+
+</html>

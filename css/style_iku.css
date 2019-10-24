@@ -1,0 +1,68 @@
+/* 초기화 */
+*{ margin: 0; padding: 0; 
+}
+/* 바디 기본 설정 */
+body{
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+/*content 예) 후쿠오카로 가는~*/
+.title2 {
+    margin: 0 auto;
+    padding-top: 100px;
+    font: bold 60px/1.6 arial; 
+    color: black; 
+    text-align: center;
+    line-height: 60px;
+}
+/*중간 제목 ~방법*/
+.sub_title {
+    height: 80px;
+    width: 50%;
+    margin: 50px auto;
+    font: bold 30px/1.6 arial; 
+    color: white; 
+    text-align: center;
+    cursor: pointer;
+    background-color: #449FA9;
+    border-radius: 10px;
+    line-height: 80px;
+}
+/* div content */
+.content {
+    margin: 10px;
+    display: none;
+    overflow: hidden;
+}
+/* div funtion */
+span{
+    border: 1px solid black;
+}
+select, div > button, span{
+    margin: 10px;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+.content{
+    text-align: center;
+}
+#fnc{
+    margin: 10px;
+    display: inline-block;
+}
+/* 검색 설정 */
+#airportRe, #ShipRe , #trainRe , #busRe {
+    margin: 10px auto;
+    text-align: center;
+    width: 50%;
+    height: 50px;
+    background: #E2EAEE;
+    padding: 10px;
+    line-height: 30px;
+    font-weight: bold;
+}

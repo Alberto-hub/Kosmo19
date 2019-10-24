@@ -1,0 +1,47 @@
+body{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+
+section{
+    text-align: center;
+    height: auto;
+}
+.content_name, .content_input, .content_sub{
+    margin: 10px;
+    font-weight: bold;
+    float: left;
+    line-height: 2.5em;
+}
+.name, .input, .sub {
+    display: inline-block;
+}
+
+.content_input > input{
+    width: 75%;
+    height: 30px;
+    font-size: 25px;
+}
+.find_pwd{
+    margin: 0 auto;
+    width: 200px;
+    height: 54px;
+    padding-top: 10px;
+    background: #3498DB;
+    text-decoration-line: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    line-height: 2em;
+    font-size: 18px;
+    color: rgb(64,64,64);
+}
+#telceck {
+    margin: 5px;
+    width: 15px;
+    height: 15px;
+}

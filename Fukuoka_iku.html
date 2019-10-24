@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title -->
+    <title>후쿠오카로 가는 교통 수단</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/header_footer.css">
+    <script src="./js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="./js/load.js"></script>
+    <script src="./js/active.js"></script>
+    <script src="./js/custom_iku.js"></script>
+    <link rel="stylesheet" id="css" href="./css/style_iku.css">
+</head>
+<header id="header">
+
+</header>
+
+<body>
+    <!-- Preloader -->
+
+    <h2 class="title2">후쿠오카로 가는 교통수단</h2>
+    <!-- content -->
+
+    <div id="wrap">
+
+        <!-- 비행기로 가는 방법 -->
+
+        <div class="sub_title">비행기로 가는 방법</div>
+        <div class="content">
+            <div id="fnc">
+                <span>출발지</span>
+                <select name="startAR" id="startAR">
+                    <!-- startAR 아이디 -->
+                    <option value="인천">인천</option>
+                    <option value="김포">김포</option>
+                    <option value="부산">부산</option>
+                    <option value="도쿄">도쿄</option>
+                </select>
+                <br>
+                <span>도착지</span>
+                <select name="arriveAR" id="arriveAR">
+                    <!-- ariiveAR 아이디 -->
+                    <option value="후쿠오카" selected="후쿠오카" disabled>후쿠오카</option>
+                </select>
+                <br>
+                <button id="airportSr">검색</button>
+            </div>
+            <!-- airportSr 아이디 -->
+            <div id="airportRe">예상 도착 시간 : </div> <!-- airportRe 아이디 -->
+        </div>
+
+        <!-- 배로 가는 방법 -->
+
+        <div class="sub_title">배로 가는 방법</div>
+        <div class="content">
+            <div id="fnc">
+                <span>출발지</span>
+                <select name="startSH" id="startSH">
+                    <!-- startSH 아이디 -->
+                    <option value="부산" selected="부산" disabled>부산</option>
+                </select>
+                <br>
+                <span>도착지</span>
+                <select name="arriveSH" id="arriveSH">
+                    <!-- arriveSH 아이디 -->
+                    <option value="후쿠오카" selected="후쿠오카" disabled>후쿠오카</option>
+                </select>
+                <br>
+                <span>배편</span>
+                <select name="Ship" id="Ship">
+                    <option value="쾌속선">쾌속선</option>
+                    <option value="여객선">여객선</option>
+                </select>
+                <br>
+                <button id="ShipSr">검색</button> <!-- ShipSr 아이디 -->
+            </div>
+            <div id="ShipRe">예상 도착 시간 : </div> <!-- ShipRe 아이디 -->
+        </div>
+
+        <!-- 기차로 가는 방법 -->
+
+        <div class="sub_title">기차로 가는 방법</div>
+        <div class="content">
+            <div id="fnc">
+                <span>출발지</span>
+                <select name="startTR" id="startTR">
+                    <!-- startTR 아이디 -->
+                    <option value="도쿄">도쿄</option>
+                    <option value="오사카">오사카</option>
+                    <option value="홋카이도">홋카이도</option>
+                </select>
+                <br>
+                <span>도착지</span>
+                <select name="arriveTR" id="arriveTR">
+                    <!-- arriveTR 아이디 -->
+                    <option value="후쿠오카" selected="후쿠오카" disabled>후쿠오카</option>
+                </select>
+                <br>
+                <button id="trainSr">검색</button> <!-- trainSr 아이디 -->
+            </div>
+
+            <div id="trainRe">예상 도착 시간 : </div> <!-- trainRe 아이디 -->
+        </div>
+
+        <!-- 버스로 가는 방법 -->
+
+        <div class="sub_title">버스로 가는 방법</div>
+        <div class="content">
+            <div id="fnc">
+                <span>출발지</span>
+                <select name="startBS" id="startBS">
+                    <!-- startBS 아이디 -->
+                    <option value="도쿄">도쿄</option>
+                    <option value="오사카">오사카</option>
+                </select>
+                <br>
+                <span>도착지</span>
+                <select name="arriveBS" id="arriveBS">
+                    <!-- arriveBS 아이디 -->
+                    <option value="후쿠오카" selected="후쿠오카" disabled>후쿠오카</option>
+                </select>
+                <br>
+                <button id="busSr">검색</button> <!-- busSr 아이디 -->
+            </div>
+
+            <div id="busRe">예상 도착 시간 : </div> <!-- busRe 아이디 -->
+        </div>
+    </div>
+</body>
+<footer id="footer">
+
+</footer>
+
+</html>

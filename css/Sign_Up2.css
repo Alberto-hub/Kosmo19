@@ -1,0 +1,84 @@
+body {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+h1{
+    text-align: center;
+}
+
+h2 {
+    width: 582px;
+    height: auto;
+    margin: 0 auto;
+}
+content > div> input {
+    width: 582px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    display: block;
+}
+
+#FFF {
+    width: 582px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    margin-right: 10px;
+}
+#sex{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#Male {
+    margin-left: 100px;
+    float: left;
+}
+
+#Female {
+    margin-left: 200px;
+    float: left;
+}
+
+
+/* 버튼 관련 */
+#btn > div{
+    float: left;
+}
+#cancel {
+    display: block;
+    background: rgb(224,224,224);
+    margin-left: 60.6px;
+    width: 200px;
+    height: 54px;
+    padding-top: 10px;
+    text-decoration-line: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    line-height: 2em;
+    font-size: 18px;
+    color: rgb(64,64,64);
+}
+#sign_up {
+    margin-left: 60.6px;
+    width: 200px;
+    height: 54px;
+    padding-top: 10px;
+    background: #3498DB;
+    text-decoration-line: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    line-height: 2em;
+    font-size: 18px;
+    color: rgb(64,64,64);
+}

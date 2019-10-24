@@ -1,0 +1,35 @@
+html{
+    width: 100%;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.login{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.wrap{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 60%;
+    height: 50px;
+    margin: 10px auto;
+    display: block;
+    color: rgb(94,94,94);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30%;
+}
+
+#lbtn{
+    background: #3498DB;
+    color: white;
+}

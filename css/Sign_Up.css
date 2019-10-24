@@ -1,0 +1,91 @@
+body {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+h1{
+    text-align: center;
+}
+
+div {
+    width: 582px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+div > p {
+    font-size: 14px;
+}
+
+#ToUAT {
+    width: 582px;
+    height: 130px;
+    margin: 0 auto;
+    overflow:scroll;
+}
+
+#PICCT {
+    width: 582px;
+    height: 130px;
+    margin: 0 auto;
+    overflow:scroll;
+}
+
+a {
+    display: block;
+    background: rgb(224,224,224);
+    width: 127px;
+    height: 40px;
+    text-decoration-line: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    line-height: 2em;
+    font-size: 18px;
+    color: rgb(64,64,64);
+    float: right;
+}
+
+#btn > div{
+    float: left;
+}
+#Cancel {
+    display: block;
+    background: rgb(224,224,224);
+    margin-left: 60.6px;
+    width: 200px;
+    height: 54px;
+    padding-top: 10px;
+    text-decoration-line: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    line-height: 2em;
+    font-size: 18px;
+    color: rgb(64,64,64);
+}
+
+#Consent {
+    margin-left: 60.6px;
+    width: 200px;
+    height: 54px;
+    padding-top: 10px;
+    background: #3498DB;
+    text-decoration-line: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    line-height: 2em;
+    font-size: 18px;
+    color: rgb(64,64,64);
+}

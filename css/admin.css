@@ -1,0 +1,34 @@
+#imginput {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+}
+
+#IpTitle {
+    width: 80%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 9%;
+}
+
+#Ipsection{
+    width: 80%;
+    height: 400px;
+    margin-top: 10px;
+    margin-left: 9%;
+}
+#x {
+    margin-left: 30%;
+    width: 20%;
+    height: 20px;
+    margin-top: 10px;
+}
+#y {
+    width: 20%;
+    height: 20px;
+    margin-top: 10px;
+}
+#pic{
+    width: 500px;
+    height: 500px;
+}

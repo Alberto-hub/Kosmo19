@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./js/Sign_Up2.js"></script>
+    <link rel="stylesheet" href="./css/Sign_Up2.css">
+    <title>회원가입</title>
+</head>
+
+<body>
+    <content>
+        <h1>회원가입</h1>
+        <div id="FFF">
+            <h2>아이디</h2>
+            <input type="text" id="id">
+            <h2>비밀번호</h2>
+            <input type="password" name="" id="pwd">
+            <h2>비밀번호 재확인</h2>
+            <input type="password" name="" id="pwd_ceck">
+            <h2>이름</h2>
+            <input type="text" id="name">
+            <h2>생년월일</h2>
+            <input type="date" name="" id="cal">
+
+            <h2>성별</h2>
+            <form id="sex">
+                <input type="radio" name="남성" value="남성" id="man"/> 남성
+                <input type="radio" name="여성" value="여성" id="woman"/> 여성
+            </form>
+            <br>
+            <h2>본인 확인 이메일</h2>
+            <input type="email" name="email" id="email">
+            <h2>휴대전화</h2>
+            <input type="tel" name="" id="tel">
+            <div id="btn">
+                <div type="button" id="cancel" onClick="history.go(-1)">뒤로</div>
+                <div type="button" id="sign_up">확인</div>
+            </div>
+        </div>
+    </content>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+/* *{
+    margin: 0; padding: 0;
+}
+ul{
+    list-style: none;
+    position: absolute;
+    top: 60%;
+    left: 39.5%;
+}
+li{
+    float: left;
+} */
+
+body{
+    position: relative;
+     /* font-family: sans-serif; */
+    width: 100%;
+    height: auto;
+    /* margin: auto; */
+    /* background-color: #f5ebdc;     */ 
+    
+}
+
+#headmenu{ /*상단 고정 메뉴*/
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+/*앵커태그 자체는 밑줄제거*/
+.spot_a{ 
+    text-decoration: none;
+}
+
+img{border:0;}
+
+
+#check_list{ /*체크 박스*/
+    /* border: 1px solid black; */
+    background-color: white;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+
+#search{  /*검색버튼*/
+    font-size: 15px;
+}
+
+#main_content{
+    /* border: 1px solid black; */
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;    
+
+}
+
+.spot{
+    border: 1px solid black;
+    background-color: white;
+    width: 272px;
+    height: 500px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    float: left;   
+}
+
+.spot img{
+    width: 272px;
+    height: auto;
+    opacity: 1;
+    /* border-radius: 20px 20px 20px 20px; */
+
+}
+.spot_info dt{
+    margin-top: 15px ;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.spot_info dd{ /*긴 글 생략*/
+    margin-top: 10px ;
+    margin-bottom: 0px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    line-height:1.6em;
+    max-height: 4.8em; 
+    overflow: hidden; 
+    display: -webkit-box;  
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; 
+}
+.spot_info p{
+    margin: 0;
+    white-space:nowrap; /*줄바꿈 금지*/
+
+}
+
+
+.spot_info a{
+    
+    font-size: 12px;
+    text-decoration:underline;
+    
+}
+
+.spot_info a option{
+    display: inline-block; /*option테그의 강제 줄바꿈을 제거하기 위하여 display:inline-block속성 사용*/
+}
+
+
+#test {
+    height: auto;
+    width: 100%;
+}
+
+#footer {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: left ;
+}
+ 

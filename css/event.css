@@ -1,0 +1,73 @@
+
+
+a{
+    text-decoration: none;
+}
+
+body{
+    /* width: 1200px; */
+    /* height: auto; */
+    /* background-color: cadetblue;
+    margin: 0 auto; */
+    /* float: left; */
+    width: auto;
+}
+
+#full{
+    border: 1px solid black;
+    background-color: white;
+    width: 1200px;
+    overflow: hidden;
+    height: auto;
+    margin: 0 auto;
+   
+    
+}
+
+#full > h1{
+    text-align: center;
+}
+
+#menu{
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#menu > a {
+    font-size: 2em;
+    color: green;
+}
+
+#maturi_img{
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+#Expl{
+    width: 820px;
+    margin-top: 30px;
+    margin: 0 auto;
+}
+#info{
+    width: 820px;
+    margin-top: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: #f5f55f;
+    
+}
+
+#info > dt{
+    float: left;
+}
+
+#footer {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+    float: left ;
+}
