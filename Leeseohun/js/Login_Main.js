@@ -1,16 +1,18 @@
 $(function () {
 
-    $(".find").css('cursor', 'pointer');
-    $('.gologin').click(function () {
-        location.href = 'Login_Main.html';      // 로그인 페이지로 이동
-    });
-    $('.findpwd').click(function () {
-        location.href = 'Find_PWD.html';        // 페스워드 찾기 페이지로 이동
-    });
-    $("#lbtn").css('cursor', 'pointer');
+    // $(".find").css('cursor', 'pointer');
+    // $('.gologin').click(function () {
+    //     location.href = 'Login_Main.html';      // 로그인 페이지로 이동
+    // });
+    // $('.findpwd').click(function () {
+    //     location.href = 'Find_PWD.html';        // 페스워드 찾기 페이지로 이동
+    // });
+
+
+    $("#lbtn").css('cursor', 'pointer'); //마우스커서 이미지변경
     $("#lbtn").click(function(){
-        var id = document.getElementById('idname');//변수 선언
-        var pwd = document.getElementById('pwd');
+        var id = document.getElementById('idname');//변수 선언 입력한 값(id)받아와서 변수에 저장
+        var pwd = document.getElementById('pwd');//변수 선언 입력한 값(pw))받아와서 변수에 저장
         var idReg = /^[A-za-z0-9]{3,15}/g;
         var pwd_reg = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$/; // 정규식
         if (id.value == "") {      // 빈칸 확인
@@ -27,11 +29,15 @@ $(function () {
             return false;
         } else{
             if(id.value == "admin"){
-                // $(this).parents("iframe").attr("src", '../index.html');
-                window.location.href = '../index_admin.html';// 메인 페이지 이동
+                alert("관리자페이지로 이동합니다.");
+                window.opener.top.location.href="/index_admin.html";
+                window.close();
             }
             else{
-                location.href = '../index_user.html';// 메인 페이지 이동
+                localStorage.setItem("userid", id.value);
+                alert(id.value+"님 환영합니다.");
+                window.opener.top.location.href="/index_user.html";
+                window.close();
             }
         }
     }); 

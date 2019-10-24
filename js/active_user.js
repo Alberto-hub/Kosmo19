@@ -224,30 +224,33 @@
         var btn3 = document.getElementById("myBtn2");
         var btn4 = document.getElementById("myBtn3");
 
-        btn2.onclick = function() {
-            var popupX = (document.body.offsetWidth / 2) - (800 / 2);
-            //&nbsp;만들 팝업창 좌우 크기의 1/2 만큼 보정값으로 빼주었음
-            var popupY= (500 / 2);
-            //&nbsp;만들 팝업창 상하 크기의 1/2 만큼 보정값으로 빼주었음
-            window.open("./Leeseohun/Login_Main.html", "PopupWin", 'status=no, height=600, width=800, left='+ popupX + ', top='+ popupY);
-        }
-        
-        btn3.onclick = function() {
-            var popupX = (document.body.offsetWidth / 2) - (800 / 2);
-            //&nbsp;만들 팝업창 좌우 크기의 1/2 만큼 보정값으로 빼주었음
-            var popupY= (500 / 2);
-            //&nbsp;만들 팝업창 상하 크기의 1/2 만큼 보정값으로 빼주었음
-            window.open("./Leeseohun/Sign_Up.html", "PopupWin", 'status=no, height=600, width=800, left='+ popupX + ', top='+ popupY);
-        }
-        // let timer = localStorage.getItem("userid");
-        // console.log(timer);
-        // btn4.onclick = function() {
+        // btn2.onclick = function() {
         //     var popupX = (document.body.offsetWidth / 2) - (800 / 2);
         //     //&nbsp;만들 팝업창 좌우 크기의 1/2 만큼 보정값으로 빼주었음
         //     var popupY= (500 / 2);
         //     //&nbsp;만들 팝업창 상하 크기의 1/2 만큼 보정값으로 빼주었음
-        //     window.open("./Leeseohun/Info_Edit.html", "PopupWin", 'status=no, height=600, width=800, left='+ popupX + ', top='+ popupY);
+        //     window.open("./Leeseohun/Login_Main.html", "PopupWin", 'status=no, height=600, width=800, left='+ popupX + ', top='+ popupY);
         // }
+        
+        // btn3.onclick = function() {
+        //     var popupX = (document.body.offsetWidth / 2) - (800 / 2);
+        //     //&nbsp;만들 팝업창 좌우 크기의 1/2 만큼 보정값으로 빼주었음
+        //     var popupY= (500 / 2);
+        //     //&nbsp;만들 팝업창 상하 크기의 1/2 만큼 보정값으로 빼주었음
+        //     window.open("./Leeseohun/Sign_Up.html", "PopupWin", 'status=no, height=600, width=800, left='+ popupX + ', top='+ popupY);
+        // }
+
+        btn4.onclick = function() {
+            var popupX = (document.body.offsetWidth / 2) - (800 / 2);
+            //&nbsp;만들 팝업창 좌우 크기의 1/2 만큼 보정값으로 빼주었음
+            var popupY= (500 / 2);
+            //&nbsp;만들 팝업창 상하 크기의 1/2 만큼 보정값으로 빼주었음
+            window.open("./Leeseohun/Info_Edit.html", "PopupWin", 'status=no, height=600, width=800, left='+ popupX + ', top='+ popupY);
+        }
+        let id = localStorage.getItem("userid");
+        // console.log(id);
+        $("#userid").text(id);
+
 
 };
    

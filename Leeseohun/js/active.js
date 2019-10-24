@@ -235,7 +235,6 @@
     var span3 = document.getElementsByClassName("close")[3];                                          
 
     // When the user clicks on the button, open the modal 
-    window.onload = function(){ 
         btn2.onclick = function() {
             modal2.style.display = "block";
             $('html, body').css({'overflow': 'hidden', 'height': '100%'}); // 모달팝업 중 html,body의 scroll을 hidden시킴
@@ -267,8 +266,6 @@
             $('html, body').css({'overflow': 'auto', 'height': '100%'}); //scroll hidden 해제 
             $('#element').off('scroll touchmove mousewheel'); // 터치무브 및 마우스휠 스크롤 가능
         }
-    
-    };
 };
 
 
