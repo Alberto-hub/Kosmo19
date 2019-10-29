@@ -45,6 +45,12 @@ img{border:0;}
     padding: 20px;
 }
 
+#search_div{ /*검색 메뉴 div*/
+    margin-top: 10px;
+    text-align: center;
+
+}
+
 
 
 #search{  /*검색버튼*/
@@ -61,7 +67,7 @@ img{border:0;}
 }
 
 .spot{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: white;
     width: 272px;
     height: 500px;
