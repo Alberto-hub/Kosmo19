@@ -84,8 +84,8 @@ img{border:0;}
 }
 
 .spot_info dd{ /*긴 글 생략*/
-    margin-top: 10px ;
-    margin-bottom: 0px;
+    margin-top: 0px ;
+    margin-bottom: 20px;
     font-size: 14px;
     text-overflow: ellipsis;
     line-height:1.6em;

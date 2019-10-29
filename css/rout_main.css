@@ -54,6 +54,7 @@ body{
 #list{
     border: 1px solid black;
     margin: 0 auto;
+    padding-bottom: 30px;
 
     float: left;
     width: 1200px;
