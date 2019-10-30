@@ -6,12 +6,11 @@
 body{
     text-align: center;
     width: 100%;
-    /* background-color: #e5f4ff;  */
 }
 /*중간 제목 ~방법*/
 .sub_title {
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 100px;
     font: bold 30px/1.6 arial; 
     color: black; 
     text-align: center;
@@ -22,6 +21,7 @@ body{
 }
 .content{
     display: inline-block;
+    padding-bottom: 100px;
 }
 .map{
     margin: 30px;

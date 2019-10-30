@@ -12,6 +12,7 @@ body{
 .title2 {
     margin: 0 auto;
     padding-top: 100px;
+    padding-bottom: 100px;
     font: bold 60px/1.6 arial; 
     color: black; 
     text-align: center;
@@ -22,7 +23,7 @@ body{
     height: 80px;
     width: 50%;
     margin: 50px auto;
-    font: bold 30px/1.6 arial; 
+    font: bold 24px/1.6 arial; 
     color: white; 
     text-align: center;
     cursor: pointer;
@@ -37,7 +38,7 @@ body{
     overflow: hidden;
 }
 /* div funtion */
-span{
+#fnc > span{
     border: 1px solid black;
 }
 select, div > button, span{
@@ -54,6 +55,9 @@ select, div > button, span{
 #fnc{
     margin: 10px;
     display: inline-block;
+}
+#wrap {
+    padding-bottom: 100px;
 }
 /* 검색 설정 */
 #airportRe, #ShipRe , #trainRe , #busRe {

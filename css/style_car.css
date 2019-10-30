@@ -16,6 +16,10 @@ body{
     cursor: pointer;
 }
 /* div content */
+p {
+    line-height: 2em;
+}
+
 img > #car {
     width: 50%;
     height: 25%;
