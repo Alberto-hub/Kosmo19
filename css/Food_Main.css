@@ -7,38 +7,36 @@ section{
     
 }
 
-section > div{
+.divfood{
     overflow: hidden;
     position: relative;
 }
-section > div > img {
+
+.divfood > img {
     width: 30%;
     float: left;
     height: 100%;
 }
-
-section > div > p {
+.secp {
     width: 70%;
     float: left;
     height: 100%;
     padding: 5px;
     box-sizing: border-box;
-    font-size: 24px;
-    line-height: 1.4em;
+    font-size: 19px;
+    line-height: 1.6em;
     color: black;
 }
 
-section > div:nth-child(even) {
+.divfood:nth-child(even) {
     margin-left: 20%;
 }
 
 body {
     width: 100%;
-    background: #a3daff;
-    /* background: #a3daff; */
 }
 
-section > div {
+.divfood {
     width: 80%;
     height: 250px;
     border: 1px solid black;
@@ -99,17 +97,17 @@ strong{
 font-size: 26px;
 }
 
-.body12 {
-    width: 360px;
-    background: #a3daff;
-    margin: 0 auto;
-    font: 24px arial; color: black;
-}
-
 #header{
     width: 100%;
     height: 140px;
 }
 #footer{
     background: white;
+}
+.divfood2 > img{
+    width: 100%;
+    max-width: 500px;
+}
+.divfood2 > p{
+    font-size: 14px;
 }

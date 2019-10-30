@@ -14,8 +14,8 @@ body{
 /*중간 제목 ~방법*/
 .sub_title {
     margin: 0 auto;
-    padding-top: 50px;
-    font: bold 30px/1.6 arial; 
+    padding-top: 100px;
+    font: bold 24px/1.6 arial; 
     color: black; 
     text-align: center;
     cursor: pointer;
@@ -25,6 +25,7 @@ body{
 }
 .content{
     display: inline-block;
+    padding-bottom: 150px;
 }
 .map{
     margin: 30px;
