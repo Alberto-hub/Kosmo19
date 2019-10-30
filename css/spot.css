@@ -31,11 +31,12 @@ body{
 
 #left_section{ /*(왼쪽)실제 해당 spot의 정보 부분*/
     float: left;
-    width: 650px;
+    width: 660px;
     margin: 0 auto;
     position: relative;
     /* margin-left: 10px; */
     background-color: #E2EAEE;
+
    
 
 }
@@ -44,6 +45,7 @@ body{
 
 #spot_name{ /*관광지명 */
     width: 500px;
+    font-style: "Cursive";
     text-align: center;
     margin: 0 auto;
     margin-top: 20px;
@@ -52,12 +54,13 @@ body{
 }
 
 #spot_full{
-    width: 642px;
+    width: 100% ;
+    max-width: 700px;
     height: auto;
     margin: 0 auto;
     margin-top: 20px;
     /* border: 1px solid black; */
-    text-align: center;
+    /* text-align: center; */
     /* position: relative; */
     float: left;
 
@@ -65,12 +68,12 @@ body{
 
 #spot{
 
-    display: inline-block;
-    width: 500px;
+    display: block;
+    width: 600px;
     height: auto;
     margin: 0 auto;
-    /* float: left; */
-    /* position: absolute; */
+    float: left;
+    margin-left: 70px;
     
     
 }
@@ -102,12 +105,15 @@ body{
 }
 
 #information{
+    border: 5px double rgb(153, 164, 226);
+
     float: left;
     width: 600px;
     height: auto;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 30px ;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 20px;
@@ -136,12 +142,18 @@ body{
 
 }
 
+#relation{
+    border:7px inset  rgb(153, 164, 226);
+    margin-bottom: 10px;
+}
+
 
 
 
 
 
 #relation img{ /*관련장소의 이미지*/
+    /* border:7px inset  rgb(153, 164, 226); */
     height: auto;
     width: 300px;
     opacity: 1;
@@ -150,10 +162,10 @@ body{
 }
 
 #story{ /*관련장소 설명*/
-    border: 1px solid black;
+    /* border:7px inset  rgb(153, 164, 226); */
     width: auto;
     height: auto;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     padding: 10px;
     background-color: white;
 

@@ -30,36 +30,64 @@
     <div id="test">
         <div id="check_list">
             <form>
-                <h3>지역</h3>
+                
                 <!--area 는 지역-->
-                <input type="checkbox" name="chk_area" value="1">하카타지역
-                <input type="checkbox" name="chk_area" value="2">나카스 카와바타 지역
-                <input type="checkbox" name="chk_area" value="3">텐진&야쿠인 일대
-                <input type="checkbox" name="chk_area" value="4">오호리&롯폰마쓰 일대
-                <input type="checkbox" name="chk_area" value="5">모모치&사와지역
+                <div id="check_area">
+                        <h4>지역</h4>
+                        <input type="checkbox" name="chk_area" value="1">하카타지역
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        <input type="checkbox" name="chk_area" value="2">나카스 카와바타 지역
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="chk_area" value="3">텐진&야쿠인 일대
+                        <br>
+                        <br>
+                        <input type="checkbox" name="chk_area" value="4">오호리&롯폰마쓰 일대
+                        &nbsp;
+                        <input type="checkbox" name="chk_area" value="5">모모치&사와지역
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="chk_area" value="6">동부지역
+                        <br>
+                        <br>
+                        <input type="checkbox" name="chk_area" value="7">서&이토시마 에리어
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="chk_area" value="8">후쿠오카 시 근교 지역
 
-                <input type="checkbox" name="chk_area" value="6">동부지역
-                <input type="checkbox" name="chk_area" value="7">서&이토시마 에리어
-                <input type="checkbox" name="chk_area" value="8">후쿠오카 시 근교 지역
-                <br>
-                <h3>카테고리</h3>
+                </div>
+                
+              
+                <div id="check_categori">
+                        <h4>카테고리</h4>
+
+                        <input type="checkbox" name="chk_clf" value="40">문화*예술
+                        &nbsp;&nbsp;
+                        <input type="checkbox" name="chk_clf" value="41">자연*경관
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="chk_clf" value="42">가족 친화적인
+                        &nbsp;&nbsp;
+                        <input type="checkbox" name="chk_clf" value="43">역사*신사*사찰
+                        &nbsp;&nbsp;
+                        <br><br>
+                        <input type="checkbox" name="chk_clf" value="44">건축물
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="chk_clf" value="45">레저*아웃도어
+                        &nbsp;&nbsp;
+                        <input type="checkbox" name="chk_clf" value="46">볼거리-기타
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="chk_clf" value="47">즐길거리-기타
+                        &nbsp;&nbsp;
+                        <br>
+                        <br>
+                        <input type="checkbox" name="chk_clf" value="48">쇼핑-기타
+                </div>
+
+              
                 <!--clf = Classification(분류)-->
-                <input type="checkbox" name="chk_clf" value="40">문화*예술
-                <input type="checkbox" name="chk_clf" value="41">자연*경관
-                <input type="checkbox" name="chk_clf" value="42">가족 친화적인
-                <input type="checkbox" name="chk_clf" value="43">역사*신사*사찰
-                <input type="checkbox" name="chk_clf" value="44">건축물
-                <input type="checkbox" name="chk_clf" value="45">레저*아웃도어
-                <input type="checkbox" name="chk_clf" value="46">볼거리-기타
-                <input type="checkbox" name="chk_clf" value="47">즐길거리-기타
-                <input type="checkbox" name="chk_clf" value="48">쇼핑-기타
-
-
-                <br>
+               
+               
                 <div id="search_div">
                         <a onClick="window.location.reload()" style="cursor: pointer;">[ 새로 고침 ]</a>
 
-                        &nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;
 
                         <input type='button' id="search"  value="검색">
                      
@@ -72,6 +100,7 @@
                 <br>
             </form>
         </div>
+        <div id="wrap_main_content">
 
         <div id="main_content">
             <div class="spot">
@@ -424,6 +453,7 @@
                 </div>
             </div>
 
+        </div>
         </div>
     </div>
 
