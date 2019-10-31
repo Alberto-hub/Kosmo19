@@ -1,9 +1,7 @@
 $(function () {
     if ($(window).width() < 1200) {
-        $('.divfood').attr('class','divfood2');
         $('.nextbtn').hide();
     } else {
-        $('.divfood2').attr('class','divfood');
         $('.nextbtn').show();
     }
 
@@ -56,12 +54,11 @@ $(function () {
         $(this).css('cursor', 'pointer');
     });
 });
+
 $(window).resize(function () {
     if ($(window).width() < 1200) {
-        $('.divfood').attr('class','divfood2');
         $('.nextbtn').hide();
     } else {
-        $('.divfood2').attr('class','divfood');
         $('.nextbtn').show();
     }
 

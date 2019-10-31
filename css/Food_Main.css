@@ -104,10 +104,56 @@ font-size: 26px;
 #footer{
     background: white;
 }
-.divfood2 > img{
-    width: 100%;
-    max-width: 500px;
+
+#secp1 {
+    padding-top: 45px;
 }
-.divfood2 > p{
-    font-size: 14px;
+
+@media screen and (min-width : 600px) and (max-width:1200px) {
+    .divfood > img{
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .divfood > p{
+        max-width: 600px;
+        width: 100%;
+        display: block;
+        
+    }
+
+    .divfood:nth-child(even) {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    .divfood {
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 25px;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width : 600px) {
+    .divfood > img{
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .divfood > p{
+        max-width: 600px;
+        width: 100%;
+        display: block;
+        
+    }
+    .divfood:nth-child(even) {
+        margin-left: 0;
+    }
+    .divfood {
+        width: 100%;
+        height: auto;
+        margin-top: 25px;
+        box-sizing: border-box;
+    }
 }

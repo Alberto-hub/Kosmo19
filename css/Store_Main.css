@@ -50,6 +50,12 @@ section {
     background:#284B52;
 
 }
+
+#Title >h2 {
+   color: white;
+   padding-top: 4px;
+}
+
 h2{
     text-align: center;
     color: black;
@@ -81,14 +87,16 @@ h2{
     width: 100%;
     text-align: center;
     padding-top: 20px;
+    font-weight: bold;
 }
 
 .Store_Main_Body > p {
     box-sizing: border-box;
-    padding: 10px;
+    padding: 30px;
     font-size: 24px;
     margin-top: 20px;
     width: 100%;
+    line-height: 1.8em;
 }
 
 .Store_Main_Body > ul {
@@ -143,4 +151,28 @@ h2{
 .top {
     width: 50px;
     height: 50px;
+}
+
+@media screen and (min-width : 800px) and (max-width:1200px) {
+    .Store_Main_Body > ul {
+        margin-left: 100px;
+        font-size: 16px;
+        max-width: 700px;
+    }
+
+    .Store_Main_Body > img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width : 799px) {
+    .Store_Main_Body > ul {
+        margin-left: 0;
+        font-size: 16px;
+        max-width: 700px;
+    }
+    .Store_Main_Body > img {
+        width: 100%;
+        height: auto;
+    }
 }
