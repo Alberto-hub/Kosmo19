@@ -31,19 +31,31 @@ body{
     margin: 30px;
     float: left;
 }
-#map1, #map2, #map3{
-    margin: 2%;
-    height: 320px;
-    width: 320px;
-}
+
 h4 {
-    width: 320px;
     margin: 1%;
     font: bold 20px/1.6 arial; 
     color: black; 
     text-align: center;
 }
-
+@media screen and (min-width: 1161px) {
+    /* 데스크탑에서 사용될 스타일을 여기에 작성합니다. */
+    #map1, #map2, #map3{
+        margin: 2%;
+        height: 320px;
+        width: 320px;
+    }
+ }
+@media screen and (max-width: 1160px) {
+    .map {
+        clear: both;
+    }
+    #map1, #map2, #map3{
+        margin: 2%;
+        height: 420px;
+        width: 420px;
+    }
+}
 
 
 
