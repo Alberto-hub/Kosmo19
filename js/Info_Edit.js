@@ -51,10 +51,12 @@ $(function () {
     });
     $('.sign_up').click(function () {
         location.href = '../index_user.html';
+        window.close();
     });
 
     $('.cancel').click(function () {
         location.href = '../index_user.html';
+        window.close();
     });
 });
 $(function () {

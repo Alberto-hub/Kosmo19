@@ -241,12 +241,11 @@
         // }
 
         btn4.onclick = function() {
-            var popupX = (document.body.offsetWidth / 2) - (800 / 2);
+            var popupX = (document.body.offsetWidth / 2) - (600 / 2);
             //&nbsp;만들 팝업창 좌우 크기의 1/2 만큼 보정값으로 빼주었음
-            var popupY= (500 / 2);
+            var popupY= (800 / 2) - (600 / 2);
             //&nbsp;만들 팝업창 상하 크기의 1/2 만큼 보정값으로 빼주었음
-            window.open("./Info_Edit.html", "PopupWin", 'status=no, height=600, width=800, left='+ popupX + ', top='+ popupY);
-            window.closed();
+            window.open("./login/Info_Edit.html", "PopupWin", 'status=no, height=600, width=800, left='+ popupX + ', top='+ popupY);
         }
         let id = localStorage.getItem("userid");
         // console.log(id);
