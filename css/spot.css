@@ -207,3 +207,28 @@ body{
     margin-top: 30px;
     float: left ;
 }
+
+
+@media screen and (max-width : 1080px) {
+    #full_section {
+        width:670px;
+    }
+
+    #right_section {
+        margin-top: 30px;
+        /* margin-right: 190px; */
+        width: 630px;
+        
+    }
+
+    #right_section > h3{
+        text-align:center;
+    }
+
+    #relation{
+        margin-left: 10px;
+        width: 302px;
+        float: left;
+    }
+}
+

@@ -62,42 +62,15 @@ img{border:0;}
     padding: 0 auto;
     /*상우하좌*/
 }
-@media screen and (max-width:1178px) {
-    /* #check_list {
-        height: 420px;
-    }
-    #check_area{
-        margin-left: 500px;
-    }
 
-    #check_categori{
-        margin-left: 500px;
-    } */
- }
- @media screen and (max-width:1184px) {
-    /* #check_list {
-        height: 420px;
-    }
-    #check_area{
-        margin-left: 500px;
-    }
-
-    #check_categori{
-        margin-left: 500px;
-    } */
- }
 #search_div{ /*검색 메뉴 div*/
-    margin-left:300px;
-    margin-top: 30px;
     text-align: center;
     width: 350px;
-
     height: 30px;
     margin: 0 auto;
+    margin-left:300px;
+    margin-top: 30px;
     padding-top:10px ;
-
-
-
 }
 
 #check_area{
@@ -131,7 +104,6 @@ img{border:0;}
     /* text-align: center; */
     margin: 0 auto; 
     max-width: 1200px;
-    margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
     /* padding: 20px; */
