@@ -18,6 +18,7 @@ $(function () {
              }
              else{
                 alert("정상적으로 탈퇴처리 되었습니다.")
+                window.close();
                 location.href = '../index.html';
             }
         }else{   //취소
