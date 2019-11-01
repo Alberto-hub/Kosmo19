@@ -12,26 +12,28 @@ body{
     
 }
 
-.titleh1 {
-    margin: 30px;
-    color: black;
+#titleh1 {
+    text-align: center;
+    /* color: black; */
 }
 
 
 
 #full_section{ /*SPOT 정보 전체 틀*/
-    width: 1080px;
+    width: 100%;
+    max-width: 1080px;
     height: 100%;
     margin: 0 auto;
     /* border: 1px solid black; */
-    position: relative; /**/
+    /* position: relative;  */
     overflow: hidden;
 
 }
 
 #left_section{ /*(왼쪽)실제 해당 spot의 정보 부분*/
     float: left;
-    width: 660px;
+    width: 100%;
+    max-width: 660px;
     margin: 0 auto;
     position: relative;
     /* margin-left: 10px; */
@@ -69,7 +71,8 @@ body{
 #spot{
 
     display: block;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     height: auto;
     margin: 0 auto;
     float: left;
@@ -80,7 +83,8 @@ body{
 
 
 #spot_img img{
-    width: 502px;
+    width: 100%;
+    max-width: 502px;
      
     float: left;
     height: 300px;
@@ -108,7 +112,8 @@ body{
     border: 5px double rgb(153, 164, 226);
 
     float: left;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     height: auto;
     margin: 0 auto;
     margin-top: 20px;
@@ -208,16 +213,29 @@ body{
     float: left ;
 }
 
-
-@media screen and (max-width : 1080px) {
+/* 
+@media screen and (min-width: 992px) and (max-width: 1199px) {
     #full_section {
-        width:670px;
+        width:100%;
+        max-width: 1199px;
+        margin: 0 auto;
     }
 
+    
+} */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #full_section {
+        width:100%;
+        max-width: 670px;
+    }
+
+   
     #right_section {
         margin-top: 30px;
         /* margin-right: 190px; */
-        width: 630px;
+        width: 100%;
+        max-width: 630px;
         
     }
 
@@ -231,4 +249,66 @@ body{
         float: left;
     }
 }
+@media screen and (max-width: 767px) {
+    #full_section {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    #spot{
+        margin-left: 50px;
+    }
+ 
+    #right_section {
+        margin-top: 30px;
+        /* margin-right: 190px; */
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+        
+    }
+
+    #right_section > h3{
+        text-align:center;
+    }
+
+    #relation{
+        margin-left: 10px;
+        width: 302px;
+        float: left;
+    } 
+
+    #information{
+
+        widows: 100%;
+        max-width: 400px;
+
+    }
+
+  
+
+}
+
+
+@media only screen and (max-width: 573px) {
+    
+    #spot_img img{
+        display: none;
+    }
+
+
+}
+
+/* @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .header-area .newsbox-main-menu .header-add-area {
+      margin-left: 20px;
+      max-width: 250px; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .header-area .newsbox-main-menu .header-add-area {
+      margin-left: 0;
+      margin-top: 15px; } }
+  @media  screen and (max-width: 767px) {
+    .header-area .newsbox-main-menu .header-add-area {
+      margin-left: 0;
+      margin-top: 15px; } } */
 
