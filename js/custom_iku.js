@@ -17,10 +17,10 @@ $(function(){
         var ST = document.getElementById("startAR");       // 예)ST = 인천
         var STvar = ST.options[ST.selectedIndex].value;    // ST는 값이 아니므로 값으로 저장
         if(STvar == "부산"){                               // 부산이 아닐경우 50분 부산일경우 40분
-            $("#airportRe").append(mi[0]);
-            false;
-        }else if(STvar == "부산"){
             $("#airportRe").append(mi[1]);
+            false;
+        }else if(STvar == "도쿄"){
+            $("#airportRe").append(mi[0]);
             false;
         }else{
             $("#airportRe").append(mi[2]);
