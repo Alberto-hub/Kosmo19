@@ -113,13 +113,13 @@ img{border:0;}
 }
 
 #main_content{
-    /* border: 1px solid black; */
+ 
     width: 100%;
     max-width: 1200px;
-    /* display: inline-block; */
+ 
     height: auto;
     margin: 0 auto;   
-    /* float: left;  */
+   
 
 }
 @media screen and (min-width : 900px) and (max-width:1184px) {
