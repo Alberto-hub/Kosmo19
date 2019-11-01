@@ -150,6 +150,17 @@ img{border:0;}
         max-width: 400px;
     }
 }
+@media screen and (max-width:413px) {
+    #check_area {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #check_categori {
+        width: 100%;
+        max-width: 300px;
+    }
+}
 
 
 
