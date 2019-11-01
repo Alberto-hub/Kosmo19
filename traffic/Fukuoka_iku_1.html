@@ -33,7 +33,38 @@
         <div class="sub_title">비행기로 가는 방법</div>
         <div class="content">
             <div id="fnc">
-               
+               <dl>
+                   <dt>서울 - 후쿠오카</dt>
+                   <div class="">
+                       <p class=""><span>인천 국제 공항</span></p>
+                       <p class=""><img src="../img/iku_air.jpg" alt="air"><span>약 1시간 50분</span></p>
+                       <p class=""><span>후쿠오카 공항</span></p>
+                   </div>
+               </dl>
+               <dl>
+                   <dt>서울 - 후쿠오카</dt>
+                   <div class="">
+                        <p class=""><span>김포 공항</span></p>
+                        <p class=""><img src="../img/iku_air.jpg" alt="air"><span>약 1시간 50분</span></p>
+                        <p class=""><span>후쿠오카 공항</span></p>
+                    </div>
+               </dl>
+               <dl>
+                   <dt>부산 - 후쿠오카</dt>
+                   <div class="">
+                        <p class=""><span>부산 공항</span></p>
+                        <p class=""><img src="../img/iku_air.jpg" alt="air"><span>약 50분</span></p>
+                        <p class=""><span>후쿠오카 공항</span></p>
+                    </div>
+               </dl>
+               <dl>
+                   <dt>도쿄 - 후쿠오카</dt>
+                   <div class="">
+                        <p class=""><span>도쿄 공항</span></p>
+                        <p class=""><img src="../img/iku_air.jpg" alt="air"><span>약 40분</span></p>
+                        <p class=""><span>후쿠오카 공항</span></p>
+                    </div>
+               </dl>   
             </div>
         </div>
 
@@ -42,27 +73,23 @@
         <div class="sub_title">배로 가는 방법</div>
         <div class="content">
             <div id="fnc">
-                <span>출발지</span>
-                <select name="startSH" id="startSH">
-                    <!-- startSH 아이디 -->
-                    <option value="부산" selected="부산" disabled>부산</option>
-                </select>
-                <br>
-                <span>도착지</span>
-                <select name="arriveSH" id="arriveSH">
-                    <!-- arriveSH 아이디 -->
-                    <option value="후쿠오카" selected="후쿠오카" disabled>후쿠오카</option>
-                </select>
-                <br>
-                <span>배편</span>
-                <select name="Ship" id="Ship">
-                    <option value="쾌속선">쾌속선</option>
-                    <option value="여객선">여객선</option>
-                </select>
-                <br>
-                <button id="ShipSr">검색</button> <!-- ShipSr 아이디 -->
+                <dl>
+                    <dt>부산 - 후쿠오카 (쾌속선)</dt>
+                    <div class="">
+                            <p class=""><span>부산</span></p>
+                            <p class=""><img src="../img/iku_ship.jpg" alt="ship"><span>약 3시간</span></p>
+                            <p class=""><span>후쿠오카</span></p>
+                        </div>
+                </dl>  
             </div>
-            <div id="ShipRe">예상 도착 시간 : </div> <!-- ShipRe 아이디 -->
+                <dl>
+                    <dt>부산 - 후쿠오카 (여객선)</dt>
+                    <div class="">
+                        <p class=""><span>부산</span></p>
+                        <p class=""><img src="../img/iku_ship.jpg" alt="ship"><span>약 하루</span></p>
+                        <p class=""><span>후쿠오카</span></p>
+                    </div>
+                </dl>  
         </div>
 
         <!-- 기차로 가는 방법 -->
@@ -70,24 +97,31 @@
         <div class="sub_title">기차로 가는 방법</div>
         <div class="content">
             <div id="fnc">
-                <span>출발지</span>
-                <select name="startTR" id="startTR">
-                    <!-- startTR 아이디 -->
-                    <option value="도쿄">도쿄</option>
-                    <option value="오사카">오사카</option>
-                    <option value="홋카이도">홋카이도</option>
-                </select>
-                <br>
-                <span>도착지</span>
-                <select name="arriveTR" id="arriveTR">
-                    <!-- arriveTR 아이디 -->
-                    <option value="후쿠오카" selected="후쿠오카" disabled>후쿠오카</option>
-                </select>
-                <br>
-                <button id="trainSr">검색</button> <!-- trainSr 아이디 -->
+                <dl>
+                    <dt>도쿄 - 후쿠오카</dt>
+                    <div class="">
+                        <p class=""><span>도쿄</span></p>
+                        <p class=""><img src="../img/iku_train.jpg" alt="ship"><span>약 5시간</span></p>
+                        <p class=""><span>후쿠오카</span></p>
+                    </div>
+                </dl>
+                <dl>
+                    <dt>오사카 - 후쿠오카</dt>
+                    <div class="">
+                        <p class=""><span>오사카</span></p>
+                        <p class=""><img src="../img/iku_train.jpg" alt="ship"><span>약 2시간 반</span></p>
+                        <p class=""><span>후쿠오카</span></p>
+                    </div>
+                </dl>  
+                <dl>
+                    <dt>홋카이도 - 후쿠오카</dt>
+                    <div class="">
+                        <p class=""><span>홋카이도</span></p>
+                        <p class=""><img src="../img/iku_train.jpg" alt="ship"><span>약 10시간</span></p>
+                        <p class=""><span>후쿠오카</span></p>
+                    </div>
+                </dl>
             </div>
-
-            <div id="trainRe">예상 도착 시간 : </div> <!-- trainRe 아이디 -->
         </div>
 
         <!-- 버스로 가는 방법 -->
@@ -95,23 +129,23 @@
         <div class="sub_title">버스로 가는 방법</div>
         <div class="content">
             <div id="fnc">
-                <span>출발지</span>
-                <select name="startBS" id="startBS">
-                    <!-- startBS 아이디 -->
-                    <option value="도쿄">도쿄</option>
-                    <option value="오사카">오사카</option>
-                </select>
-                <br>
-                <span>도착지</span>
-                <select name="arriveBS" id="arriveBS">
-                    <!-- arriveBS 아이디 -->
-                    <option value="후쿠오카" selected="후쿠오카" disabled>후쿠오카</option>
-                </select>
-                <br>
-                <button id="busSr">검색</button> <!-- busSr 아이디 -->
+                <dl>
+                    <dt>도쿄 - 후쿠오카</dt>
+                    <div class="">
+                        <p class=""><span>도쿄</span></p>
+                        <p class=""><img src="../img/iku_bus.jpg" alt="ship"><span>약 14시간</span></p>
+                        <p class=""><span>후쿠오카</span></p>
+                    </div>
+                </dl>
+                <dl>
+                    <dt>오사카 - 후쿠오카</dt>
+                    <div class="">
+                        <p class=""><span>오사카</span></p>
+                        <p class=""><img src="../img/iku_bus.jpg" alt="ship"><span>약 9시간</span></p>
+                        <p class=""><span>후쿠오카</span></p>
+                    </div>
+                </dl>
             </div>
-
-            <div id="busRe">예상 도착 시간 : </div> <!-- busRe 아이디 -->
         </div>
     </div>
 </body>
