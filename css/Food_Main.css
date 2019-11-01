@@ -133,6 +133,15 @@ font-size: 26px;
         margin: 0 auto;
         margin-top: 25px;
         box-sizing: border-box;
+        background: white;
+    }
+
+    #swiper_main{
+        background: none;
+    }
+
+    section {
+        background: none;
     }
 }
 @media screen and (max-width : 600px) {
@@ -155,5 +164,12 @@ font-size: 26px;
         height: auto;
         margin-top: 25px;
         box-sizing: border-box;
+        background: white;
+    }
+    #swiper_main{
+        background: none;
+    }
+    section {
+        background: none;
     }
 }

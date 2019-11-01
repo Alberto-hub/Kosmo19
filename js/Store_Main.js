@@ -18,7 +18,7 @@ $(window).scroll(function () {
     var scrollHeight = $(document).height();
     var scrollPosition = $(window).height() + $(window).scrollTop();
     if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
-        $(".top").css("bottom", 281);
+        $(".top").css("bottom", 181);
     } else {
         $(".top").css("bottom", 0);
     }
