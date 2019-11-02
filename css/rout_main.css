@@ -93,14 +93,20 @@ body{
     /* border: 1px solid black; */
     margin: 0 auto;
     margin-bottom: 2px;
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 200px;
+    
     opacity: 1;
 }
 
 .pic> a > img {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    max-width: 299px;
+    height: 100%;
+    max-height: 200px;
+    
 }
 
 .Exp{
@@ -108,7 +114,8 @@ body{
   
     margin: 0 auto;
     height: auto;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     opacity: 1;
 }
 
@@ -175,19 +182,20 @@ body{
         
     }
 }
-@media screen and (min-width : 600px) and (max-width : 989px) {
+@media screen and (min-width : 788px) and (max-width : 989px) {
 
     #Basic_Expl{
         width: 100%;
-        max-width: 800px;
+        max-width: 788px;
     }
     #list {
         width: 100%;
-        max-width: 900px;
+        max-width: 788px;
         margin: 0 auto;
+         /* padding-left: 15px; */
         
-        padding-left: 60px;
-        /* margin-left: 0px; */
+        /* padding-left: 80px; */
+        /* margin-left: 90px; */
        
         
     }
@@ -202,12 +210,37 @@ body{
     }
 }
 
-@media screen and (max-width : 600px) {
+@media screen and (max-width : 787px) {
     #list {
         width: 100%;
         max-width: 320px;
-        margin: 0 auto;
-        /* margin-left: 0px; */
+        /* margin: 0 auto; */
+        padding-left:  15px;
+        /* margin-right: 20px; */
+        /* display: block; */
+        
+     }
+
+     #Basic_Expl{
+         max-width: 400px;
+         margin-top: 50px;
+         margin-bottom: 50px;
+     }
+
+     .Object{
+         margin: 0 auto;
+         margin-bottom: 30px;
+         padding: 0 auto;
+   
+     }
+    
+
+
+     .pic> a > img {
+        /* width: 100%; */
+        max-width: 301px;
+        /* height: 100%;
+        max-height: 200px; */
         
     }
 
