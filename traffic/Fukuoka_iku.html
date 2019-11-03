@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wih3h=device-wih3h, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Title -->
@@ -32,105 +32,135 @@
 
         <div class="sub_title">비행기로 가는 방법</div>
         <div class="content">
-            <div id="fnc">
-                <span>출발지</span>
-                <select name="startAR" id="startAR">
-                    <!-- startAR 아이디 -->
-                    <option value="인천">인천</option>
-                    <option value="김포">김포</option>
-                    <option value="부산">부산</option>
-                    <option value="도쿄">도쿄</option>
-                </select>
-                <br>
-                <span>도착지</span>
-                <select name="arriveAR" id="arriveAR">
-                    <!-- ariiveAR 아이디 -->
-                    <option value="후쿠오카" selected="후쿠오카" disabled>후쿠오카</option>
-                </select>
-                <br>
-                <button id="airportSr">검색</button>
-            </div>
-            <!-- airportSr 아이디 -->
-            <div id="airportRe">예상 도착 시간 : </div> <!-- airportRe 아이디 -->
+                <section class="access-block ac-menu">
+                        <div class="ac-box">
+                            <dl>
+                                <dt>서울 - 후쿠오카</dt>
+                                <dd>
+                                    <div class="way way-airplane">
+                                        <p class="route-spot-start"><span>인천 국제 공항</span></p>
+                                        <p class="route-time"><span>약 1시간 50분</span></p>
+                                        <p class="route-spot-end"><span>후쿠오카 공항</span></p>
+                                    </div>
+                                    <div class="way way-airplane">
+                                        <p class="route-spot-start"><span>인천 국제 공항</span></p>
+                                        <p class="route-time"><span>약 1시간 50분</span></p>
+                                        <p class="route-spot-end"><span>후쿠오카 공항</span></p>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>부산 - 후쿠오카</dt>
+                                <dd>
+                                    <div class="way way-airplane">
+                                        <p class="route-spot-start"><span>부산 공항</span></p>
+                                        <p class="route-time"><span>약 50분</span></p>
+                                        <p class="route-spot-end"><span>후쿠오카 공항</span></p>
+                                    </div>
+                                </dd>
+                            </dl>	
+                            <dl>
+                                <dt>나리타 공항 - 후쿠오카</dt>
+                                <dd>
+                                    <div class="way way-airplane">
+                                        <p class="route-spot-start"><span>나리타 공항</span></p>
+                                        <p class="route-time"><span>약 40분</span></p>
+                                        <p class="route-spot-end"><span>후쿠오카 공항</span></p>
+                                    </div>
+                                </dd>
+                            </dl>	
+                        </div>
+                </section>
         </div>
 
         <!-- 배로 가는 방법 -->
 
         <div class="sub_title">배로 가는 방법</div>
         <div class="content">
-            <div id="fnc">
-                <span>출발지</span>
-                <select name="startSH" id="startSH">
-                    <!-- startSH 아이디 -->
-                    <option value="부산" selected="부산" disabled>부산</option>
-                </select>
-                <br>
-                <span>도착지</span>
-                <select name="arriveSH" id="arriveSH">
-                    <!-- arriveSH 아이디 -->
-                    <option value="후쿠오카" selected="후쿠오카" disabled>후쿠오카</option>
-                </select>
-                <br>
-                <span>배편</span>
-                <select name="Ship" id="Ship">
-                    <option value="쾌속선">쾌속선</option>
-                    <option value="여객선">여객선</option>
-                </select>
-                <br>
-                <button id="ShipSr">검색</button> <!-- ShipSr 아이디 -->
+            <section class="access-block ac-menu">  
+                <dl>
+                    <dt>부산 - 후쿠오카</dt>
+                    <dd>
+                    <div class="way way-ferry">
+                        <p class="route-spot-start"><span>부산</span></p>
+                        <p class="route-time"><span>쾌속선<br>약 3시간</span></p>
+                        <p class="route-spot-end"><span>후쿠오카</span></p>
+                    </div>
+                    </dd>
+                </dl>           
+            <div class="way way-ferry">
+                <p class="route-spot-start"><span>부산</span></p>
+                <p class="route-time"><span>여객선<br>약 하루</span></p>
+                <p class="route-spot-end"><span>후쿠오카</span></p>
             </div>
-            <div id="ShipRe">예상 도착 시간 : </div> <!-- ShipRe 아이디 -->
+            
+            </section>
         </div>
-
         <!-- 기차로 가는 방법 -->
 
         <div class="sub_title">기차로 가는 방법</div>
         <div class="content">
-            <div id="fnc">
-                <span>출발지</span>
-                <select name="startTR" id="startTR">
-                    <!-- startTR 아이디 -->
-                    <option value="도쿄">도쿄</option>
-                    <option value="오사카">오사카</option>
-                    <option value="홋카이도">홋카이도</option>
-                </select>
-                <br>
-                <span>도착지</span>
-                <select name="arriveTR" id="arriveTR">
-                    <!-- arriveTR 아이디 -->
-                    <option value="후쿠오카" selected="후쿠오카" disabled>후쿠오카</option>
-                </select>
-                <br>
-                <button id="trainSr">검색</button> <!-- trainSr 아이디 -->
-            </div>
-
-            <div id="trainRe">예상 도착 시간 : </div> <!-- trainRe 아이디 -->
+            <section class="access-block ac-menu">  
+                <dl>
+                    <dt>도쿄 - 후쿠오카</dt>
+                    <dd>
+                    <div class="way way-bullettrain">
+                        <p class="route-spot-start"><span>도쿄 역</span></p>
+                        <p class="route-time"><span>약 5시간</span></p>
+                        <p class="route-spot-end"><span>후쿠오카 역</span></p>
+                    </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>오사카 - 후쿠오카</dt>
+                    <dd>
+                    <div class="way way-bullettrain">
+                        <p class="route-spot-start"><span>오사카 역</span></p>
+                        <p class="route-time"><span>약 2시간</span></p>
+                        <p class="route-spot-end"><span>후쿠오카 역</span></p>
+                    </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>홋카이도 - 후쿠오카</dt>
+                    <dd>
+                    <div class="way way-bullettrain">
+                        <p class="route-spot-start"><span>홋카이도 역</span></p>
+                        <p class="route-time"><span>약 9시간</span></p>
+                        <p class="route-spot-end"><span>후쿠오카 역</span></p>
+                    </div>
+                    </dd>
+                </dl>
+            </section>
         </div>
-
         <!-- 버스로 가는 방법 -->
 
         <div class="sub_title">버스로 가는 방법</div>
         <div class="content">
-            <div id="fnc">
-                <span>출발지</span>
-                <select name="startBS" id="startBS">
-                    <!-- startBS 아이디 -->
-                    <option value="도쿄">도쿄</option>
-                    <option value="오사카">오사카</option>
-                </select>
-                <br>
-                <span>도착지</span>
-                <select name="arriveBS" id="arriveBS">
-                    <!-- arriveBS 아이디 -->
-                    <option value="후쿠오카" selected="후쿠오카" disabled>후쿠오카</option>
-                </select>
-                <br>
-                <button id="busSr">검색</button> <!-- busSr 아이디 -->
-            </div>
-
-            <div id="busRe">예상 도착 시간 : </div> <!-- busRe 아이디 -->
-        </div>
-    </div>
+                <section class="access-block ac-menu">  
+                <dl>
+                    <dt>도쿄 - 후쿠오카</dt>
+                    <dd>
+                    <div class="way way-exbus">
+                        <p class="route-spot-start"><span>도쿄</span></p>
+                        <p class="route-time"><span>약 14시간</span></p>
+                        <p class="route-spot-end"><span>후쿠오카</span></p>
+                    </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>오사카 - 후쿠오카</dt>
+                    <dd>
+                    <div class="way way-exbus">
+                        <p class="route-spot-start"><span>오사카</span></p>
+                        <p class="route-time"><span>약 9시간</span></p>
+                        <p class="route-spot-end"><span>후쿠오카</span></p>
+                    </div>
+                    </dd>
+                </dl>
+                </section>
+        </div>     
+    </div>           
 </body>
 <footer id="footer">
 
