@@ -3,9 +3,9 @@
 }
 /* 바디 기본 설정 */
 body{
-    margin: 10px auto;
+    /* margin: 10px auto; */
     text-align: center;
-    padding: 10px;
+    /* padding: 10px; */
     width: 100%;
 }
 /*content 예) 후쿠오카로 가는~*/
@@ -43,9 +43,12 @@ body{
     width: 80%;
     display: inline-block;
 }
-.spot_start , .spot_time, .spot_end{
+.spot_start , .spot_time{
     float: left;
 }
+ .spot_end {
+     float: right;
+ }
 .spot_start , .spot_end{
     margin: 0 auto;
     width: 130px;
@@ -58,3 +61,37 @@ body{
 h3 {
     text-align: left;
 }
+.spot_time > span{
+	display:table-cell;
+	text-align:center;
+	color:#528cbd;
+	padding-top:70px;
+	position:relative;
+	line-height:1.2;
+}
+.spot_time{
+	content:"";
+	width:80px;
+    height:50px;
+	/* overflow:hidden; */
+	background-color:#C2DCE2;
+	background-image: url(../img/sprite-access.png);
+	background-repeat: no-repeat;
+	background-size:80px auto;
+	/* position:absolute; */
+	/* left:50%; */
+    margin-left:40%;
+	top:20px;
+}
+.way_airplane:after{
+    border-bottom: dotted 
+    5px #ccc;
+    margin-bottom:-2px;
+}
+.way_car .spot_time{background-position:0 0;}
+.way_exbus .spot_time{background-position:0 -40px;}
+.way_extrain .spot_time{background-position:0 -90px;}
+.way_bullettrain .spot_time{background-position:0 -130px;}
+.way_airplane .spot_time{background-position:0 -180px;}
+.way_ferry .spot_time{background-position:0 -220px;}
+
