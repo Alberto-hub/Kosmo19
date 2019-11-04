@@ -406,7 +406,7 @@ dl{
 			height:10px;
 			display: inline-block;
 			background:#FF0;
-			border: #C2DCE2 solid 1px;
+			border: #fff solid 1px;
 		}
 		
 		/* item-2col */
@@ -451,7 +451,7 @@ dl{
 			height:1px;
 			display:block;
 			position:absolute;
-			background:#C2DCE2;
+			background:#fff;
 			left:0;
 			bottom:50%;
 			z-index:-1;
