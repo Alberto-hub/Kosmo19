@@ -4,7 +4,7 @@ $(document).ready(function() {
         $(this).css({"border-radius":"15px 15px 0 0"});
         $(this).css({"color":"Red", "background-color":"lightgreen"});
         
-        $(".FAQ_Ans").not($(this).next(".FAQ_Ans").slideToggle(500)).slideUp();
+        $(".FAQ_Ans").not($(this).next(".FAQ_Ans").stop().slideToggle(500)).slideUp();
     });
 
 });

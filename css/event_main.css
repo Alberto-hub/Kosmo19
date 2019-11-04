@@ -3,8 +3,9 @@
 }
 
 body{
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     /* width: 1080px; */
+    
     height: auto;
     margin: 0 auto;
     background-color: #f5ebdc;
@@ -12,14 +13,13 @@ body{
 }
 
 #full{
-    width: 1200px;
-    height: auto;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
     /* position:; */
-    /* float: left; */
 
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-left: 450px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 
@@ -32,14 +32,19 @@ body{
 }
 
 #content {
-    float: left;
-    position: relative;
-    width: 1190px; height: auto;
+  
+    display: inline-block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .season_front, .season_back {
     float: left;
   
-    width: 500px; height: 300px;
+    width:100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 350px;
     transition: transform 1s;
     backface-visibility:hidden;
 }
@@ -52,31 +57,39 @@ body{
 #spring{
   float: left;
  
-  width: 550px;
-  height: 350px;
+  width:100%;
+  max-width: 500px;
+  height: 100%;
+  max-height: 350px;
   margin-bottom: 50px;
 }
 
 #summer{
-  float: left;
+  float: right;
   
-  width: 550px;
-  height: 350px;
+  width:100%;
+  max-width: 500px;
+  height: 100%;
+  max-height: 350px;
   margin-bottom: 50px;
 }
 
 #fall{
   float: left;
- 
-  width: 550px;
-  height: 350px;
+  width:100%;
+  max-width: 500px;
+  height: 100%;
+  max-height: 350px;
+  margin-bottom: 50px;
 }
 
 #winter{
-  float: left;
- 
-  width: 550px;
-  height: 350px;
+  float: right;
+  width:100%;
+  max-width: 500px;
+  height: 100%;
+  max-height: 350px;
+  margin-bottom: 50px;
 }
 
 #content img{
@@ -103,3 +116,125 @@ body{
 
 #winter:hover .season_front{ transform: rotateY(180deg); }
 #winter:hover .season_back { transform: rotateY(360deg); }
+
+
+@media screen and (max-width : 1190px) {
+  #full{
+   
+      max-width: 900px;
+  }
+
+  #content {
+      max-width:900px;
+  }
+  #spring{
+
+    max-width: 400px;
+    max-height: 300px;
+  }
+
+  #fall{
+    max-width: 400px;
+    max-height: 300px;
+
+  }
+  #summer {
+    max-width: 400px;
+    max-height: 300px;
+  
+  }
+  #winter{
+    max-width: 400px;
+    max-height: 300px;
+  
+  }
+
+  .season_front, .season_back {
+   
+    max-width: 400px;
+    max-height: 300px;
+   
+  }
+}
+
+
+
+@media screen and (min-width : 504px)and (max-width :912px) {
+  #full{
+   
+      max-width: 502px;
+  }
+
+  #content {
+      max-width:502px;
+  }
+  #spring{
+
+    max-width: 500px;
+    max-height: 300px;
+  }
+
+  #fall{
+    max-width: 500px;
+    max-height: 300px;
+
+  }
+  #summer {
+    max-width:500px;
+    max-height: 300px;
+  
+  }
+  #winter{
+    max-width: 500px;
+    max-height: 300px;
+  
+  }
+
+  .season_front, .season_back {
+   
+    max-width: 500px;
+    max-height: 300px;
+   
+  }
+}
+
+
+@media screen and (max-width :503px) {
+  #full{
+   
+      max-width: 320px;
+  }
+
+  #content {
+      max-width:320px;
+  }
+  #spring{
+
+    max-width: 319px;
+    max-height: 200px;
+  }
+
+  #fall{
+    max-width: 319px;
+    max-height: 200px;
+
+  }
+  #summer {
+    max-width: 319px;
+    max-height: 200px;
+  
+  }
+  #winter{
+    max-width: 319px;
+    max-height: 200px;
+  
+  }
+
+  .season_front, .season_back {
+   
+    max-width: 319px;
+    max-height: 200px;
+   
+  }
+}
+

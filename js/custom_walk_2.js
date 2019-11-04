@@ -5,17 +5,17 @@ $(function(){
         if(STvar == "스미요시신사"){                              
             $("#map").css("display","none");
             $("#maps").css({display : "block"})
-            $("#maps").attr("src","./img/sumiyo.PNG")
+            $("#maps").attr("src","../img/sumiyo.PNG")
             false;
         }if(STvar == "쿠시다신사") {
             $("#map").css("display","none");
             $("#maps").css({display : "block"})
-            $("#maps").attr("src","./img/cusida.PNG")
+            $("#maps").attr("src","../img/cusida.PNG")
             false;
         }if(STvar == "캐널시티"){
             $("#map").css("display","none");
             $("#maps").css({display : "block"})
-            $("#maps").attr("src","./img/city.PNG")
+            $("#maps").attr("src","../img/city.PNG")
             false;
         };
     });

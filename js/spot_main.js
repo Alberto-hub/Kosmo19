@@ -24,6 +24,7 @@ $(document).ready(function(){
             
         });
     });
+   
 
   
 
@@ -58,11 +59,13 @@ $(document).ready(function(){
                 for(var i=0;i<=chk_area_count;i++){
                     
                     if(check_spot==check_area[i]){
+                     
                         break;
                     }else if(i==chk_area_count){
-                        console.log("하이드");
+                        // console.log("하이드");
                         $(this).hide();
                     }
+                 
                 }
             });
 
@@ -92,9 +95,8 @@ $(document).ready(function(){
 
                 for(var i=0;i<=chk_area_count;i++){
                     
-                    if(check_spot==check_area[i]){ /*체크된 지역 중에 해당하면 브레이크*/ 
-                        break;
-                    }else{                         /*지역에 해당되지 않을 시 카테고리 비교*/ 
+                    if(check_spot==check_area[i]){
+
                         for(var k=0;k<=chk_clf_count;k++){ /*체크되어있는 카테고리 횟수만큼 비교*/
                     
                             if(check_clf==chk_clf[k]){  /*체크된 카테고리 중에 해당하면 브레이크*/ 
@@ -103,8 +105,30 @@ $(document).ready(function(){
                                 $(this).hide();
                             }
                         }
+
+                        break;
+                    }else if(i==chk_area_count){
+                        console.log("하이드");
+                        $(this).hide();
                     }
                 }
+
+                // for(var i=0;i<=chk_area_count;i++){
+                    
+                //     if(check_spot==check_area[i]){ /*체크된 지역 중에 해당하면 브레이크*/ 
+                //         break;
+                        
+                //     }else{                         /*지역에 해당되지 않을 시 카테고리 비교*/ 
+                //         for(var k=0;k<=chk_clf_count;k++){ /*체크되어있는 카테고리 횟수만큼 비교*/
+                    
+                //             if(check_clf==chk_clf[k]){  /*체크된 카테고리 중에 해당하면 브레이크*/ 
+                //                 break;
+                //             }else if(k==chk_clf_count){  /*체크된 카테고리의 마지막까지 해당되는 것이 없을경우 hide*/ 
+                //                 $(this).hide();
+                //             }
+                //         }
+                //     }
+                // }
             });
 
         }else{ //아무것도 선택하지 않고 검색버튼 눌렀을 경우
