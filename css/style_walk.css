@@ -25,38 +25,89 @@ body{
   display: inline-block;
   padding-bottom: 50px;
 }
-#maps{
-  display: none;
-  float: left;
-  height: 500px;
-  width: 700px;
-}
-#map {
-  float: left;
-  height: 500px;
-  width: 500px;
-}
 #fnc1 > span, #fnc2 > span{
   border: 1px solid black;
 }
-select, div > button, span{
-  margin: 5px;
-  height: 40px;
-  padding: 5px;
-  font-size: 14px;
-  line-height: 1.5;
-  border-radius: 3px;
+
+@media screen and (min-width: 1161px) {
+  /* 데스크탑에서 사용될 스타일을 여기에 작성합니다. */
+  #map {
+    float: left;
+    height: 500px;
+    width: 500px;
+  }
+  #maps{
+    display: none;
+    float: left;
+    height: 500px;
+    width: 700px;
+  }
+  select, div > button, span{
+    margin: 5px;
+    height: 40px;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 3px;
+  }
+  #Serch{
+    width: 80px;
+    float: left;
+    margin: 0 60px;
+    background: white;
+    border: none;
+  }
 }
-#fnc1 , #fnc2 {
-  line-height: 180px;
-  margin: 0;
-  overflow: auto;
-  width: 200px;
+@media screen and (max-width: 1160px) {
+  #map {
+    float: left;
+    height: 500px;
+    width: 500px;
+  }
+  #maps{
+    display: none;
+    float: left;
+    height: 500px;
+    width: 700px;
+  }
+  #fnc1 , #fnc2 {
+    line-height: 180px;
+    margin: 0;
+    overflow: auto;
+    width: 200px;
+  }
+  select, div > button, span{
+    margin: 5px;
+    height: 40px;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 3px;
+  }
 }
-#Serch{
-  width: 80px;
-  float: left;
-  margin: 0 60px;
-  background: white;
-  border: none;
+@media screen and (max-width: 500px) {
+  #map{
+      clear: both;
+      margin: 0;
+      height: 320px;
+      width: 320px;
+  }
+  #maps{
+      clear: both;
+      margin: 0;
+      height: 320px;
+      width: 320px;
+  }
+  #fnc1 , #fnc2 {
+    line-height: 0;
+    margin: 0 auto;
+    clear: both;
+  }
+  select, div > button, span{
+    margin: 5px;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 3px;
+  }
 }

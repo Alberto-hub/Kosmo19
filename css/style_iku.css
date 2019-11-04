@@ -62,7 +62,10 @@ body{
 h3 {
     text-align: left;
 }
-
+dl{
+	max-width: 80%;
+	margin: 0 auto;
+}
 .ttl-access{
 	align-items: center;
 	letter-spacing:.2rem;
@@ -403,7 +406,7 @@ h3 {
 			height:10px;
 			display: inline-block;
 			background:#FF0;
-			border: #C2DCE2 solid 1px;
+			border: #fff solid 1px;
 		}
 		
 		/* item-2col */
@@ -448,7 +451,7 @@ h3 {
 			height:1px;
 			display:block;
 			position:absolute;
-			background:#C2DCE2;
+			background:#fff;
 			left:0;
 			bottom:50%;
 			z-index:-1;
@@ -575,8 +578,22 @@ h3 {
 			display: block;
 			background:#C2DCE2;
 		}
-		
-
-	
 }
+@media screen and (max-width: 750px) {
 
+	.title2{
+		font-size: 30px;
+	}
+	.sub_title{
+		font-size: 15px;
+	}
+}
+@media screen and (max-width: 400px) {
+
+	.title2{
+		font-size: 18px;
+	}
+	.sub_title{
+		font-size: 12px;
+	}
+}

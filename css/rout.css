@@ -1,25 +1,27 @@
-*{
+/* *{
     margin: 0 auto;
-}
+} */
 
 body{
     /* width: 1200px; */
     /* height: auto; */
     background-color: #f5ebdc;
-    position: relative;
+    /* position: relative; */
 }
 
 a{
     text-decoration: none; /*앵커태그 밑줄제거*/
 }
+
 #full{
     width: 100%;
     max-width: 1200px;
     /* overflow: hidden; */
-    height: auto;
+    /* height: auto; */
     margin: 0 auto;
-    margin-top: 200px; /*헤더 들어갈거라서 나중에 제거*/
-    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
    
 }
 
@@ -27,22 +29,33 @@ a{
     margin: 0 auto;
     text-align: center;
 }
+/* #wrap_Basic_Exp{
+    margin: 0 auto;
+    width: 1100px;
+} */
 
 #Basic_Exp{
     /* border: 1px solid blue; */
-    height: 500px;
+    width: 1030px;
+    overflow: hidden;
+    /* height: 100%; */
+    /* max-height: 920px; */
+    margin: 0 auto;
     margin-top: 50px ;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    /* float: right; */
 }
 
 #b_exp{
     float: left;
     /* border: 1px solid black; */
+    margin: 0 auto;
     background-color: #f5ebdc;
     padding-top: 50px;
+    padding-bottom: 35px;
     width: 100%;
-    max-width: 433px;
-    height: 500px;
+    max-width: 430px;
+    max-height: 700px;
     color: rgb(63, 65, 170);
 }
 
@@ -57,27 +70,33 @@ a{
     margin-right: 65px;
 }
 
-/* #b_img{
+#b_img{
     width: 100%;
-    max-width: 766px;
-} */
+    max-width: 600px;
+    height: 100%;
+    max-height: 700px;
+    margin: 0 auto;
+    float: right;
+}
 
 
 #b_img > img{
     width:100%;
-    max-width: 766px;
+    max-width: 600px;
     height: 100%;
     max-height: 500px;
-    /* float: right; */
+    float: right;
 }
 
 #content{
     /* border: 1px solid blue; */
-    width: 1200px;   
+    width: 100%;
+    max-width: 1200px;   
     overflow: hidden;
     height: auto;
     margin: 0 auto;
-    position: relative;
+
+    /* position: relative; */
     box-sizing: border-box;
     background-color: blanchedalmond;
    
@@ -87,7 +106,7 @@ a{
     /* border: 1px solid orange; */
     width: 800px;
     height: auto;
-    float: left;
+    float: right;
     margin: 0 auto;
     margin-top: 1px;
     margin-bottom: 10px;
@@ -97,11 +116,14 @@ a{
 .content_box{
     /* border: 1px solid orange; */
     background-color: #f5ebdc;
-    width: 700px;
+    width: 100%;
+    max-width: 750px;
+
     height: auto;
-    float: left;
+    float: right;
     margin: 0 auto;
-    margin-left: 47px;
+    /* margin-left: 50px; */
+    padding-left: 50px;
 }
 .content_box >h2{
     margin-top: 10px;
@@ -119,32 +141,31 @@ a{
    
 }
 #content_aside{
-    width:300px;
-    height: 100%;
-    float: right;
+    width: 270px;
+    /* height: 100%; */
+    float: left;
     position: relative;
 }
 
+
 #content_aside_two{
-  
-   width:300px;
-   float: right;
+   width:270px;
+   float: left;
    position: fixed;
    top: 0;
-   right: 350px;
 }
 
 #content_aside_sub{
     border-top: 3px solid salmon;
-    
-    display: block;
-   
-    width: auto;
-    height: auto;
-    float: right;
+    border-bottom: 3px solid salmon;
+    display: inline-block;
+    width: 100%;
+    max-width: 270px;
+    height: 100%;
+    /* float: right; */
     /* text-align: center; */
-    /* background-color: #0078aa; */
-    border-radius: 20px 20px 20px 20px;
+    background-color: #a6e0e4;
+    /* border-radius: 20px 20px 20px 20px; */
     margin-bottom: 50px ;
 
 }
@@ -156,21 +177,30 @@ a{
 
 
 
-#content_aside_sub > div{
-   
-    /* background-color: white;  */
-    border-radius: 20px 20px 20px 20px;   
+#content_aside_content >div{
+    text-align: center;
+    width: 100%;
+    max-width: 270px;
+    height: 50px;
+    background-color: white;
+    padding-top: 15px;
+    border-radius: 20px 20px 20px 20px  ;
 }
 
+
+
 .content_img{
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: auto;
     float: left;
 }
 
 .content_img >img{
-    width: 350px;
-    height: auto;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    max-height: 250px;
 }
 
 .content_info{
@@ -202,17 +232,132 @@ a{
     font-size: 14px;
 }
 
+#wrap_map{
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-left: 90px;
+    /* float: right; */
+}
+
 #map{
     margin: 0 auto;
     width: 50%;
     height: 400px;
-    float: left;
+    float: right;
     margin-top: 50px;
     margin-left: 50px;
+    margin-right: 90px;
     margin-bottom: 50px;
+   
 }
 
 
-@media screen and (max-width:1919px){
-    #content_aside_two{display: none;}
+@media screen and (min-width : 1106px) and (max-width:1202px){
+    
+
+    #content{
+        max-width: 1100px;
+    }
+    #content_aside{
+        max-width: 250px;
+    }
+    #content_aside_two{
+        max-width: 250px;
+    }
+    .content_section{
+        max-width: 750px;
+    }
+    #wrap_map{
+     
+        padding-left: 0px;
+        padding-right: 30px;
+       
+    }
+}
+
+@media screen and (max-width:1105px){
+    
+
+    #content{
+        max-width: 900px;
+    }
+    .content_section{
+        max-width: 750px;
+        margin: 0 auto;
+        float: none;
+    } 
+
+    #content_aside{
+        display: none;
+    }
+    #content_aside_two{
+        display: none;
+    }
+    #wrap_map{
+        max-width: 450px;
+        padding: 0;
+        
+    }
+  
+    #map{
+        
+        width: 100%;
+        float: none;
+        padding: 0;
+        margin: 50px 0px 0px 0px;
+        /* margin-top: 50px; */
+    }
+    
+}
+/* min-width : 900px */
+@media screen and (max-width:1032px){ /*코스 설명 부분*/
+   
+    #Basic_Exp{
+        width: 900px;
+        height: 350px;
+    }
+    #b_exp{
+        width: 400px;
+        height: 350px;
+    }
+    #b_exp > h2 {
+        padding-left: 15px;
+        margin-bottom: 30px;
+    
+    }
+    #b_exp > p{
+        padding: 0px 20px 0px 20px;/*상우하좌*/
+        margin: 0;
+    }
+    #b_img{
+        width: 499px;
+        height: 350px;
+    }
+
+}
+
+@media screen and (max-width:899px){
+
+    #content{
+        max-width: 750px;
+    }
+    #b_img{
+       display: none;
+    }
+  
+    #Basic_Exp{
+        width: 700px;
+        height: 350px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    #b_exp{
+        
+        width: 600px;
+        height: 200px;
+        margin: 0 auto;
+    }
 }

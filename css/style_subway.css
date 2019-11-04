@@ -56,6 +56,16 @@ h4 {
         width: 420px;
     }
 }
+@media screen and (max-width: 500px) {
+    #map1, #map2, #map3{
+        margin: 0;
+        height: 320px;
+        width: 320px;
+    }
+    .map ,.wrap{
+        margin: 0;
+    }
+}
 
 
 
