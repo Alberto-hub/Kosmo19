@@ -57,6 +57,12 @@ body{
     background: white;
     border: none;
   }
+  #fnc1 , #fnc2 {
+    line-height: 180px;
+    margin: 0;
+    overflow: auto;
+    width: 200px;
+  }
 }
 @media screen and (max-width: 1160px) {
   #map {
