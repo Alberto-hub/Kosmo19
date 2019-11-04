@@ -7,9 +7,9 @@ $(document).ready(function () {
 
 $(window).scroll(function () {
   var height = $(document).scrollTop(); //실시간으로 스크롤의 높이를 측정
-  if (height > 1010) {
+  if (height > 890) {
     $('#content_aside').attr('id', 'content_aside_two');
-  } else if (height < 1010) {
+  } else if (height < 890) {
     $('#content_aside_two').attr('id', 'content_aside');
   }
 });

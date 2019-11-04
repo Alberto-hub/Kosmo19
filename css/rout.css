@@ -20,6 +20,7 @@ a{
     /* height: auto; */
     margin: 0 auto;
     margin-top: 100px;
+    margin-bottom: 100px;
     
    
 }
@@ -105,7 +106,7 @@ a{
     /* border: 1px solid orange; */
     width: 800px;
     height: auto;
-    float: left;
+    float: right;
     margin: 0 auto;
     margin-top: 1px;
     margin-bottom: 10px;
@@ -115,11 +116,14 @@ a{
 .content_box{
     /* border: 1px solid orange; */
     background-color: #f5ebdc;
-    width: 700px;
+    width: 100%;
+    max-width: 750px;
+
     height: auto;
-    float: left;
+    float: right;
     margin: 0 auto;
-    margin-left: 47px;
+    /* margin-left: 50px; */
+    padding-left: 50px;
 }
 .content_box >h2{
     margin-top: 10px;
@@ -137,31 +141,30 @@ a{
    
 }
 #content_aside{
-    width:300px;
-    height: 100%;
-    float: right;
+    width: 270px;
+    /* height: 100%; */
+    float: left;
     position: relative;
 }
 
+
 #content_aside_two{
-  
-   width:300px;
-   float: right;
+   width:270px;
+   float: left;
    position: fixed;
    top: 0;
-   right: 350px;
 }
 
 #content_aside_sub{
     border-top: 3px solid salmon;
-    
-    display: block;
-   
-    width: auto;
-    height: auto;
-    float: right;
+    border-bottom: 3px solid salmon;
+    display: inline-block;
+    width: 100%;
+    max-width: 270px;
+    height: 100%;
+    /* float: right; */
     /* text-align: center; */
-    /* background-color: #0078aa; */
+    background-color: #a6e0e4;
     /* border-radius: 20px 20px 20px 20px; */
     margin-bottom: 50px ;
 
@@ -174,21 +177,30 @@ a{
 
 
 
-#content_aside_sub > div{
-   
-    /* background-color: white;  */
-    border-radius: 20px 20px 20px 20px;   
+#content_aside_content >div{
+    text-align: center;
+    width: 100%;
+    max-width: 270px;
+    height: 50px;
+    background-color: white;
+    padding-top: 15px;
+    border-radius: 20px 20px 20px 20px  ;
 }
 
+
+
 .content_img{
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: auto;
     float: left;
 }
 
 .content_img >img{
-    width: 350px;
-    height: auto;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    max-height: 250px;
 }
 
 .content_info{
@@ -220,30 +232,132 @@ a{
     font-size: 14px;
 }
 
+#wrap_map{
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-left: 90px;
+    /* float: right; */
+}
+
 #map{
     margin: 0 auto;
     width: 50%;
     height: 400px;
-    float: left;
+    float: right;
     margin-top: 50px;
     margin-left: 50px;
+    margin-right: 90px;
     margin-bottom: 50px;
+   
 }
 
 
-@media screen and (min-width : 1030px) and (max-width:1202px){
+@media screen and (min-width : 1106px) and (max-width:1202px){
     
 
     #content{
-        max-width: 1000px;
+        max-width: 1100px;
     }
     #content_aside{
+        max-width: 250px;
+    }
+    #content_aside_two{
         max-width: 250px;
     }
     .content_section{
         max-width: 750px;
     }
+    #wrap_map{
+     
+        padding-left: 0px;
+        padding-right: 30px;
+       
+    }
+}
+
+@media screen and (max-width:1105px){
+    
+
+    #content{
+        max-width: 900px;
+    }
+    .content_section{
+        max-width: 750px;
+        margin: 0 auto;
+        float: none;
+    } 
+
+    #content_aside{
+        display: none;
+    }
     #content_aside_two{
+        display: none;
+    }
+    #wrap_map{
+        max-width: 450px;
+        padding: 0;
         
+    }
+  
+    #map{
+        
+        width: 100%;
+        float: none;
+        padding: 0;
+        margin: 50px 0px 0px 0px;
+        /* margin-top: 50px; */
+    }
+    
+}
+/* min-width : 900px */
+@media screen and (max-width:1032px){ /*코스 설명 부분*/
+   
+    #Basic_Exp{
+        width: 900px;
+        height: 350px;
+    }
+    #b_exp{
+        width: 400px;
+        height: 350px;
+    }
+    #b_exp > h2 {
+        padding-left: 15px;
+        margin-bottom: 30px;
+    
+    }
+    #b_exp > p{
+        padding: 0px 20px 0px 20px;/*상우하좌*/
+        margin: 0;
+    }
+    #b_img{
+        width: 499px;
+        height: 350px;
+    }
+
+}
+
+@media screen and (max-width:899px){
+
+    #content{
+        max-width: 750px;
+    }
+    #b_img{
+       display: none;
+    }
+  
+    #Basic_Exp{
+        width: 700px;
+        height: 350px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    #b_exp{
+        
+        width: 600px;
+        height: 200px;
+        margin: 0 auto;
     }
 }
