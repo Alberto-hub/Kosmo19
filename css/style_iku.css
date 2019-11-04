@@ -62,7 +62,10 @@ body{
 h3 {
     text-align: left;
 }
-
+dl{
+	max-width: 80%;
+	margin: 0 auto;
+}
 .ttl-access{
 	align-items: center;
 	letter-spacing:.2rem;
