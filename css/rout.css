@@ -322,6 +322,7 @@ a{
     #b_exp{
         width: 400px;
         height: 350px;
+
     }
     #b_exp > h2 {
         padding-left: 15px;
@@ -339,25 +340,175 @@ a{
 
 }
 
-@media screen and (max-width:899px){
+@media screen  and (min-width : 752px) and (max-width:899px){
 
-    #content{
-        max-width: 750px;
+    #wrap_Basic_Exp{
+        max-width: 600px;
+        margin: 0 auto;
     }
-    #b_img{
-       display: none;
-    }
-  
     #Basic_Exp{
         width: 700px;
         height: 350px;
         padding: 0;
+        max-width: 600px;
         margin: 0 auto;
     }
+
+
+    #b_exp{
+        float: none;
+        width: 600px;
+        height: 300px;
+        margin: 0 auto;
+
+       
+    }
+
+    #b_exp > h2{
+        font-size: 1.5em;
+    }
+    #b_exp > p{
+        font-size: 0.8em;
+    }
+
+    #content{
+        max-width: 750px;
+    }
+
+    #b_img{
+       display: none;
+    }
+}
+
+
+
+@media screen and (max-width:752px){
+
+
+    #wrap_Basic_Exp{
+        max-width: 430px;
+        margin: 0 auto;
+    }
+    #Basic_Exp{
+        width: 430px;
+        height: 350px;
+        padding: 0;
+  
+        margin: 0 auto;
+    }
+
+
+    #b_exp{
+        float: none;
+        width: 430px;
+        height: 300px;
+        margin: 0 auto;
+
+       
+    }
+
+    #b_exp > h2{
+        font-size: 1.5em;
+    }
+    #b_exp > p{
+        font-size: 0.8em;
+    }
+
+   
+
+    #content{
+        max-width: 450px;
+    }
+
+
+    #b_img{
+        display: none;
+    }
+
+    .content_section{
+        margin: 0 auto;
+        max-width: 450px;
+        height: auto;
+        margin-bottom: 100px;
+    }
+    .numberring{
+        font-size: 2.0em;
+        margin-bottom: 0;
+    }
+
+    .content_img{
+        width: 300px;
+        height: 180px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .content_box{
+
+        width: 100%;
+        max-width: 450px;
+
+        float: none;
+        margin: 0 auto;
+   
+        /* margin-left: 50px; */
+        /* padding-left: 50px; */
+        
+    }
+
+    .content_box > h2{
+        width: 320px;
+        line-height: 50px;
+    }
+
+    .content_info{
+        float: none;
+        margin-top: 30px;
+        margin-right: 0px;
+        
+    }
+}
+
+@media screen and (max-width:449px){
+
+    #big_name{
+        width: 100%;
+        max-width: 320px;
+    }
+    #big_name >h1{
+        font-size: 1em;
+    }
+
+    #wrap_Basic_Exp{
+        max-width: 320px;
+     
+    }
+    #Basic_Exp{
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
     #b_exp{
         
-        width: 600px;
-        height: 200px;
-        margin: 0 auto;
+        width: 320px;       
     }
+
+    #content{
+        max-width: 320px;
+    }
+
+    .content_section{
+        
+        max-width: 320px;
+
+    }
+
+    .content_box{
+
+        
+        max-width: 320px;
+        padding-left: 0px;
+        
+    }
+
 }
