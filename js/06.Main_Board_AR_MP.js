@@ -11,5 +11,5 @@ function sendData() {
     }
 
     alert("수정되었습니다.")
-    location.href='05.Main_Board_ARp01.html';
+    location.href='./05.Main_Board_ARp01.html';
 }

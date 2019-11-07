@@ -43,7 +43,6 @@ h2{
     color: black;
 }
 
-
 .slide_img {
     width: 600px;
     height: 480px;
@@ -60,6 +59,14 @@ h2{
 }
 
 #chm_main > .str1 {text-align:center;}
+
+#chm_main > h1 {
+    text-align:center; margin:30px 0; font-weight:bold;
+}
+
+h2 {
+    text-align:center; font-weight:bold;
+}
 
 /* nav_bar */
 #chm_lnb {
@@ -136,6 +143,10 @@ h2{
     .prev, .next {font-size: 11px}
 }
 
+.top {
+    position:absolute; bottom:5px; right:5px;
+}
+
 /* 01.traffic */
 #chm_trf {width: 100%; max-width:600px; margin:20px auto;
 }
@@ -161,8 +172,9 @@ h2 {text-align:center; margin-top:40px;}
 overflow: hidden;}
 
 .trf_pnt {
-    margin-right:24px;max-width: 180px;
+    margin-right:30px;max-width: 180px;
     width:100%; height:180px;
+    padding-top:20px;
     text-align:center;
     background-color:#284B52;
     color: white;
@@ -170,7 +182,7 @@ overflow: hidden;}
     float: left;
 }
 
-.trf_pnt:last-child {margin-right:0;}
+.trf_pnt:last-child {margin-right:0; float:right;}
 
 .trf_pnt > .str3 {max-width: 180px;
     width:100%; height:50px; text-align:center;}
@@ -178,7 +190,7 @@ overflow: hidden;}
     width:100%; height:50px; text-align:center;}
 .trf_small {font-size:8px; width: 90px; display:inline-block;}
 .trf_pnt > .str2 {max-width: 180px;
-    width:100%; height:50px; margin:20px auto;}
+    width:100%; height:50px; margin:25px auto;}
 
 .trf_section {width: 100%;
     max-width:600px; height:auto; margin:20px auto;
@@ -225,8 +237,9 @@ h2 {text-align:center; margin-top:40px;}
     max-width:600px; margin:0 auto; height:auto; overflow: hidden;}
 
 .food_pnt {
-    margin-right:24px;max-width: 180px;
+    margin-right:30px;max-width: 180px;
     width:100%; height:180px;
+    padding-top:20px;
     text-align:center;
     background-color:#284B52;
     color: white;
@@ -234,7 +247,7 @@ h2 {text-align:center; margin-top:40px;}
     float: left;
 }
 
-.food_pnt:last-child {margin-right:0;}
+.food_pnt:last-child {margin-right:0; float:right;}
 
 .food_pnt > .str3 {max-width: 180px;
     width:100%; height:50px; text-align:center; }
@@ -242,7 +255,7 @@ h2 {text-align:center; margin-top:40px;}
     width:100%; height:50px; text-align:center; }
 .food_sml {font-size:8px; width: 50px; display:inline-block;}
 .food_pnt > .str2 {max-width: 180px;
-    width:100%; height:50px; margin:20px auto;}
+    width:100%; height:50px; margin:25px auto;}
 
 .food_section {
     max-width: 600px;
@@ -280,9 +293,9 @@ h2 {text-align:center; margin-top:40px;}
     width:100%; margin:0 auto; height:180px; overflow: hidden;}
 
 .fst_pnt {
-    margin-right:24px;
-    max-width: 180px;
+    margin-right:30px;max-width: 180px;
     width:100%; height:180px;
+    padding-top:25px;
     text-align:center;
     background-color:#284B52;
     color: white;
@@ -290,7 +303,7 @@ h2 {text-align:center; margin-top:40px;}
     float: left;
 }
 
-.fst_pnt:last-child {margin-right:0;}
+.fst_pnt:last-child {margin-right:0; float:right;}
 
 .fst_pnt > .str3 {max-width: 180px;
     width:100%; height:50px; text-align:center; }
@@ -298,7 +311,7 @@ h2 {text-align:center; margin-top:40px;}
     width:100%; height:50px; text-align:center; }
 .fst_sml {font-size:8px; width: 50px; display:inline-block;}
 .fst_pnt > .str2 {max-width: 180px;
-    width:100%; height:50px; margin:20px auto;}
+    width:100%; height:50px; margin:25px auto;}
 
 .fst_section {max-width: 600px;
     width:100%; height:auto; margin:20px auto;
@@ -333,8 +346,9 @@ h2 {text-align:center; margin-top:40px;}
     width:100%; margin:0 auto; height:180px; }
 
 .ntr_pnt {
-    margin-right:24px;max-width: 180px;
+    margin-right:30px;max-width: 180px;
     width:100%; height:180px;
+    padding-top:30px;
     text-align:center;
     background-color:#284B52;
     color: white;
@@ -342,7 +356,8 @@ h2 {text-align:center; margin-top:40px;}
     float: left;
 }
 
-.ntr_pnt:last-child {margin-right:0;}
+.ntr_pnt:first-child {padding-top:45px;}
+.ntr_pnt:last-child {margin-right:0; float:right;}
 
 .ntr_pnt > .str3 {max-width: 180px;
     width:100%; height:50px; text-align:center; }
@@ -350,7 +365,7 @@ h2 {text-align:center; margin-top:40px;}
     width:100%; height:50px; text-align:center; }
 .ntr_sml {font-size:8px; width: 50px; display:inline-block;}
 .ntr_pnt > .str2 {max-width: 180px;
-    width:100%; height:50px; margin:20px auto;}
+    width:100%; height:50px; margin:25px auto;}
 
 .ntr_section {
     max-width: 600px;

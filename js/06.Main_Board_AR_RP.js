@@ -1,7 +1,7 @@
 function func_prompt_delete() {
     if(prompt('비밀번호를 입력하시면 삭제됩니다.') ==='1234'){
         alert("삭제되었습니다.");
-        location.href='05.Main_Board_ARp01.html';
+        location.href='./05.Main_Board_ARp01.html';
     } else {
         alert("비밀번호가 틀렸습니다.");
     }
@@ -10,7 +10,7 @@ function func_prompt_delete() {
 function func_prompt_modify() {
     if(prompt('비밀번호를 입력하시면 수정창으로 이동합니다.') ==='1234'){
         alert("비밀번호가 일치합니다.");
-        location.href='06.Main_Board_AR_MP.html';
+        location.href='./06.Main_Board_AR_MP.html';
     } else {
         alert("비밀번호가 틀렸습니다.");
     }
