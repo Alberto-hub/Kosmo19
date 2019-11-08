@@ -182,31 +182,31 @@
     window.onload = function(){ 
         btn.onclick = function() {
             modal.style.display = "block";
-            $('html, body').css({'overflow': 'hidden', 'height': '100%'}); // 모달팝업 중 html,body의 scroll을 hidden시킴
-            $('#element').on('scroll touchmove mousewheel', function(event) { // 터치무브와 마우스휠 스크롤 방지     
-                event.preventDefault();     
-                event.stopPropagation();     
-                return false; 
-            });
+            // $('html, body').css({'overflow': 'hidden', 'height': '100%'}); // 모달팝업 중 html,body의 scroll을 hidden시킴
+            // $('#element').on('scroll touchmove mousewheel', function(event) { // 터치무브와 마우스휠 스크롤 방지     
+            //     event.preventDefault();     
+            //     event.stopPropagation();     
+            //     return false; 
+            // });
         }
         btn1.onclick = function() {
             modal1.style.display = "block";
-            $('html, body').css({'overflow': 'hidden', 'height': '100%'}); // 모달팝업 중 html,body의 scroll을 hidden시킴
-            $('#element').on('scroll touchmove mousewheel' , function(event) { // 터치무브와 마우스휠 스크롤 방지     
-                event.preventDefault();     
-                event.stopPropagation();     
-                return false; 
-            });
+            // $('html, body').css({'overflow': 'hidden', 'height': '100%'}); // 모달팝업 중 html,body의 scroll을 hidden시킴
+            // $('#element').on('scroll touchmove mousewheel' , function(event) { // 터치무브와 마우스휠 스크롤 방지     
+            //     event.preventDefault();     
+            //     event.stopPropagation();     
+            //     return false; 
+            // });
         }
         span.onclick = function() {
             modal.style.display = "none";
-            $('html, body').css({'overflow': 'auto', 'height': '100%'}); //scroll hidden 해제 
-            $('#element').off('scroll touchmove mousewheel'); // 터치무브 및 마우스휠 스크롤 가능
+            // $('html, body').css({'overflow': 'auto', 'height': '100%'}); //scroll hidden 해제 
+            // $('#element').off('scroll touchmove mousewheel'); // 터치무브 및 마우스휠 스크롤 가능
         }
         span1.onclick = function() {
             modal1.style.display = "none";
-            $('html, body').css({'overflow': 'auto', 'height': '100%'}); //scroll hidden 해제 
-            $('#element').off('scroll touchmove mousewheel'); // 터치무브 및 마우스휠 스크롤 가능
+            // $('html, body').css({'overflow': 'auto', 'height': '100%'}); //scroll hidden 해제 
+            // $('#element').off('scroll touchmove mousewheel'); // 터치무브 및 마우스휠 스크롤 가능
         }
         window.onclick = function(event) {
             if (event.target == modal) {
@@ -222,7 +222,6 @@
 
         var btn2 = document.getElementById("myBtn1");
         var btn3 = document.getElementById("myBtn2");
-        var btn4 = document.getElementById("myBtn3");
 
         btn2.onclick = function() {
             var popupX = (document.body.offsetWidth / 2) - (800 / 2);
