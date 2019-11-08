@@ -38,7 +38,7 @@ table {
 table th { text-align: center; }
 table tr { height: 30px;}
 table td { 
-    width: 80px; 
+    width: 100px; 
     text-align: center; 
     border: 1px solid #555;
     padding: 10px;
