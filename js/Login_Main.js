@@ -30,13 +30,13 @@ $(function () {
         } else{
             if(id.value == "admin"){
                 alert("관리자페이지로 이동합니다.");
-                window.opener.top.location.href="/index_admin.html";
+                window.opener.top.location.href="../index_admin.html";
                 window.close();
             }
             else{
                 localStorage.setItem("userid", id.value);
                 alert(id.value+"님 환영합니다.");
-                window.opener.top.location.href="/index_user.html";
+                window.opener.top.location.href="../index_user.html";
                 window.close();
             }
         }
