@@ -75,7 +75,7 @@ body{
     float: left ;
 }
 
-@media screen  and (min-width : 409px)and (max-width : 511px) {
+@media screen  and (min-width : 409px)and (max-width : 529px) {
     #full > h1{
         font-size: 2.0em;
     }
