@@ -153,13 +153,15 @@ img{border:0;}
 @media screen and (max-width:413px) {
     #check_area {
         width: 100%;
-        max-width: 300px;
+        max-width: 340px;
     }
 
     #check_categori {
         width: 100%;
-        max-width: 300px;
+        max-width: 340px;
     }
+
+   
 }
 
 
