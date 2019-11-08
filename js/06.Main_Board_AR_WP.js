@@ -17,7 +17,7 @@ function sendData() {
     }
 
     alert("새로운 글이 작성되었습니다.")
-    location.href='05.Main_Board_ARp01.html';
+    location.href='./05.Main_Board_ARp01.html';
 }
     // function page_href() {
     //     alert("새로운 글이 작성되었습니다.")

@@ -26,7 +26,9 @@ figcaption {text-align:center;}
     width:100%; margin:20px auto; padding:0 15px;
 }
 
-.his_main > h1 {text-align:center;}
+.his_main > h1 {
+    text-align:center; margin:30px 0; font-weight:bold;
+}
 
 .his_main > p {margin:20px auto; padding:20px auto;}
 
@@ -47,10 +49,17 @@ figcaption {text-align:center;}
     float:right; margin-top:40px; padding-right:60px;
 }
 
-.hisory_content{
-    border: 2px double black;
-    margin-bottom:  30px;
-    line-height: 2.2em;
+.history_content{
+    border-bottom: 2px double black;
+    margin-top:20px;
+    line-height: 2.0em;
+    padding:0 20px;
+}
+
+.history_content:last-child { margin:0; border:0;}
+
+.FL:first-letter {color:palevioletred; font-size:30px; font-weight:bold;
+    
 }
 
 @media screen and (max-width : 1100px) {

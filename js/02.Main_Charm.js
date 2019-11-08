@@ -1,7 +1,13 @@
 var slideIndex = 1; {
     showSlides1(slideIndex);
+}
+var slideIndex = 1; {
     showSlides2(slideIndex);
+}
+var slideIndex = 1; {
     showSlides3(slideIndex);
+}
+var slideIndex = 1; {
     showSlides4(slideIndex);
     // showSlides5(slideIndex);
 }
