@@ -21,3 +21,13 @@ $(window).resize(function () {
     }
 });
 });
+
+// 관리자 페이지
+$(function () {
+    $('.enteradmin').click(function () {
+        location.href = "fu-ADFM.html";
+    });
+    $('.btn').click(function () {
+        window.open($(this).attr('src'));
+    });
+});
