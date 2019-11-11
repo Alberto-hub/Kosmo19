@@ -157,6 +157,11 @@ body{
     float: left ;
 }
 
+.admin{
+    text-align: right;
+    font-size: 0.8em;
+}
+
 
 @media screen  and (min-width : 990px)and (max-width : 1106px) {
     #Basic_Expl{
