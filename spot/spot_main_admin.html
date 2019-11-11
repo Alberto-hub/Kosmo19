@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>관광지 메인페이지(관리자모드)</title>
+    <script src="../js/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="../css/spot_main.css">
+    <script src="../js/spot_main.js"></script>
+    <link rel="stylesheet" href="../css/header_footer.css">
+
+</head>
+<header id="header"></header>
+
+<body>
+
+
+    <!--지역 value값  
+        하카타지역:1 나카스카와바타지역:2 텐진야쿠인일대:3 오호리롯폰마쓰일대:4
+        모모치사와지역:5 동부지역: 6 서이트시마에리어:7 후쿠오카시근교지역:8
+    -->
+
+    <!--카테고리 option값 
+        문화*예술:40 자연*경관:41 가족친화적인:42 역사*신사*사찰:43 건축물: 44 레저*아웃도어:45 
+        볼거리-기타:46 즐길거리-기타:47 쇼핑-기타:48
+    -->
+
+    <div id="test">
+        <div id="check_list">
+            <form>
+                
+                <!--area 는 지역-->
+                <div id="check_area">
+                        <h4>지역</h4>
+                       
+                        <input type="checkbox" name="chk_area" value="1">하카타지역
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        <input type="checkbox" name="chk_area" value="2">나카스 카와바타 지역
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="chk_area" value="3">텐진&야쿠인 일대
+                        <br>
+                        <br>
+                        <input type="checkbox" name="chk_area" value="4">오호리&롯폰마쓰 일대
+                        &nbsp;
+                        <input type="checkbox" name="chk_area" value="5">모모치&사와지역
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="chk_area" value="6">동부지역
+                        <br>
+                        <br>
+                        <input type="checkbox" name="chk_area" value="7">서&이토시마 에리어
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="chk_area" value="8">후쿠오카 시 근교 지역
+
+                </div>
+                
+              
+                <div id="check_categori">
+                        <h4>카테고리</h4>
+
+                        <input type="checkbox" name="chk_clf" value="40">문화*예술
+                        &nbsp;&nbsp;
+                        <input type="checkbox" name="chk_clf" value="41">자연*경관
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="chk_clf" value="42">가족 친화적인
+                        &nbsp;&nbsp;
+                        <input type="checkbox" name="chk_clf" value="43">역사*신사*사찰
+                        &nbsp;&nbsp;
+                        <br><br>
+                        <input type="checkbox" name="chk_clf" value="44">건축물
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="chk_clf" value="45">레저*아웃도어
+                        &nbsp;&nbsp;
+                        <input type="checkbox" name="chk_clf" value="46">볼거리-기타
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="chk_clf" value="47">즐길거리-기타
+                        &nbsp;&nbsp;
+                        <br>
+                        <br>
+                        <input type="checkbox" name="chk_clf" value="48">쇼핑-기타
+                </div>
+
+              
+                <!--clf = Classification(분류)-->
+               
+               
+                <div id="search_div">
+                        <a onClick="window.location.reload()" style="cursor: pointer;">[ 새로 고침 ]</a>
+
+                        &nbsp;&nbsp;&nbsp;
+
+                        <input type='button' id="search"  value="검색">
+                     
+                        
+                        &nbsp;&nbsp;&nbsp;
+                            
+                        <input type='reset' id="check_reset" value="검색조건 초기화">
+                </div>
+                
+                <br>
+            </form>
+        </div>
+        <div id="wrap_main_content">
+
+        <div id="main_content">
+            <div class="spot">
+                <div class="spot_img"><a href="./hakatayenungkan.html"><img src="../img/Place/hakata_yenungkan.jpg"
+                            alt="하카타_전통예능관"></a></div>
+                <div class="spot_info">
+                    <dt>하카타 전통 예능관</dt>
+                    <dd>하카타의 수호신인 ‘구시다 신사’ 앞에 있는, 하카타의 전통문화와 접하며 체험이 가능한
+                        새로운 관광 장소로 체험형 문화시설입니다.
+
+                        일본무용과 민속무용, 팽이, 하카타 니와카 등 하카타에 전해지는 전통예능의 매력을
+                        널리 알리는 것이 목적입니다. 또한, 하카타 권번 게이샤의 연습장으로도 이용되고 있습니다.
+
+                        ※상설 이벤트는 없습니다.
+                    </dd>
+                    <p class="area">지역&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="2">나카스 카와바타 지역</option>
+                        </a>
+                    </p>
+                    <br>
+                    <p class="category">카테고리 &nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="40">문화*예술</option>
+                        </a>
+                    </p>
+                </div>
+                <div class="admin">
+                        <input type='button' id="modify"  value="수정">
+                        <input type='button' id="delete"  value="삭제">
+                </div>
+                    
+            </div>
+
+            <div class="spot">
+                <div class="spot_img"><a href="dekimachi_park.html"><img src="../img/Place/dekimachi_park.jpg"
+                            alt="데키마치공원"></a></div>
+                <div class="spot_info">
+                    <dt>데키마치 공원</dt>
+                    <dd>1965(쇼와 40)년에 정비된 공원입니다.
+                        이 장소가 구 하카타 역 구내였으므로 공원 안에는 ‘규슈철도 발상의 지’라는 기념비가
+                        세워져 있습니다.
+                        2017(헤이세이 29)년 12월에 리뉴얼하여 하카타의 새로운 게이트가 되었습니다.
+                        공원에는 관광버스 6대분의 승차장이 정비되어 있습니다
+                    </dd>
+                    <p class="area">지역&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="1">하카타 지역</option>
+                        </a>
+                    </p>
+                    <br>
+                    <p class="category">카테고리&nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="41">자연*경관</option>
+                        </a>
+                        <!-- <a href="#" class="spot_a">
+                            <option value="42">가족 친화적인</option>
+                        </a><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" class="spot_a">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<option value="47">즐길거리-기타</option>
+                        </a>
+                        <a href="#" class="spot_a">
+                            <option value="46">볼거리-기타</option>
+                        </a></p> -->
+                </div>
+
+                <div class="admin">
+                        <input type='button' id="modify"  value="수정">
+                        <input type='button' id="delete"  value="삭제">
+                </div>
+            </div>
+
+            <div class="spot">
+                <div class="spot_img"><a href="./engakugi.html"><img src="../img/Place/engakugi.jpg" alt="엔가쿠지"></a>
+                </div>
+                <div class="spot_info">
+                    <dt>엔가쿠지</dt>
+                    <dd>엔가쿠지는 1246(간겐 4)년 다이가쿠젠지(란케이도류)가 송에서 다자이후에 왔을 때, 당시의 가마쿠라막부 5대 집권인 호조 도키요리가 대가람을 야구라몬(현재의 기온마치)에
+                        창건했습니다. 그러나 당시의 전란과 병화로 사원이 전부 소실되었습니다.
+                        그후, 1636(간에이 13)년에 쇼후쿠지의 경내로 바탕을 이전시켜 재건하여, 쇼후쿠지의 탑두사원이 되었습니다.
+                        엔가쿠지는 후쿠오카번의 중신인 다치바나 지쓰잔 자필의 ‘남방록’이 전승되고 있으며, 남쪽 식이 차와 선의 도장으로 알려져 있습니다.
+                    </dd>
+                    <p class="area">지역&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="1">하카타 지역</option>
+                        </a>
+                    </p>
+                    <br>
+                    <p class="category">카테고리 &nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="43">역사*신사*사찰</option>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="admin">
+                        <input type='button' id="modify"  value="수정">
+                        <input type='button' id="delete"  value="삭제">
+                </div>
+            </div>
+
+            <div class="spot">
+                <div class="spot_img"><a href="./wakahachimangu.html"><img src="../img/Place/wakahachimangu.jpg"
+                            alt="와카하치만구"></a></div>
+                <div class="spot_info">
+                    <dt>와카하치만구</dt>
+                    <dd>제신은 닌토쿠 천황, 오나무치노미코토, 스쿠나히코나노미코토. 속칭「야쿠하치만」「야쿠요케하치만」이라고도 불리며,
+                        시내뿐만 아니라 주변 지역에서도 널리 신앙의 대상으로 자리 잡고 있다. 양력과 음력 섣달그믐에는 매년 심야까지
+                        액막이 기원을 하는 사람들로 매우 붐빈다.
+                        액년에는 액년의 전해, 액년, 액년의 후해가 있어, 3년 계속하여 참배하면 다음 해에는 액막이가 된다고 한다.
+                    </dd>
+                    <p class="area">지역 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="1"> 하카타 지역</option>
+                        </a>
+                    </p>
+                    <br>
+                    <p class="category">카테고리 &nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="43">역사*신사*사찰</option>
+                        </a>&nbsp;&nbsp;
+                        <!-- <a href="#" class="spot_a">
+                            <option value="44">건축물</option>
+                        </a></p> -->
+                </div>
+
+                <div class="admin">
+                        <input type='button' id="modify"  value="수정">
+                        <input type='button' id="delete"  value="삭제">
+                </div>
+            </div>
+
+            <div class="spot">
+                <div class="spot_img"><a href="./baejihuru_stadium.html"><img src="../img/Place/baejihuru_stadium.jpg"
+                            alt="베지후루스타디엄"></a></div>
+                <div class="spot_info">
+                    <dt>베지후루스타디엄</dt>
+                    <dd>시내 3개소에 있던 청과시장, 서부시장, 동부시장의 세 시장을 이전통합하여 2016년 2월에 개장 하였습니다.
+                        고도의 품질관리와 유통의 효율화로 신선하고 안전하며 안심할 수 있는 청과물을 후쿠오카 시민에게 공급하고 있습니다.
+                        청과물을 상설판매 하고 있지 않지만 특별히 그것들을 판매하는 이벤트인 「베지후루 감사제」를 매월 3째주 토요일에 개최하고 있습니다.
+                        베지후루 감사제에는 야채와 과일뿐만 아니라 건어물과 꽃, 생선등 풍부한 상품을 구입할 수 있습니다.
+                    </dd>
+                    <p class="area">지역&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="6">동부 지역</option>
+                        </a>
+                    </p>
+                    <br>
+                    <p class="category">카테고리 &nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="46">볼거리-기타</option>
+                        </a>&nbsp;&nbsp;
+                        <!-- <a href="#" class="spot_a">
+                            <option value="48">쇼핑-기타</option>
+                        </a> -->
+                    </p>
+                </div>
+
+                <div class="admin">
+                        <input type='button' id="modify"  value="수정">
+                        <input type='button' id="delete"  value="삭제">
+                </div>
+            </div>
+
+            <div class="spot">
+                <div class="spot_img"><a href="./kamado_sinsa.html"><img src="../img/Place/kamado_sinsa.jpg"
+                            alt="카마도신사"></a></div>
+                <div class="spot_info">
+                    <dt>카마도 신사</dt>
+                    <dd>위쪽에 위치한 신사는 호만산 정상에 위치하며, 가장 아래에 있는 신사는 호만산 기슭에 있다.
+                        7세기에 다자이후의 정무를 취급하는 관청을 세웠을 때 저승문 방향에 제사를 지냄으로 해서
+                        재난을 피하려고 북동향에 해당하는 ‘카마도야마(호만산)’ 정상에 무수한 신을 모신 곳이
+                        ‘카마도 신사’의 시초라고 전해진다. 진무 천황의 생모인 타마요리히메노미코토를 주요 제신으로
+                        삼고 있으며, 남녀에게 좋은 인연을 맺어 주는 신으로 알려져 있다. 봄에는 벚꽃과 석남화,
+                        가을에는 단풍을 즐길 수 있으며, 후쿠오카현 안팎으로부터 많은 참배객이 방문한다.
+                        2012년에 세계를 무대로으로 활동하는 건축가와 인테리어 디자이너를 프로젝트 멤버로 맞이해서
+                        신사 사무소와 참집전(参集殿)을 신축하. 전통과 현대의 매력이 공존하는 공간을 만들어 주목을
+                        받고 있다.
+                    </dd>
+                    <p class="area">지역&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="8">후쿠오카 시 근교 지역</option>
+                        </a>
+                    </p>
+                    <br>
+                    <p class="category">카테고리 &nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="43">역사*신사*사찰</option>
+                        </a>&nbsp;&nbsp;
+                        <!-- <a href="#" class="spot_a">
+                            <option value="41">자연*경관</option>
+                        </a> -->
+                    </p>
+                </div>
+
+                <div class="admin">
+                        <input type='button' id="modify"  value="수정">
+                        <input type='button' id="delete"  value="삭제">
+                </div>
+            </div>
+
+            <div class="spot">
+                <div class="spot_img"><a href="./hukuokasi_gahakkan.html"><img src="../img/Place/hukuokasi_gahakkan.jpg"
+                            alt="후쿠오카시_과학관"></a></div>
+                <div class="spot_info">
+                    <dt>후쿠오카시 과학관</dt>
+                    <dd>2017년10월에 개관하여,　명예관장을 맡은 규슈대학, 대학원 출신의 우주비행사 와카타 코이치 씨
+                        220석의 좌석이 완만하게 배치된 6층 돔시어터(플라네타륨)의 돔 직경은 규슈 최대인 25미터의 크기를 자랑하며3D디지털 사라운드 시스템으로 경이로운 입체감과 현장감을
+                        체험할 수 있습니다.
+                        5층의 기본전시실에는 무한의 우주, 우리를 둘러싼 환경, 일상생활을 지탱하는 과학기술, 생명의 신비함과 구조, 미래 등 여러 분야를 한 곳에서 체험할 수 있습니다.
+                        그 외 과학서적이 모여있는 도서실 ・사이언스내비 와 과학실험 워크숍이 열리는 실험실, 4K영상시스템을 구비해 강연과 세미나, 연극 등 다목적 대응이 가능한 사이언스홀 등이
+                        있어
+                        세대를 넘어 과학의 매력을 맛보실 수 있습니다.
+                        ※로보스퀘어(구 주소: 후쿠오카시 사와라구 모모치하마2-3-2 TNC방송 회관2층)는 후쿠오카시 과학관의 개관에 맞추어 2017년 10월부터 5층 기본전시실 내로 이전
+                        하였습니다.
+                    </dd>
+                    <p class="area">지역&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="4">오호리&롯폰마쓰 일대</option>
+                        </a>
+                    </p>
+                    <button></button>
+                    <p class="category">카테고리 &nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="46">볼거리-기타</option>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="admin">
+                        <input type='button' id="modify"  value="수정">
+                        <input type='button' id="delete"  value="삭제">
+                </div>
+            </div>
+
+            <div class="spot">
+                <div class="spot_img"><a href="./syogonji.html"><img src="../img/Place/syogonji.jpg" alt="쇼곤지"></a></div>
+                <div class="spot_info">
+                    <dt>쇼곤지</dt>
+                    <dd>쇼곤지 절은 시카노시마 도선장에서 도보로 약 6분 거리에 위치하는 역사 깊은 선종 사찰입니다.
+                        남녀의 인연을 맺어 주는 효험이 있기로도 유명한 사찰로 절에서 내려다보이는 하카타만의 경치는 매우 아름답습니다.
+                        또, 절의 행사가 없는 날은 좌선체험, 다도체험, 사경체험(유료)도 열고 있어서 해외에서 오는 분들로부터도
+                        매우 호평을 받고 있습니다.
+                        ※좌선체험, 다도체험, 사경체험에 관해서는 당일 현지에서 확인해 주십시오.
+                    </dd>
+                    <p class="area">지역&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="6">동부 지역</option>
+                        </a>
+                    </p>
+                    <br>
+                    <p class="category">카테고리 &nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="43">역사*신사*사찰</option>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="admin">
+                        <input type='button' id="modify"  value="수정">
+                        <input type='button' id="delete"  value="삭제">
+                </div>
+            </div>
+
+            <div class="spot">
+                <div class="spot_img"><a href="./hakata_sennenmon.html"><img src="../img/Place/hakata_sennenmon.jpg"
+                            alt="하카타_천년문"></a></div>
+                <div class="spot_info">
+                    <dt>하카타 천년문</dt>
+                    <dd>하카타 천년문은, 하카타를 방문한 관광객을 역사적 문화재가 많이 남아있는
+                        절과 신사의 거리로 안내하는 웰컴 게이트입니다.하카타의 번영을 바라는 지역 주민, 지역 기업, 행정 기관이
+                        한 뜻으로 천년문 건설에 힘써 2014년 3월에 완성되었습니다. 명칭은 공모로 결정. 지금까지 버텨온 천 년의 무게,
+                        그리고 앞으로의 천 년의 번영을 바라는 상징입니다.
+                        역사적 문헌에 의하면, 하카타에서 다자이후 정청(政庁)까지 이어지는 길에는 에도 시대 때
+                        ‘쓰지노도구치몬(辻堂口門)’이라 불렸던 하카타의 입구가 되는 문이 존재했었다고 합니다.
+                        하카타 천년문은 옛 ‘쓰지노도구치몬(辻堂口門)’ 양식을 딴 목조의 사각 문으로, 중세 하카타에서 볼 수 있던
+                        사사(寺社) 양식으로 만들어 졌으며, 문비(門扉) 조각에는 하카타오리(직물)의 헌상 무늬 모양이 새겨져 있습니다.
+                    </dd>
+                    <p class="area">지역&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="1">하카타 지역</option>
+                        </a>
+                    </p>
+                    <br>
+                    <p class="category">카테고리 &nbsp;
+                        <!-- <a href="#" class="spot_a">
+                            <option value="43">역사*신사*사찰</option>
+                        </a>&nbsp;&nbsp; -->
+                        <a href="#" class="spot_a">
+                            <option value="44">건축물</option>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="admin">
+                        <input type='button' id="modify"  value="수정">
+                        <input type='button' id="delete"  value="삭제">
+                </div>
+            </div>
+
+            <div class="spot">
+                <div class="spot_img"><a href="./sannomaru_squer.html"><img src="../img/Place/sannomaru_squer.jpg"
+                            alt="산노마루스퀘어"></a></div>
+                <div class="spot_info">
+                    <dt>산노마루 스퀘어</dt>
+                    <dd>고대 영빈관이었던 ‘고로칸’과 후쿠오카라는 지명의 유래가 된 ‘후쿠오카성’은, 각자 시대는 다르지만
+                        시간을 초월해 같은 장소에 지어진 역사상 매우 중요한 건조물입니다.
+                        산노마루 스퀘어에서는 고로칸・후쿠오카성의 역사 등을 소개하고 있습니다.
+                        또한 시설 내에는 유명 화과자점인 ‘조스이안 후쿠오카성점’이 있어, 말차 또는 전차와
+                        과자가 한 세트로 된 메뉴, 가벼운 식사 등을 편안하게 즐길 수 있습니다.
+
+                        [후쿠오카 관광 기모노 체험 ‘후쿠오카 성 마이유노칸’]
+                        영업시간／10:00~16:00(예약 15:00까지)
+                        휴일／월요일, 8월 13일~15일, 12월 30일~1월 4일
+                        TEL／092-707-3193
+
+                        [조스이안 후쿠오카성점]
+                        영업시간／10:00~17:00(주문마감 16:00)
+                        정기휴일／월요일, 연말연시(12월 29일~1월 3일)
+                        좌석수／32석
+                        TEL／092-711-0052
+                    </dd>
+                    <p class="area">지역&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="4">오호리&롯폰마쓰 일대</option>
+                        </a>
+                    </p>
+                    <br>
+                    <p class="category">카테고리 &nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="43">역사*신사*사찰</option>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="admin">
+                        <input type='button' id="modify"  value="수정">
+                        <input type='button' id="delete"  value="삭제">
+                </div>
+            </div>
+
+            <div class="spot">
+                <div class="spot_img"><a href="./hukuokasung_tambangkan.html"><img
+                            src="../img/Place/hukuokasung_tambangkan.jpg" alt="후쿠오카성_탐방관"></a></div>
+                <div class="spot_info">
+                    <dt>후쿠오카성 탐방관</dt>
+                    <dd>헤이세이 24년 4월(2012년), 후쿠오카 성터에 오픈한 「후쿠오카성 무카시(옛날) 탐방관」.
+                        쿠로다죠스이・나가마사 부자가 지은 「후쿠오카성」의 역사와 매력을 소개하는 시설입니다.
+                        「시공의 버추얼 무비(가상영화)」에서는, 옛 후쿠오카성을 컴퓨터 그래픽으로 재현!
+                        박력있는 리얼한 영상이 압권으로, 풍격있는 후쿠오카성의 용맹한 모습을 담아 냈습니다.
+                        영상 안에는, 아직까지 존재가 수수께끼에 쌓여있는 후쿠오카성의 천수각이 등장.
+                        현재와 과거가 교차하여, 실제 성을 산책하는 기분이 듭니다.
+                        「후쿠오카성 무카시 탐방관」주변에는, 여러 단체가 투어 이벤트를 실시하고 있습니다.
+                        자세한 사항은 공식 홈페이지를 봐 주세요.
+                    </dd>
+                    <p class="area">지역&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="4">오호리&롯폰마쓰 일대</option>
+                        </a>
+                    </p>
+                    <br>
+                    <p class="category">카테고리 &nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="43">역사*신사*사찰</option>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="admin">
+                        <input type='button' id="modify"  value="수정">
+                        <input type='button' id="delete"  value="삭제">
+                </div>
+            </div>
+
+            <div class="spot">
+                <div class="spot_img"><a href="./hakata_jengtong_gongyaekan.html"><img
+                            src="../img/Place/hakata_jengtong_gongyaekan.jpg" alt="하카타_전통공예관"></a></div>
+                <div class="spot_info">
+                    <dt>하카타 전통 공예관</dt>
+                    <dd>후쿠오카시를 대표하는 전통공예품・하카타직물 및 하카타 인형 등
+                        전통공예품을 전시하는 ‘하카타 전통공예관’
+                        2011년 봄에 오픈한, 후쿠오카의 문화를 알 수 있는 새로운 관광명소입니다.
+                        ‘하카타오리(하카타직물)’은,
+                        자색, 청색, 홍색, 황색, 감색의 ‘오색진상’이 유명하고, 치쿠젠 쿠로다 번주가 막부에 진상한 것으로 알려져 있으며, ‘하카타 인형’은 쿠로다 나가마사의 치쿠젠 입국에
+                        동반한 많은 직인이 모인 곳에서 탄생했다고 전해집니다.
+                        그 외에도, ‘하카타 곡물(마게모노)’, ‘하카타 팽이’, ‘하카타 종이공예’, ‘하카타 가위’, ‘치쿠젠하카타 화살’에 ‘멀티글래스’. 후쿠오카・하카타에는 전통공예품이
+                        한가득!
+                        그리고 무엇보다, 전통공예품에서 잊어서는 안 될 것이, 장인의 기술!
+                        장인들이 전통을 지키며, 확실한 기술을 계승해 온 덕분에, 예로부터 지금까지 전해지고 있는 그 장인기술의 대단함을 가까이서 느낄 수가 있습니다.
+                        장소는, 관광명소의 하나인 ‘쿠시다 신사’ 옆.
+                        전통이 숨쉬는 ‘하카타 전통공예관’, 꼭 한 번 들러 보세요.
+                    </dd>
+                    <p class="area">지역&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="2">나카스 카와바타 지역</option>
+                        </a>
+                    </p>
+                    <br>
+                    <p class="category">카테고리 &nbsp;
+                        <a href="#" class="spot_a">
+                            <option value="40">문화*예술</option>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="admin">
+                        <input type='button' id="modify"  value="수정">
+                        <input type='button' id="delete"  value="삭제">
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+</body>
+<footer id="footer"></footer>
+
+
+</html>
