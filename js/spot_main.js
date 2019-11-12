@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $("#header").load("../header.html");
+    $("#header").load("../header_admin.html");
     $("#footer").load("../footer.html");
 
      var search_count=0;

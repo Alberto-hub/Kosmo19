@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#header").load("../header.html");
+    $("#header").load("../header_admin.html");
     $("#footer").load("../footer.html");
 
     var admin_pw =1111;
