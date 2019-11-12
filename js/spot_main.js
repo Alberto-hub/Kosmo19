@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-    $("#header").load("../header_admin.html");
-    $("#footer").load("../footer.html");
+    // $("#header").load("../header.html");
+    // $("#footer").load("../footer.html");
 
      var search_count=0;
      var check_point; //체크값 비교하기 위한 변수

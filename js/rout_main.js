@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    $("#header").load("../header_admin.html");
-    $("#footer").load("../footer.html");
+    // $("#header").load("../header.html");
+    // $("#footer").load("../footer.html");
 
     var admin_pw =1111;
     $(".admin > #delete").click(function(){
