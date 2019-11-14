@@ -21,6 +21,13 @@ a {
   text-decoration-line: none;
 }
 
+#admin{
+    font-family: "Raleway", sans-serif;
+    color: #858585;
+    font-size: 15px;
+    font-weight: 400;
+}
+
 /* h1,
 h2,
 h3,

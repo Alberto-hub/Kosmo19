@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-    $("#header").load("../header.html");
-    $("#footer").load("../footer.html");
+    // $("#header").load("../header.html");
+    // $("#footer").load("../footer.html");
 
      var search_count=0;
      var check_point; //체크값 비교하기 위한 변수
@@ -13,6 +13,9 @@ $(document).ready(function(){
     //     $(this).css('opacity','1');
     // });
 
+
+
+
     $(function () {
         $('.spot_img').mouseenter(function () { // 마우스 올렸을때 이미지 흐리게
             $(this).css('opacity', '0.5');
@@ -23,6 +26,29 @@ $(document).ready(function(){
            
             
         });
+    });
+
+   //관리자 spot 삭제 
+    var admin_pw =1111;
+    $(".admin > #delete").click(function(){
+
+   
+
+        if (confirm("정말 삭제하시겠습니까??") == true){    //확인
+
+            var inputpw=prompt("비밀번호를 입력하세요.");
+            if(inputpw == admin_pw){
+                alert("삭제되었습니다.");
+            }else{
+                alert("비밀번호가 틀렸습니다.");
+            }
+       
+        }else{   //취소
+       
+            return false;
+       
+        }
+       
     });
    
 
