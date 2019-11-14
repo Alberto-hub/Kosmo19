@@ -228,7 +228,7 @@
             //&nbsp;만들 팝업창 좌우 크기의 1/2 만큼 보정값으로 빼주었음
             var popupY= (500 / 2);
             //&nbsp;만들 팝업창 상하 크기의 1/2 만큼 보정값으로 빼주었음
-            if('.index-login'){
+            if('#index-login'){
                 window.open("./login/Login_Main.html", "PopupWin", 'status=no, height=600, width=800, left='+ popupX + ', top='+ popupY);
             } else {
                 window.open("../login/Login_Main.html", "PopupWin", 'status=no, height=600, width=800, left='+ popupX + ', top='+ popupY);
@@ -241,7 +241,7 @@
             //&nbsp;만들 팝업창 좌우 크기의 1/2 만큼 보정값으로 빼주었음
             var popupY= (500 / 2);
             //&nbsp;만들 팝업창 상하 크기의 1/2 만큼 보정값으로 빼주었음
-            if('.index-join'){
+            if('#index-join'){
                 window.open("./login/Sign_Up.html", "PopupWin", 'status=no, height=600, width=800, left='+ popupX + ', top='+ popupY);
             } else {
                 window.open("../login/Sign_Up.html", "PopupWin", 'status=no, height=600, width=800, left='+ popupX + ', top='+ popupY);
