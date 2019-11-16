@@ -3,6 +3,9 @@ $(function () {
     $('#CH').click(function () {
         location.href = 'Sign_Up_Child.html';
     });
+    $('#Cancel').click(function () {
+        location.href = 'Login_Main.html';
+    });
     $('#Consent').click(function () {
         if ($('#ToUA').is(":checked") == false) {
             var target_offset = $("#ToUA").offset();
